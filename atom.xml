@@ -6,7 +6,7 @@
   <link href="https://shoal-rat.github.io/atom.xml" rel="self"/>
   
   <link href="https://shoal-rat.github.io/"/>
-  <updated>2024-01-12T06:59:44.442Z</updated>
+  <updated>2024-01-12T09:45:29.009Z</updated>
   <id>https://shoal-rat.github.io/</id>
   
   <author>
@@ -17,22 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
+    <title>Who am I?</title>
     <link href="https://shoal-rat.github.io/2024/01/12/hello-world/"/>
     <id>https://shoal-rat.github.io/2024/01/12/hello-world/</id>
-    <published>2024-01-12T06:59:44.442Z</published>
-    <updated>2024-01-12T06:59:44.442Z</updated>
+    <published>2024-01-12T09:25:10.000Z</published>
+    <updated>2024-01-12T09:45:29.009Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Hello, my name is Weike Zhang. I am a fourth-year undergraduate student at Jilin University, majoring in Public Finance. I have embarked on an exciting journey to pursue a Bachelor’s degree in Information Technology (IT) at the Illinois Institute of Technology (IIT), aiming to complete it within two years. Concurrently, I am also working towards a Master’s degree in Economics. My unique educational path combines the insights of economics with the technical skills of computer science. If you have any questions about studying Computer Science as an Economics student, please feel free to reach out to me via email. Additionally, I am actively engaged in the GPT store, where I manage a selection of GPT models. Below, you’ll find a detailed list of all the GPTs I’ve worked with.<br>[Visit my blog to learn more about my journey and perspectives.]</p><p><a href="https://chat.openai.com/g/g-UbEp9ALjg-personal-statement-specialist">personal statement specialist</a></p><p><a href="https://chat.openai.com/g/g-65u5qPCLS-ielts-writing-advisor">ielts writing advisor</a></p><p><a href="https://chat.openai.com/g/g-fPNXmJ5Co-code-mentor">code mentor</a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;p&gt;Hello, my name is Weike Zhang. I am a fourth-year undergraduate student at Jilin University, majoring in Public Finance. I have embarked </summary>
       
     
     
     
+    <category term="blog" scheme="https://shoal-rat.github.io/categories/blog/"/>
+    
+    
+    <category term="introduction" scheme="https://shoal-rat.github.io/tags/introduction/"/>
     
   </entry>
   
