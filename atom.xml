@@ -6,7 +6,7 @@
   <link href="https://shoal-rat.github.io/atom.xml" rel="self"/>
   
   <link href="https://shoal-rat.github.io/"/>
-  <updated>2024-01-15T12:24:18.640Z</updated>
+  <updated>2024-01-15T12:47:27.386Z</updated>
   <id>https://shoal-rat.github.io/</id>
   
   <author>
@@ -15,6 +15,51 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>考试顺利呀</title>
+    <link href="https://shoal-rat.github.io/2024/01/15/%E8%80%83%E8%AF%95%E9%A1%BA%E5%88%A9%E5%91%80/"/>
+    <id>https://shoal-rat.github.io/2024/01/15/%E8%80%83%E8%AF%95%E9%A1%BA%E5%88%A9%E5%91%80/</id>
+    <published>2024-01-15T12:47:05.000Z</published>
+    <updated>2024-01-15T12:47:27.386Z</updated>
+    
+    <content type="html"><![CDATA[<p>祝你成功❤</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;祝你成功❤&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>How to build a blog by yourself-Part 1 Github</title>
+    <link href="https://shoal-rat.github.io/2024/01/15/blog-building/"/>
+    <id>https://shoal-rat.github.io/2024/01/15/blog-building/</id>
+    <published>2024-01-15T12:27:24.000Z</published>
+    <updated>2024-01-15T12:46:25.172Z</updated>
+    
+    <content type="html"><![CDATA[<p>If you hope to build a blog by yourself, you can first register a account in GitHub. Attention, you may need some tools which have magic to let you bypass some walls in somewhere, and you can reach <a href="https://github.com/">GitHub</a>.</p><p>After you intered into github, you can first go into your profile, which named <a href="https://github.com/[your">https://github.com/[your</a> github name] as for me, my github profile is <a href="https://github.com/shoal-rat">https://github.com/shoal-rat</a>. And what’s next? You should click repositories on the left side of your screen. Then click a green botton named “New”. And this step is importent, the Repository name must be named “[your name].github.io”, such as “shoal-rat.github.io”. You can choose add a readme doc up to you. </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;If you hope to build a blog by yourself, you can first register a account in GitHub. Attention, you may need some tools which have magic </summary>
+      
+    
+    
+    
+    <category term="Computer Science" scheme="https://shoal-rat.github.io/categories/Computer-Science/"/>
+    
+    
+    <category term="Blog" scheme="https://shoal-rat.github.io/tags/Blog/"/>
+    
+  </entry>
   
   <entry>
     <title>Introduction of my GPTs</title>
