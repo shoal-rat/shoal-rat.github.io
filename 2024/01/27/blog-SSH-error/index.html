@@ -22,16 +22,17 @@
     var CONFIG = {"hostname":"shoal-rat.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":2,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="Eureka! Eureka!">
+  <meta name="description" content="Experiencing SSH Connection Problems with GitHub?SSH (Secure Shell) is a common method used by developers to securely connect and interact with remote servers, including repositories hosted on GitHub.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="blog_SSH_error">
+<meta property="og:title" content="Solution of SSH error">
 <meta property="og:url" content="https://shoal-rat.github.io/2024/01/27/blog-SSH-error/index.html">
 <meta property="og:site_name" content="Econ-CS Learning Blog">
-<meta property="og:description" content="Eureka! Eureka!">
+<meta property="og:description" content="Experiencing SSH Connection Problems with GitHub?SSH (Secure Shell) is a common method used by developers to securely connect and interact with remote servers, including repositories hosted on GitHub.">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-01-27T12:50:14.000Z">
-<meta property="article:modified_time" content="2024-01-27T12:50:14.359Z">
+<meta property="article:modified_time" content="2024-02-04T14:03:39.990Z">
 <meta property="article:author" content="Shoal Rat">
+<meta property="article:tag" content="Blog">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://shoal-rat.github.io/2024/01/27/blog-SSH-error/">
@@ -47,7 +48,7 @@
   };
 </script>
 
-  <title>blog_SSH_error | Econ-CS Learning Blog</title>
+  <title>Solution of SSH error | Econ-CS Learning Blog</title>
   
 
 
@@ -209,7 +210,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          blog_SSH_error
+          Solution of SSH error
         </h1>
 
         <div class="post-meta">
@@ -221,6 +222,13 @@
 
               <time title="Created: 2024-01-27 20:50:14" itemprop="dateCreated datePublished" datetime="2024-01-27T20:50:14+08:00">2024-01-27</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-02-04 22:03:39" itemprop="dateModified" datetime="2024-02-04T22:03:39+08:00">2024-02-04</time>
+              </span>
 
           
 
@@ -233,7 +241,35 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <h2 id="Experiencing-SSH-Connection-Problems-with-GitHub"><a href="#Experiencing-SSH-Connection-Problems-with-GitHub" class="headerlink" title="Experiencing SSH Connection Problems with GitHub?"></a>Experiencing SSH Connection Problems with GitHub?</h2><p>SSH (Secure Shell) is a common method used by developers to securely connect and interact with remote servers, including repositories hosted on GitHub. However, sometimes, you might find yourself unable to connect to GitHub via SSH, leading to errors like “Connection timed out”. Don’t worry; this blog post is here to help you troubleshoot and resolve these SSH connection issues.</p>
+<h3 id="Understanding-the-Error"><a href="#Understanding-the-Error" class="headerlink" title="Understanding the Error"></a>Understanding the Error</h3><p>When you encounter an error like <code>ssh: connect to host github.com port 22: Connection timed out</code>, it indicates that your SSH client is unable to establish a connection to GitHub’s servers. This could be due to various reasons such as network issues, firewall settings, or SSH key configuration problems.</p>
+<h3 id="Step-by-Step-Troubleshooting"><a href="#Step-by-Step-Troubleshooting" class="headerlink" title="Step-by-Step Troubleshooting"></a>Step-by-Step Troubleshooting</h3><h4 id="1-Check-Your-Internet-Connection"><a href="#1-Check-Your-Internet-Connection" class="headerlink" title="1. Check Your Internet Connection"></a>1. <strong>Check Your Internet Connection</strong></h4><ul>
+<li>Ensure your internet connection is stable and working properly.</li>
+</ul>
+<h4 id="2-Verify-GitHub’s-Server-Status"><a href="#2-Verify-GitHub’s-Server-Status" class="headerlink" title="2. Verify GitHub’s Server Status"></a>2. <strong>Verify GitHub’s Server Status</strong></h4><ul>
+<li>Occasionally, the issue might be on GitHub’s end. Check <a target="_blank" rel="noopener" href="https://www.githubstatus.com/">GitHub’s status page</a> to confirm their servers are operational.</li>
+</ul>
+<h4 id="3-SSH-Key-Configuration"><a href="#3-SSH-Key-Configuration" class="headerlink" title="3. SSH Key Configuration"></a>3. <strong>SSH Key Configuration</strong></h4><ul>
+<li>Confirm your SSH key is correctly configured in your GitHub account.</li>
+</ul>
+<h4 id="4-Firewall-and-Network-Restrictions"><a href="#4-Firewall-and-Network-Restrictions" class="headerlink" title="4. Firewall and Network Restrictions"></a>4. <strong>Firewall and Network Restrictions</strong></h4><ul>
+<li>Your network might be blocking SSH connections on port 22. Check if your firewall or antivirus settings are restricting access.</li>
+</ul>
+<h4 id="5-Using-an-Alternate-SSH-Port"><a href="#5-Using-an-Alternate-SSH-Port" class="headerlink" title="5. Using an Alternate SSH Port"></a>5. <strong>Using an Alternate SSH Port</strong></h4><ul>
+<li>GitHub supports connections via an alternate SSH port (443), which can bypass certain network restrictions.</li>
+</ul>
+<h3 id="Configuring-SSH-for-Alternate-Port"><a href="#Configuring-SSH-for-Alternate-Port" class="headerlink" title="Configuring SSH for Alternate Port"></a>Configuring SSH for Alternate Port</h3><p>If you suspect that port 22 is blocked, you can configure SSH to use port 443 for GitHub:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">  Hostname ssh.github.com</span><br><span class="line">  Port 443</span><br><span class="line">  User git</span><br></pre></td></tr></table></figure>
+
+<p>Add this configuration to your SSH config file (~&#x2F;.ssh&#x2F;config on most systems). This directs SSH to use port 443 specifically for connections to GitHub.</p>
+<h3 id="Testing-Your-Connection"><a href="#Testing-Your-Connection" class="headerlink" title="Testing Your Connection"></a>Testing Your Connection</h3><p>After making changes, test your SSH connection:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>If successful, you’ll receive a message confirming your authentication.</p>
+<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>SSH connection issues can be frustrating, but with the right troubleshooting steps, they are usually resolvable. By checking your network settings, confirming your SSH key configuration, and potentially using an alternate port, you can restore your SSH connection to GitHub and get back to coding.</p>
+<p>Remember, if all else fails, GitHub’s HTTPS connection is a reliable fallback for repository operations. </p>
+<p>Happy coding!</p>
+
     </div>
 
     
@@ -248,7 +284,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="https://shoal-rat.github.io/2024/01/27/blog-SSH-error/" title="blog_SSH_error">https://shoal-rat.github.io/2024/01/27/blog-SSH-error/</a>
+    <a href="https://shoal-rat.github.io/2024/01/27/blog-SSH-error/" title="Solution of SSH error">https://shoal-rat.github.io/2024/01/27/blog-SSH-error/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -258,6 +294,9 @@
 
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Blog/" rel="tag"># Blog</a>
+          </div>
 
         
 
@@ -327,6 +366,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Experiencing-SSH-Connection-Problems-with-GitHub"><span class="nav-number">1.</span> <span class="nav-text">Experiencing SSH Connection Problems with GitHub?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Understanding-the-Error"><span class="nav-number">1.1.</span> <span class="nav-text">Understanding the Error</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-by-Step-Troubleshooting"><span class="nav-number">1.2.</span> <span class="nav-text">Step-by-Step Troubleshooting</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Check-Your-Internet-Connection"><span class="nav-number">1.2.1.</span> <span class="nav-text">1. Check Your Internet Connection</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Verify-GitHub%E2%80%99s-Server-Status"><span class="nav-number">1.2.2.</span> <span class="nav-text">2. Verify GitHub’s Server Status</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-SSH-Key-Configuration"><span class="nav-number">1.2.3.</span> <span class="nav-text">3. SSH Key Configuration</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-Firewall-and-Network-Restrictions"><span class="nav-number">1.2.4.</span> <span class="nav-text">4. Firewall and Network Restrictions</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-Using-an-Alternate-SSH-Port"><span class="nav-number">1.2.5.</span> <span class="nav-text">5. Using an Alternate SSH Port</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Configuring-SSH-for-Alternate-Port"><span class="nav-number">1.3.</span> <span class="nav-text">Configuring SSH for Alternate Port</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Testing-Your-Connection"><span class="nav-number">1.4.</span> <span class="nav-text">Testing Your Connection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Conclusion"><span class="nav-number">1.5.</span> <span class="nav-text">Conclusion</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -355,7 +395,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>

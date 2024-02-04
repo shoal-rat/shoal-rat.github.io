@@ -6,7 +6,7 @@
   <link href="https://shoal-rat.github.io/atom.xml" rel="self"/>
   
   <link href="https://shoal-rat.github.io/"/>
-  <updated>2024-01-27T12:50:14.359Z</updated>
+  <updated>2024-02-04T14:03:39.990Z</updated>
   <id>https://shoal-rat.github.io/</id>
   
   <author>
@@ -17,15 +17,24 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>blog_SSH_error</title>
+    <title>Solution of SSH error</title>
     <link href="https://shoal-rat.github.io/2024/01/27/blog-SSH-error/"/>
     <id>https://shoal-rat.github.io/2024/01/27/blog-SSH-error/</id>
     <published>2024-01-27T12:50:14.000Z</published>
-    <updated>2024-01-27T12:50:14.359Z</updated>
+    <updated>2024-02-04T14:03:39.990Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Experiencing-SSH-Connection-Problems-with-GitHub"><a href="#Experiencing-SSH-Connection-Problems-with-GitHub" class="headerlink" title="Experiencing SSH Connection Problems with GitHub?"></a>Experiencing SSH Connection Problems with GitHub?</h2><p>SSH (Secure Shell) is a common method used by developers to securely connect and interact with remote servers, including repositories hosted on GitHub. However, sometimes, you might find yourself unable to connect to GitHub via SSH, leading to errors like “Connection timed out”. Don’t worry; this blog post is here to help you troubleshoot and resolve these SSH connection issues.</p><h3 id="Understanding-the-Error"><a href="#Understanding-the-Error" class="headerlink" title="Understanding the Error"></a>Understanding the Error</h3><p>When you encounter an error like <code>ssh: connect to host github.com port 22: Connection timed out</code>, it indicates that your SSH client is unable to establish a connection to GitHub’s servers. This could be due to various reasons such as network issues, firewall settings, or SSH key configuration problems.</p><h3 id="Step-by-Step-Troubleshooting"><a href="#Step-by-Step-Troubleshooting" class="headerlink" title="Step-by-Step Troubleshooting"></a>Step-by-Step Troubleshooting</h3><h4 id="1-Check-Your-Internet-Connection"><a href="#1-Check-Your-Internet-Connection" class="headerlink" title="1. Check Your Internet Connection"></a>1. <strong>Check Your Internet Connection</strong></h4><ul><li>Ensure your internet connection is stable and working properly.</li></ul><h4 id="2-Verify-GitHub’s-Server-Status"><a href="#2-Verify-GitHub’s-Server-Status" class="headerlink" title="2. Verify GitHub’s Server Status"></a>2. <strong>Verify GitHub’s Server Status</strong></h4><ul><li>Occasionally, the issue might be on GitHub’s end. Check <a href="https://www.githubstatus.com/">GitHub’s status page</a> to confirm their servers are operational.</li></ul><h4 id="3-SSH-Key-Configuration"><a href="#3-SSH-Key-Configuration" class="headerlink" title="3. SSH Key Configuration"></a>3. <strong>SSH Key Configuration</strong></h4><ul><li>Confirm your SSH key is correctly configured in your GitHub account.</li></ul><h4 id="4-Firewall-and-Network-Restrictions"><a href="#4-Firewall-and-Network-Restrictions" class="headerlink" title="4. Firewall and Network Restrictions"></a>4. <strong>Firewall and Network Restrictions</strong></h4><ul><li>Your network might be blocking SSH connections on port 22. Check if your firewall or antivirus settings are restricting access.</li></ul><h4 id="5-Using-an-Alternate-SSH-Port"><a href="#5-Using-an-Alternate-SSH-Port" class="headerlink" title="5. Using an Alternate SSH Port"></a>5. <strong>Using an Alternate SSH Port</strong></h4><ul><li>GitHub supports connections via an alternate SSH port (443), which can bypass certain network restrictions.</li></ul><h3 id="Configuring-SSH-for-Alternate-Port"><a href="#Configuring-SSH-for-Alternate-Port" class="headerlink" title="Configuring SSH for Alternate Port"></a>Configuring SSH for Alternate Port</h3><p>If you suspect that port 22 is blocked, you can configure SSH to use port 443 for GitHub:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">  Hostname ssh.github.com</span><br><span class="line">  Port 443</span><br><span class="line">  User git</span><br></pre></td></tr></table></figure><p>Add this configuration to your SSH config file (~&#x2F;.ssh&#x2F;config on most systems). This directs SSH to use port 443 specifically for connections to GitHub.</p><h3 id="Testing-Your-Connection"><a href="#Testing-Your-Connection" class="headerlink" title="Testing Your Connection"></a>Testing Your Connection</h3><p>After making changes, test your SSH connection:</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>If successful, you’ll receive a message confirming your authentication.</p><h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>SSH connection issues can be frustrating, but with the right troubleshooting steps, they are usually resolvable. By checking your network settings, confirming your SSH key configuration, and potentially using an alternate port, you can restore your SSH connection to GitHub and get back to coding.</p><p>Remember, if all else fails, GitHub’s HTTPS connection is a reliable fallback for repository operations. </p><p>Happy coding!</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Experiencing-SSH-Connection-Problems-with-GitHub&quot;&gt;&lt;a href=&quot;#Experiencing-SSH-Connection-Problems-with-GitHub&quot; class=&quot;headerlink&quot; tit</summary>
+      
     
     
     
     
+    <category term="Blog" scheme="https://shoal-rat.github.io/tags/Blog/"/>
     
   </entry>
   
