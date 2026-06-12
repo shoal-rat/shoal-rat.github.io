@@ -94,16 +94,10 @@ input {
   min-width: 11rem;
 }
 
-.brand-mark {
-  width: 2.6rem;
-  height: 2.6rem;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--teal);
-  border-radius: 8px;
-  background: #1e1e1e;
-  color: var(--green);
-  font-weight: 800;
+.brand-logo {
+  width: 3.2rem;
+  height: 3.2rem;
+  flex: 0 0 auto;
 }
 
 .brand-copy {
@@ -390,14 +384,14 @@ input {
 
 .project-card {
   min-width: 0;
-  min-height: 24rem;
+  min-height: 30rem;
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
 }
 
 .project-card.is-compact {
-  min-height: 20rem;
+  min-height: 28rem;
 }
 
 .project-head {
@@ -429,6 +423,30 @@ input {
 .project-card h2 {
   font-size: 1.35rem;
   overflow-wrap: anywhere;
+}
+
+.project-media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: #050505;
+  overflow: hidden;
+}
+
+.project-media img,
+.project-gif {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-gif {
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: #050505;
 }
 
 .project-note {
