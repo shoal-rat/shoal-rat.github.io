@@ -489,6 +489,68 @@ input {
   justify-content: space-between;
 }
 
+.about-terminal {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.8fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.terminal-card {
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: #050505;
+  box-shadow: 0 18px 52px var(--shadow);
+  overflow: hidden;
+}
+
+.terminal-title {
+  min-height: 2.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border-bottom: 1px solid var(--line);
+  background: #1e1e1e;
+  padding: 0 1rem;
+  color: var(--teal);
+}
+
+.terminal-title span {
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 1.1rem 0 0 var(--amber), 2.2rem 0 0 var(--magenta);
+  margin-right: 2.2rem;
+}
+
+.terminal-card pre {
+  margin: 0;
+  padding: 1rem;
+  overflow-x: auto;
+  color: var(--amber);
+}
+
+.terminal-card code {
+  font: inherit;
+}
+
+.skill-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.skill-cloud span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #0d1117;
+  color: var(--text);
+  padding: 0.32rem 0.62rem;
+  font-size: 0.84rem;
+}
+
 .taxonomy-card {
   min-height: 7rem;
   padding: 1.2rem;
@@ -783,6 +845,7 @@ input {
   .split-section,
   .story-grid,
   .resource-grid,
+  .about-terminal,
   .taxonomy-grid,
   .article-nav {
     grid-template-columns: 1fr;
