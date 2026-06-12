@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#070a0c">
-  <meta name="description" content="Resources, tools, and references from the Shoal/Rat Econ-CS lab.">
+  <meta name="description" content="Public GitHub projects from the Shoal/Rat Econ-CS lab, with notes on purpose, stack, and research signal.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Resources | Shoal/Rat Econ-CS Lab">
-  <meta property="og:description" content="Resources, tools, and references from the Shoal/Rat Econ-CS lab.">
-  <meta property="og:url" content="https://shoal-rat.github.io/resources/">
+  <meta property="og:title" content="Projects | Shoal/Rat Econ-CS Lab">
+  <meta property="og:description" content="Public GitHub projects from the Shoal/Rat Econ-CS lab, with notes on purpose, stack, and research signal.">
+  <meta property="og:url" content="https://shoal-rat.github.io/projects/">
   <meta property="og:site_name" content="Shoal/Rat Econ-CS Lab">
   <meta property="og:image" content="https://shoal-rat.github.io/images/hacker-ide-hero.png">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://shoal-rat.github.io/resources/">
+  <link rel="canonical" href="https://shoal-rat.github.io/projects/">
   <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
   <link rel="alternate icon" href="/images/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="/css/main.css">
   <link rel="alternate" href="/atom.xml" title="Shoal/Rat Econ-CS Lab" type="application/atom+xml">
   <script defer src="/js/lab.js"></script>
-  <title>Resources | Shoal/Rat Econ-CS Lab</title>
+  <title>Projects | Shoal/Rat Econ-CS Lab</title>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -35,11 +35,11 @@
     <div class="nav-links">
       <a class="" href="/"><i class="fa fa-terminal" aria-hidden="true"></i><span>Home</span></a>
       <a class="" href="/aboutme/"><i class="fa fa-user-astronaut" aria-hidden="true"></i><span>AboutMe</span></a>
-      <a class="" href="/projects/"><i class="fa fa-code-branch" aria-hidden="true"></i><span>Projects</span></a>
+      <a class="is-active" href="/projects/"><i class="fa fa-code-branch" aria-hidden="true"></i><span>Projects</span></a>
       <a class="" href="/archives/"><i class="fa fa-archive" aria-hidden="true"></i><span>Archive</span></a>
       <a class="" href="/tags/"><i class="fa fa-tags" aria-hidden="true"></i><span>Tags</span></a>
       <a class="" href="/categories/"><i class="fa fa-th" aria-hidden="true"></i><span>Categories</span></a>
-      <a class="is-active" href="/resources/"><i class="fa fa-cube" aria-hidden="true"></i><span>Resources</span></a>
+      <a class="" href="/resources/"><i class="fa fa-cube" aria-hidden="true"></i><span>Resources</span></a>
       <button class="icon-button" type="button" data-search-open aria-label="Open search"><i class="fa fa-search" aria-hidden="true"></i></button>
     </div>
   </nav>
@@ -47,19 +47,30 @@
   <main id="main">
 
     <section class="page-intro">
-      <p class="eyebrow">Resource bay</p>
-      <h1>Tools and references worth keeping close.</h1>
-      <p>A lightweight directory for GPT assistants, code experiments, and useful public links.</p>
+      <p class="eyebrow">gh repo list shoal-rat --public</p>
+      <h1>Project console</h1>
+      <p>Public GitHub repositories read from their own READMEs, manifests, and file layouts, then rewritten as short working notes.</p>
     </section>
-    <section class="section">
-      <div class="section-head">
-        <p class="eyebrow">resource.project_index</p>
-        <h2>GitHub project notes</h2>
-        <p>Every public repository currently visible from the GitHub profile, with private repos excluded from the public site.</p>
+    <section class="section split-section">
+      <div>
+        <p class="eyebrow">repo telemetry</p>
+        <h2>14 public repositories, grouped by what they actually do.</h2>
+        <p>Private repositories are intentionally not listed on the public site. Forks are marked as forks, while original public repos are treated as lab projects.</p>
       </div>
-      <div class="project-grid compact-grid">
+      <div class="matrix-list">
+        <a href="#featured-projects"><span>featured systems</span><strong>4</strong></a>
+        <a href="#all-projects"><span>public index</span><strong>14</strong></a>
+        <a href="https://github.com/shoal-rat" target="_blank" rel="noopener"><span>GitHub profile</span><strong><i class="fab fa-github" aria-hidden="true"></i></strong></a>
+      </div>
+    </section>
+    <section class="section" id="featured-projects">
+      <div class="section-head">
+        <p class="eyebrow">featured.remotes</p>
+        <h2>Systems with the strongest research signal</h2>
+      </div>
+      <div class="project-grid">
 
-  <article class="project-card is-compact">
+  <article class="project-card">
     <div class="project-head">
       <span class="project-scope">quant agents</span>
       <span class="project-status">public</span>
@@ -72,12 +83,12 @@
     <img class="project-gif" src="https://raw.githubusercontent.com/shoal-rat/quant-research-lab/main/docs/media/demo-office.gif" alt="quant-research-lab animated preview" loading="lazy">
     <div class="project-stack" aria-label="quant-research-lab stack">
       <span>TypeScript</span>
-      <span>React</span><span>Vite</span><span>LLM agents</span>
+      <span>React</span><span>Vite</span><span>LLM agents</span><span>backtesting</span>
     </div>
     <a class="read-link" href="https://github.com/shoal-rat/quant-research-lab" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
   </article>
 
-  <article class="project-card is-compact">
+  <article class="project-card">
     <div class="project-head">
       <span class="project-scope">self-driving RL</span>
       <span class="project-status">public</span>
@@ -90,12 +101,12 @@
     
     <div class="project-stack" aria-label="Horizon_FSD stack">
       <span>Python</span>
-      <span>DreamerV3</span><span>computer vision</span><span>telemetry</span>
+      <span>DreamerV3</span><span>computer vision</span><span>telemetry</span><span>ViGEm</span><span>Windows</span>
     </div>
     <a class="read-link" href="https://github.com/shoal-rat/Horizon_FSD" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
   </article>
 
-  <article class="project-card is-compact">
+  <article class="project-card">
     <div class="project-head">
       <span class="project-scope">econometrics agent</span>
       <span class="project-status">public</span>
@@ -108,12 +119,12 @@
     
     <div class="project-stack" aria-label="econoclast stack">
       <span>Python</span>
-      <span>LLM agent</span><span>replication</span><span>DiD</span>
+      <span>LLM agent</span><span>replication</span><span>DiD</span><span>RDD</span><span>specification curves</span>
     </div>
     <a class="read-link" href="https://github.com/shoal-rat/econoclast" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
   </article>
 
-  <article class="project-card is-compact">
+  <article class="project-card">
     <div class="project-head">
       <span class="project-scope">research automation</span>
       <span class="project-status">public</span>
@@ -126,12 +137,92 @@
     
     <div class="project-stack" aria-label="digital-unconscious stack">
       <span>Python</span>
-      <span>local-first</span><span>screen context</span><span>idea scoring</span>
+      <span>local-first</span><span>screen context</span><span>idea scoring</span><span>RAG</span><span>dashboard</span>
+    </div>
+    <a class="read-link" href="https://github.com/shoal-rat/digital-unconscious" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </article>
+</div>
+    </section>
+    <section class="section" id="all-projects">
+      <div class="section-head">
+        <p class="eyebrow">all.public.repos</p>
+        <h2>Full public project index</h2>
+      </div>
+      <div class="project-grid">
+
+  <article class="project-card">
+    <div class="project-head">
+      <span class="project-scope">quant agents</span>
+      <span class="project-status">public</span>
+    </div>
+    <div class="project-media">
+      <img src="/images/projects/quant-research-lab.svg" alt="quant-research-lab system glyph">
+    </div>
+    <h2><a href="https://github.com/shoal-rat/quant-research-lab" target="_blank" rel="noopener">quant-research-lab</a></h2>
+    <p class="project-note">Autonomous quant research office where a simulated team proposes, backtests, gates, debates, and iterates on equity strategy ideas. The README shows real research mechanics behind the anime surface: 15 documented strategy families, deflated-Sharpe gates, alpha-pool correlation penalties, cost and drawdown checks, memory, lineage, boss directives, and desktop-wallpaper packaging.</p>
+    <img class="project-gif" src="https://raw.githubusercontent.com/shoal-rat/quant-research-lab/main/docs/media/demo-office.gif" alt="quant-research-lab animated preview" loading="lazy">
+    <div class="project-stack" aria-label="quant-research-lab stack">
+      <span>TypeScript</span>
+      <span>React</span><span>Vite</span><span>LLM agents</span><span>backtesting</span>
+    </div>
+    <a class="read-link" href="https://github.com/shoal-rat/quant-research-lab" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </article>
+
+  <article class="project-card">
+    <div class="project-head">
+      <span class="project-scope">self-driving RL</span>
+      <span class="project-status">public</span>
+    </div>
+    <div class="project-media">
+      <img src="/images/projects/horizon-fsd.svg" alt="Horizon_FSD system glyph">
+    </div>
+    <h2><a href="https://github.com/shoal-rat/Horizon_FSD" target="_blank" rel="noopener">Horizon_FSD</a></h2>
+    <p class="project-note">World-model driving stack for Forza Horizon 6 in Offline Solo / Free Roam. It connects Windows screen capture, Forza Data Out UDP telemetry, route features, a DreamerV3 actor-critic, virtual Xbox controller output, crash recovery, replay storage, and stress tests under a tight live decision budget.</p>
+    
+    <div class="project-stack" aria-label="Horizon_FSD stack">
+      <span>Python</span>
+      <span>DreamerV3</span><span>computer vision</span><span>telemetry</span><span>ViGEm</span><span>Windows</span>
+    </div>
+    <a class="read-link" href="https://github.com/shoal-rat/Horizon_FSD" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </article>
+
+  <article class="project-card">
+    <div class="project-head">
+      <span class="project-scope">econometrics agent</span>
+      <span class="project-status">public</span>
+    </div>
+    <div class="project-media">
+      <img src="/images/projects/econoclast.svg" alt="econoclast system glyph">
+    </div>
+    <h2><a href="https://github.com/shoal-rat/econoclast" target="_blank" rel="noopener">econoclast</a></h2>
+    <p class="project-note">Adversarial AI referee for empirical economics. It reads a paper, identifies hidden specification choices, researches unfamiliar methods, looks for public data, re-runs headline results across defensible alternatives, and reports fragility, p-hacking, cherry-picking, and replication risks in plain language.</p>
+    
+    <div class="project-stack" aria-label="econoclast stack">
+      <span>Python</span>
+      <span>LLM agent</span><span>replication</span><span>DiD</span><span>RDD</span><span>specification curves</span>
+    </div>
+    <a class="read-link" href="https://github.com/shoal-rat/econoclast" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </article>
+
+  <article class="project-card">
+    <div class="project-head">
+      <span class="project-scope">research automation</span>
+      <span class="project-status">public</span>
+    </div>
+    <div class="project-media">
+      <img src="/images/projects/digital-unconscious.svg" alt="digital-unconscious system glyph">
+    </div>
+    <h2><a href="https://github.com/shoal-rat/digital-unconscious" target="_blank" rel="noopener">digital-unconscious</a></h2>
+    <p class="project-note">Local-first research assistant that turns workday traces into private notes, idea candidates, daily briefings, and a searchable research backlog. The project includes passive observation, novelty and feasibility judging, multi-provider model routing, optional screenpipe/OCR capture, RAG context, and a staged research pipeline.</p>
+    
+    <div class="project-stack" aria-label="digital-unconscious stack">
+      <span>Python</span>
+      <span>local-first</span><span>screen context</span><span>idea scoring</span><span>RAG</span><span>dashboard</span>
     </div>
     <a class="read-link" href="https://github.com/shoal-rat/digital-unconscious" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
   </article>
 
-  <article class="project-card is-compact">
+  <article class="project-card">
     <div class="project-head">
       <span class="project-scope">paper pipeline</span>
       <span class="project-status">public</span>
@@ -144,12 +235,12 @@
     
     <div class="project-stack" aria-label="Econ_History_Research_Agent stack">
       <span>Python</span>
-      <span>Claude Code</span><span>evidence ledger</span><span>citation audit</span>
+      <span>Claude Code</span><span>evidence ledger</span><span>citation audit</span><span>pandoc</span><span>PDF</span>
     </div>
     <a class="read-link" href="https://github.com/shoal-rat/Econ_History_Research_Agent" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
   </article>
 
-  <article class="project-card is-compact">
+  <article class="project-card">
     <div class="project-head">
       <span class="project-scope">IO methods skill</span>
       <span class="project-status">public</span>
@@ -162,12 +253,12 @@
     
     <div class="project-stack" aria-label="structural-io-research stack">
       <span>Shell</span>
-      <span>BLP</span><span>GMM</span><span>IV</span>
+      <span>BLP</span><span>GMM</span><span>IV</span><span>Monte Carlo</span><span>Claude skill</span>
     </div>
     <a class="read-link" href="https://github.com/shoal-rat/structural-io-research" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
   </article>
 
-  <article class="project-card is-compact">
+  <article class="project-card">
     <div class="project-head">
       <span class="project-scope">chat strategy skill</span>
       <span class="project-status">public</span>
@@ -180,12 +271,12 @@
     
     <div class="project-stack" aria-label="dianzi-junshi stack">
       <span>Python</span>
-      <span>Codex skill</span><span>Claude Code</span><span>screenshots</span>
+      <span>Codex skill</span><span>Claude Code</span><span>screenshots</span><span>memory</span><span>reply drafting</span>
     </div>
     <a class="read-link" href="https://github.com/shoal-rat/dianzi-junshi" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
   </article>
 
-  <article class="project-card is-compact">
+  <article class="project-card">
     <div class="project-head">
       <span class="project-scope">browser game</span>
       <span class="project-status">public</span>
@@ -198,12 +289,12 @@
     
     <div class="project-stack" aria-label="ChengPing-VS-ZhangWeiWei stack">
       <span>JavaScript</span>
-      <span>HTML5 canvas</span><span>WebAudio</span><span>Pygame legacy</span>
+      <span>HTML5 canvas</span><span>WebAudio</span><span>Pygame legacy</span><span>asset pipeline</span>
     </div>
     <a class="read-link" href="https://github.com/shoal-rat/ChengPing-VS-ZhangWeiWei" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
   </article>
 
-  <article class="project-card is-compact">
+  <article class="project-card">
     <div class="project-head">
       <span class="project-scope">career data tool</span>
       <span class="project-status">public</span>
@@ -216,12 +307,12 @@
     
     <div class="project-stack" aria-label="UN-Internship-Opportunity-Scraper stack">
       <span>Python</span>
-      <span>Selenium</span><span>openpyxl</span><span>geopy</span>
+      <span>Selenium</span><span>openpyxl</span><span>geopy</span><span>pycountry</span><span>Excel</span>
     </div>
     <a class="read-link" href="https://github.com/shoal-rat/UN-Internship-Opportunity-Scraper" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
   </article>
 
-  <article class="project-card is-compact">
+  <article class="project-card">
     <div class="project-head">
       <span class="project-scope">Windows utility</span>
       <span class="project-status">public</span>
@@ -239,7 +330,7 @@
     <a class="read-link" href="https://github.com/shoal-rat/lock_window" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
   </article>
 
-  <article class="project-card is-compact">
+  <article class="project-card">
     <div class="project-head">
       <span class="project-scope">early game prototype</span>
       <span class="project-status">public</span>
@@ -257,7 +348,7 @@
     <a class="read-link" href="https://github.com/shoal-rat/name-battle-game" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
   </article>
 
-  <article class="project-card is-compact">
+  <article class="project-card">
     <div class="project-head">
       <span class="project-scope">forked writing skill</span>
       <span class="project-status is-fork">fork</span>
@@ -270,12 +361,12 @@
     
     <div class="project-stack" aria-label="humanizer stack">
       <span>Markdown</span>
-      <span>Claude Code</span><span>OpenCode</span><span>voice calibration</span>
+      <span>Claude Code</span><span>OpenCode</span><span>voice calibration</span><span>rewrite rules</span>
     </div>
     <a class="read-link" href="https://github.com/shoal-rat/humanizer" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
   </article>
 
-  <article class="project-card is-compact">
+  <article class="project-card">
     <div class="project-head">
       <span class="project-scope">forked persona skill</span>
       <span class="project-status is-fork">fork</span>
@@ -288,12 +379,12 @@
     
     <div class="project-stack" aria-label="ex-skill stack">
       <span>Python</span>
-      <span>Claude skill</span><span>chat imports</span><span>memory merge</span>
+      <span>Claude skill</span><span>chat imports</span><span>memory merge</span><span>corrections</span>
     </div>
     <a class="read-link" href="https://github.com/shoal-rat/ex-skill" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
   </article>
 
-  <article class="project-card is-compact">
+  <article class="project-card">
     <div class="project-head">
       <span class="project-scope">public website</span>
       <span class="project-status">public</span>
@@ -306,47 +397,11 @@
     
     <div class="project-stack" aria-label="shoal-rat.github.io stack">
       <span>HTML</span>
-      <span>GitHub Pages</span><span>static HTML</span><span>local search</span>
+      <span>GitHub Pages</span><span>static HTML</span><span>local search</span><span>VS Code theme</span>
     </div>
     <a class="read-link" href="https://github.com/shoal-rat/shoal-rat.github.io" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
   </article>
 </div>
-      <div class="section-actions">
-        <a class="button" href="/projects/"><i class="fa fa-code-branch" aria-hidden="true"></i><span>Open project console</span></a>
-      </div>
-    </section>
-    <section class="section">
-      <div class="section-head">
-        <p class="eyebrow">assistant.links</p>
-        <h2>GPT assistants and profile links</h2>
-      </div>
-      <div class="resource-grid">
-        <article class="resource-card">
-          <h2>Code Mentor</h2>
-          <p>A GPT assistant focused on learning the logic behind programming problems before jumping to solutions.</p>
-          <a class="read-link" href="https://chat.openai.com/g/g-fPNXmJ5Co-code-mentor" target="_blank" rel="noopener"><span>Open GPT</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-        </article>
-        <article class="resource-card">
-          <h2>Personal Statement Specialist</h2>
-          <p>A writing assistant for refining statements with clearer structure, voice, and evidence.</p>
-          <a class="read-link" href="https://chat.openai.com/g/g-UbEp9ALjg-personal-statement-specialist" target="_blank" rel="noopener"><span>Open GPT</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-        </article>
-        <article class="resource-card">
-          <h2>IELTS Writing Advisor</h2>
-          <p>A focused advisor for IELTS writing practice and feedback loops.</p>
-          <a class="read-link" href="https://chat.openai.com/g/g-65u5qPCLS-ielts-writing-advisor" target="_blank" rel="noopener"><span>Open GPT</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-        </article>
-        <article class="resource-card">
-          <h2>GitHub profile</h2>
-          <p>Source code, experiments, and public project history.</p>
-          <a class="read-link" href="https://github.com/shoal-rat" target="_blank" rel="noopener"><span>Open GitHub</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-        </article>
-        <article class="resource-card">
-          <h2>CV PDF</h2>
-          <p>A formal CV attachment for applications and academic context. The site keeps the public alias; the document can carry formal details.</p>
-          <a class="read-link" href="/assets/shoral-rat-cv.pdf" target="_blank" rel="noopener"><span>Open CV</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-        </article>
-      </div>
     </section>
   </main>
   <footer class="site-footer">
