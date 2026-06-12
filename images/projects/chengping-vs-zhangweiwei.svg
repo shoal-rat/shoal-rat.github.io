@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
   <title id="title">ChengPing-VS-ZhangWeiWei project glyph</title>
   <desc id="desc">browser game themed SVG panel for the Shoal/Rat site.</desc>
-  <rect width="640" height="360" rx="28" fill="#0d1117"/>
-  <rect x="20" y="20" width="600" height="320" rx="22" fill="#161b22" stroke="#30363d" stroke-width="4"/>
-  <rect x="20" y="20" width="600" height="44" rx="22" fill="#1e1e1e" stroke="#30363d" stroke-width="4"/>
-  <circle cx="48" cy="42" r="7" fill="#f48771"/><circle cx="72" cy="42" r="7" fill="#dcdcaa"/><circle cx="96" cy="42" r="7" fill="#89d185"/>
-  <text x="122" y="48" font-family="Cascadia Code, Consolas, monospace" font-size="16" font-weight="800" fill="#8b949e">~/projects/chengping-vs-zhangweiwei</text>
-  <path d="M42 306 H598" stroke="#30363d" stroke-width="3" stroke-dasharray="8 10"/>
+  <rect width="640" height="360" rx="28" fill="#050608"/>
+  <rect x="20" y="20" width="600" height="320" rx="22" fill="#08110c" stroke="#24352b" stroke-width="4"/>
+  <rect x="20" y="20" width="600" height="44" rx="22" fill="#101018" stroke="#24352b" stroke-width="4"/>
+  <circle cx="48" cy="42" r="7" fill="#ff5c57"/><circle cx="72" cy="42" r="7" fill="#ffd866"/><circle cx="96" cy="42" r="7" fill="#00ff66"/>
+  <text x="122" y="48" font-family="Terminal, Fixedsys, Lucida Console, Cascadia Code, Consolas, monospace" font-size="16" font-weight="800" fill="#9db5a3">~/projects/chengping-vs-zhangweiwei</text>
+  <path d="M42 306 H598" stroke="#24352b" stroke-width="3" stroke-dasharray="8 10"/>
   
-  <rect x="82" y="246" width="476" height="30" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="5"/>
-  <path d="M167 232 L201 166 L235 232 Z" fill="#161b22" stroke="#dcdcaa" stroke-width="6"/>
-  <path d="M407 232 L441 166 L475 232 Z" fill="#161b22" stroke="#f48771" stroke-width="6"/>
+  <rect x="82" y="246" width="476" height="30" rx="8" fill="#0d1117" stroke="#24352b" stroke-width="5"/>
+  <path d="M167 232 L201 166 L235 232 Z" fill="#161b22" stroke="#ff5af7" stroke-width="6"/>
+  <path d="M407 232 L441 166 L475 232 Z" fill="#161b22" stroke="#57a6ff" stroke-width="6"/>
   <path d="M246 181 L396 181 M306 137 L339 225 M284 225 L362 137" stroke="#c586c0" stroke-width="8" stroke-linecap="round"/>
-  <text x="320" y="127" text-anchor="middle" font-family="Cascadia Code, Consolas, monospace" font-size="36" font-weight="800" fill="#f48771">VS</text>
-  <text x="44" y="302" font-family="Cascadia Code, Consolas, monospace" font-size="20" font-weight="800" fill="#d4d4d4">ChengPing VS ZhangWeiWei</text>
-  <text x="596" y="322" text-anchor="end" font-family="Cascadia Code, Consolas, monospace" font-size="15" fill="#dcdcaa">JavaScript / browser game</text>
+  <text x="320" y="127" text-anchor="middle" font-family="Terminal, Fixedsys, Lucida Console, Cascadia Code, Consolas, monospace" font-size="36" font-weight="800" fill="#57a6ff">VS</text>
+  <text x="44" y="302" font-family="Terminal, Fixedsys, Lucida Console, Cascadia Code, Consolas, monospace" font-size="20" font-weight="800" fill="#eafff1">ChengPing VS ZhangWeiWei</text>
+  <text x="596" y="322" text-anchor="end" font-family="Terminal, Fixedsys, Lucida Console, Cascadia Code, Consolas, monospace" font-size="15" fill="#ff5af7">JavaScript / browser game</text>
 </svg>
