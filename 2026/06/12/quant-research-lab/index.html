@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070a0c">
+  <meta name="description" content="Why I wanted to build it Quant Research Lab started from a frustration with normal quant demos most of them show a clean equity curve, but hide the research process that produced it The interesting question is usually no">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Quant Research Lab: why I built an autonomous research office | Shoal/Rat Econ-CS Lab">
+  <meta property="og:description" content="Why I wanted to build it Quant Research Lab started from a frustration with normal quant demos most of them show a clean equity curve, but hide the research process that produced it The interesting question is usually no">
+  <meta property="og:url" content="https://shoal-rat.github.io/2026/06/12/quant-research-lab/">
+  <meta property="og:site_name" content="Shoal/Rat Econ-CS Lab">
+  <meta property="og:image" content="https://shoal-rat.github.io/images/hacker-ide-hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://shoal-rat.github.io/2026/06/12/quant-research-lab/">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="alternate icon" href="/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="preload" as="image" href="/images/hacker-ide-hero.png">
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="alternate" href="/atom.xml" title="Shoal/Rat Econ-CS Lab" type="application/atom+xml">
+  <script defer src="/js/lab.js"></script>
+  <title>Quant Research Lab: why I built an autonomous research office | Shoal/Rat Econ-CS Lab</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a class="brand" href="/" aria-label="Shoal/Rat Econ-CS Lab home">
+      <img class="brand-logo" src="/images/site-icon.png" alt="" aria-hidden="true">
+      <span class="brand-copy"><strong>Shoal/Rat</strong><span>Econ-CS Lab</span></span>
+    </a>
+    <div class="nav-links">
+      <a class="" href="/"><i class="fa fa-terminal" aria-hidden="true"></i><span>Home</span></a>
+      <a class="" href="/aboutme/"><i class="fa fa-user-astronaut" aria-hidden="true"></i><span>AboutMe</span></a>
+      <a class="" href="/projects/"><i class="fa fa-code-branch" aria-hidden="true"></i><span>Projects</span></a>
+      <a class="is-active" href="/archives/"><i class="fa fa-archive" aria-hidden="true"></i><span>Archive</span></a>
+      <a class="" href="/tags/"><i class="fa fa-tags" aria-hidden="true"></i><span>Tags</span></a>
+      <a class="" href="/categories/"><i class="fa fa-th" aria-hidden="true"></i><span>Categories</span></a>
+      <a class="" href="/resources/"><i class="fa fa-cube" aria-hidden="true"></i><span>Resources</span></a>
+      <button class="icon-button" type="button" data-search-open aria-label="Open search"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </div>
+  </nav>
+</header>
+  <main id="main">
+
+    <article class="article-shell">
+      <header class="article-header">
+        <p class="eyebrow">Field note</p>
+        <h1>Quant Research Lab: why I built an autonomous research office</h1>
+        <div class="article-meta">
+          <time datetime="2026-06-12">2026-06-12</time>
+          <span>Projects / Projects</span>
+        </div>
+        <div class="chip-row"><a class="chip" href="/tags/Projects/">Projects</a><a class="chip" href="/tags/Quant/">Quant</a><a class="chip" href="/tags/TypeScript/">TypeScript</a><a class="chip" href="/tags/AI Agents/">AI Agents</a><a class="chip" href="/categories/Projects/">Projects</a><a class="chip" href="/categories/Computer-Science/">Computer Science</a></div>
+      </header>
+      <div class="article-body">
+<h3 id="why-i-wanted-to-build-it">Why I wanted to build it</h3>
+<p>Quant Research Lab started from a frustration with normal quant demos: most of them show a clean equity curve, but hide the research process that produced it. The interesting question is usually not &quot;can one strategy look good on one chart?&quot; The harder question is whether the search process is honest after many trials, failed ideas, parameter mutations, cost assumptions, and overlapping factors.</p>
+<p>I wanted the project to feel like a hacker terminal and an office simulation, but the purpose is serious: make the research loop visible. The user should be able to watch a hypothesis become code, watch the backtest fail or pass mechanical gates, and see the next hypothesis change because the system remembers what happened before. The anime office is the face. The real product is the traceable research process behind it.</p>
+<figure class="note-media">
+        <img src="https://raw.githubusercontent.com/shoal-rat/quant-research-lab/main/docs/media/banner.svg" alt="Quant Research Lab banner" loading="lazy">
+        <figcaption>The repository banner frames the project as a research terminal rather than a brokerage dashboard.</figcaption>
+      </figure>
+<p>This is also why I did not design it as a trading app. It displays historical simulations only. It has no brokerage connection, no order execution, and no claim that any candidate is safe to trade. The point is to study how autonomous research agents should behave when they are forced to leave evidence.</p>
+<h3 id="tech-stack">Tech stack</h3>
+<p>The public implementation is a browser-first research simulator built around a TypeScript stack:</p>
+<ul>
+<li>React 18 for the interactive office UI, panels, controls, and stateful visual system.</li>
+<li>TypeScript 5.6 for typed engines and safer state transitions.</li>
+<li>Vite 7 for fast local development and static builds.</li>
+<li>src/lib/office2d/officeDirector.ts for character movement, conversation orchestration, boss reactions, and office effects.</li>
+<li>src/engines/ for deterministic research logic: strategy knowledge, hypothesis generation, backtesting, risk review, and research memory.</li>
+<li>src/engines/dialogue/ for local data-grounded dialogue scripts and optional browser-side model condensation.</li>
+<li>Wallpaper packaging for Lively Wallpaper and Wallpaper Engine, so the same research loop can run as a desktop surface.</li>
+</ul>
+<p>The stack choice is intentionally simple. A browser app is easy to inspect, easy to ship through GitHub, and good enough to demonstrate the research-loop architecture. The project does not need a server to prove the core idea because the most important behavior is deterministic: generate a candidate, backtest it, score it, review it, remember it, and propose the next move.</p>
+<h3 id="how-i-built-the-system">How I built the system</h3>
+<p>The architecture separates the office surface from the research engines. The office layer can be playful, but the engine layer has to be explicit. That split prevents the visual style from becoming the only thing the project does.</p>
+<figure class="note-media">
+        <img src="https://raw.githubusercontent.com/shoal-rat/quant-research-lab/main/docs/media/architecture.svg" alt="Quant Research Lab architecture" loading="lazy">
+        <figcaption>The architecture separates office state, dialogue, deterministic engines, memory, and review.</figcaption>
+      </figure>
+<p>The research loop has five main steps.</p>
+<ol>
+<li>The hypothesis engine chooses a direction. It can explore a new family, refine a promising line, repair a failure, or steer toward a boss directive.</li>
+<li>The strategy knowledge base constrains the idea. The README describes 15 documented equity families, including momentum, PEAD, news sentiment, low-volatility, pairs, lead-lag, and seasonality.</li>
+<li>The backtest engine simulates the candidate and produces metrics that the rest of the system can inspect.</li>
+<li>The risk review engine applies mechanical gates. A candidate can be blocked by deflated Sharpe, cost, turnover, drawdown, baseline comparison, or alpha-pool correlation.</li>
+<li>The research memory stores the outcome. Promising strategies can become v2 or v3 descendants; repeated mining of the same family can decay its edge.</li>
+</ol>
+<figure class="note-media">
+        <img src="https://raw.githubusercontent.com/shoal-rat/quant-research-lab/main/docs/media/loop-diagram.svg" alt="Self-iterating research loop" loading="lazy">
+        <figcaption>The loop diagram shows proposal, backtest, risk review, memory, and the next mutation.</figcaption>
+      </figure>
+<p>The boss interface sits above that loop. It lets the user type a directive, praise a researcher, criticize a researcher, or open live panels. I built this because a research agent should be steerable without becoming arbitrary. A directive can change search pressure, but it should not let the system bypass the gates.</p>
+<figure class="note-media">
+        <img src="https://raw.githubusercontent.com/shoal-rat/quant-research-lab/main/docs/media/demo-boss.gif" alt="Boss interface demo" loading="lazy">
+        <figcaption>Boss directives steer the next hypothesis while the engine keeps its review rules.</figcaption>
+      </figure>
+<p>The office demo is useful because it compresses a lot of state into something readable. When the system is generating, auditing, coding, meeting, or reviewing, the page makes that state visible. The user can understand where the loop is instead of staring at a silent notebook cell.</p>
+<figure class="note-media">
+        <img src="https://raw.githubusercontent.com/shoal-rat/quant-research-lab/main/docs/media/demo-office.gif" alt="Office research loop demo" loading="lazy">
+        <figcaption>The office mode shows a full research iteration through the visible workspace.</figcaption>
+      </figure>
+<h3 id="performance-and-evaluation">Performance and evaluation</h3>
+<p>The most important performance target is not raw strategy return. Raw return is too easy to overfit. The project evaluates research quality through the behavior of the loop: whether bad candidates get rejected, whether repeated trials shrink confidence, whether transaction costs matter, and whether new candidates add signal beyond the current pool.</p>
+<p>The README reports 6 passing engine tests. They cover determinism, cost monotonicity, deflated-Sharpe shrinkage, directive parsing, and risk gates. That test set is small, but it points in the right direction: the project treats the research engine as software that should be checked, not as a visual toy.</p>
+<p>On the quant side, the loop tracks the failure modes that usually make backtests look better than they are:</p>
+<ul>
+<li>Deflated Sharpe penalizes repeated searching across many trials.</li>
+<li>Alpha-pool correlation penalizes candidates that repaint an exposure already in the pool.</li>
+<li>Cost and turnover checks punish strategies that only work in frictionless simulations.</li>
+<li>Drawdown and baseline checks stop the system from promoting fragile curves.</li>
+<li>Research memory records failed branches so the agent does not keep rediscovering the same weak idea.</li>
+</ul>
+<p>This means the project is performance-aware without pretending to be a live fund. A good candidate is not just the highest standalone Sharpe. A good candidate is one that survives review, improves the pool, and leaves an auditable lineage.</p>
+<p>There is also UI performance. The app is designed as a static Vite build, so it can run locally, in a browser, or as a wallpaper mode. The wallpaper version collapses the boss tools into a floating control orb and pauses when a fullscreen app is in front. That matters because the research office is supposed to be ambient: it can keep running as a visible state machine without demanding a full dashboard all the time.</p>
+<figure class="note-media">
+        <img src="https://raw.githubusercontent.com/shoal-rat/quant-research-lab/main/docs/media/demo-wallpaper.gif" alt="Wallpaper mode demo" loading="lazy">
+        <figcaption>Wallpaper mode turns the loop into a desktop companion with compact boss controls.</figcaption>
+      </figure>
+<h3 id="what-i-learned">What I learned</h3>
+<p>The main lesson is that agent projects need hard boundaries. If an agent can only talk, it can sound impressive while doing very little. If it must call deterministic engines, pass review gates, and update memory, the output becomes easier to audit. The visual layer then becomes useful because it explains the process rather than replacing it.</p>
+<p>The next version should make the research allocator more serious. The roadmap I would prioritize is Thompson-sampling direction selection, pool-level delta Sharpe rewards, a MAP-Elites niche archive, probability-of-backtest-overfitting checks through CSCV, and real bridge adapters for Claude Code or Codex. Those changes would make the system less like a demo and more like a controlled autonomous research lab.</p>
+<p>Repository: <a href="https://github.com/shoal-rat/quant-research-lab" target="_blank" rel="noopener">quant-research-lab</a>.</p>
+      </div>
+      <nav class="article-nav" aria-label="Post navigation">
+        <a href="/2024/01/27/blog-SSH-error/"><span>Previous</span><strong>Solution of SSH error</strong></a>
+        <span></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div>
+      <strong>Shoal/Rat Econ-CS Lab</strong>
+      <span>Public finance, code, AI systems, and learning notes.</span>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/shoal-rat" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+      <a href="mailto:zwk@outlook.sg"><i class="fa fa-envelope" aria-hidden="true"></i><span>Email</span></a>
+      <a href="/atom.xml"><i class="fa fa-rss" aria-hidden="true"></i><span>RSS</span></a>
+    </div>
+  </footer>
+
+<div class="search-panel" data-search-panel hidden>
+  <div class="search-surface" role="dialog" aria-modal="true" aria-labelledby="search-title">
+    <div class="search-topline">
+      <h2 id="search-title">Search the lab</h2>
+      <button class="icon-button" type="button" data-search-close aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
+    </div>
+    <label class="search-field">
+      <span>Query</span>
+      <input type="search" data-search-input autocomplete="off" spellcheck="false" placeholder="SSH, GPT, GitHub, economics">
+    </label>
+    <div class="search-results" data-search-results></div>
+  </div>
+</div>
+</body>
+</html>
