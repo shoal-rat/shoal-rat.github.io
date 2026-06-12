@@ -34,6 +34,7 @@
     <div class="nav-links">
       <a class="is-active" href="/"><i class="fa fa-terminal" aria-hidden="true"></i><span>Home</span></a>
       <a class="" href="/aboutme/"><i class="fa fa-user-astronaut" aria-hidden="true"></i><span>AboutMe</span></a>
+      <a class="" href="/projects/"><i class="fa fa-code-branch" aria-hidden="true"></i><span>Projects</span></a>
       <a class="" href="/archives/"><i class="fa fa-archive" aria-hidden="true"></i><span>Archive</span></a>
       <a class="" href="/tags/"><i class="fa fa-tags" aria-hidden="true"></i><span>Tags</span></a>
       <a class="" href="/categories/"><i class="fa fa-th" aria-hidden="true"></i><span>Categories</span></a>
@@ -64,9 +65,78 @@
 
     <section class="signal-strip" aria-label="Site summary">
       <div><strong>4</strong><span>field notes</span></div>
+      <div><strong>14</strong><span>public repos mapped</span></div>
       <div><strong>2</strong><span>tag channels</span></div>
-      <div><strong>2</strong><span>knowledge stacks</span></div>
       <div><strong>AI + Econ + CS</strong><span>operating range</span></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="eyebrow">git remote -v</p>
+        <h2>Public projects with working notes</h2>
+        <p>The site now indexes the public GitHub trail as repo cards, not just profile links.</p>
+      </div>
+      <div class="project-grid">
+
+  <article class="project-card">
+    <div class="project-head">
+      <span class="project-scope">quant agents</span>
+      <span class="project-status">public</span>
+    </div>
+    <h2><a href="https://github.com/shoal-rat/quant-research-lab" target="_blank" rel="noopener">quant-research-lab</a></h2>
+    <p class="project-note">Autonomous quant research office where a simulated team proposes, backtests, gates, debates, and iterates on equity strategy ideas. The README shows real research mechanics behind the anime surface: 15 documented strategy families, deflated-Sharpe gates, alpha-pool correlation penalties, cost and drawdown checks, memory, lineage, boss directives, and desktop-wallpaper packaging.</p>
+    <div class="project-stack" aria-label="quant-research-lab stack">
+      <span>TypeScript</span>
+      <span>React</span><span>Vite</span><span>LLM agents</span><span>backtesting</span>
+    </div>
+    <a class="read-link" href="https://github.com/shoal-rat/quant-research-lab" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </article>
+
+  <article class="project-card">
+    <div class="project-head">
+      <span class="project-scope">self-driving RL</span>
+      <span class="project-status">public</span>
+    </div>
+    <h2><a href="https://github.com/shoal-rat/Horizon_FSD" target="_blank" rel="noopener">Horizon_FSD</a></h2>
+    <p class="project-note">World-model driving stack for Forza Horizon 6 in Offline Solo / Free Roam. It connects Windows screen capture, Forza Data Out UDP telemetry, route features, a DreamerV3 actor-critic, virtual Xbox controller output, crash recovery, replay storage, and stress tests under a tight live decision budget.</p>
+    <div class="project-stack" aria-label="Horizon_FSD stack">
+      <span>Python</span>
+      <span>DreamerV3</span><span>computer vision</span><span>telemetry</span><span>ViGEm</span><span>Windows</span>
+    </div>
+    <a class="read-link" href="https://github.com/shoal-rat/Horizon_FSD" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </article>
+
+  <article class="project-card">
+    <div class="project-head">
+      <span class="project-scope">econometrics agent</span>
+      <span class="project-status">public</span>
+    </div>
+    <h2><a href="https://github.com/shoal-rat/econoclast" target="_blank" rel="noopener">econoclast</a></h2>
+    <p class="project-note">Adversarial AI referee for empirical economics. It reads a paper, identifies hidden specification choices, researches unfamiliar methods, looks for public data, re-runs headline results across defensible alternatives, and reports fragility, p-hacking, cherry-picking, and replication risks in plain language.</p>
+    <div class="project-stack" aria-label="econoclast stack">
+      <span>Python</span>
+      <span>LLM agent</span><span>replication</span><span>DiD</span><span>RDD</span><span>specification curves</span>
+    </div>
+    <a class="read-link" href="https://github.com/shoal-rat/econoclast" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </article>
+
+  <article class="project-card">
+    <div class="project-head">
+      <span class="project-scope">research automation</span>
+      <span class="project-status">public</span>
+    </div>
+    <h2><a href="https://github.com/shoal-rat/digital-unconscious" target="_blank" rel="noopener">digital-unconscious</a></h2>
+    <p class="project-note">Local-first research assistant that turns workday traces into private notes, idea candidates, daily briefings, and a searchable research backlog. The project includes passive observation, novelty and feasibility judging, multi-provider model routing, optional screenpipe/OCR capture, RAG context, and a staged research pipeline.</p>
+    <div class="project-stack" aria-label="digital-unconscious stack">
+      <span>Python</span>
+      <span>local-first</span><span>screen context</span><span>idea scoring</span><span>RAG</span><span>dashboard</span>
+    </div>
+    <a class="read-link" href="https://github.com/shoal-rat/digital-unconscious" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+  </article>
+</div>
+      <div class="section-actions">
+        <a class="button" href="/projects/"><i class="fa fa-code-branch" aria-hidden="true"></i><span>Open all projects</span></a>
+      </div>
     </section>
 
     <section class="section">
@@ -119,8 +189,8 @@
       <div class="matrix-list">
         <a href="/categories/GPT/"><span>GPT</span><strong>2</strong></a>
         <a href="/categories/Computer-Science/"><span>Computer Science</span><strong>1</strong></a>
+        <a href="/projects/"><span>Projects</span><strong>14</strong></a>
         <a href="/tags/AIGC/"><span>AIGC</span><strong>2</strong></a>
-        <a href="/tags/Blog/"><span>Blog Ops</span><strong>2</strong></a>
       </div>
     </section>
   </main>

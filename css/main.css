@@ -224,6 +224,7 @@ input {
 .page-intro p,
 .split-section p,
 .post-card p,
+.project-card p,
 .timeline-row p,
 .resource-card p,
 .story-panel p,
@@ -318,9 +319,21 @@ input {
   margin-bottom: 1.6rem;
 }
 
+.section-head p {
+  color: var(--muted);
+}
+
+.section-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
 .section-head h2,
 .split-section h2,
 .story-panel h2,
+.project-card h2,
 .resource-card h2,
 .timeline-row h2,
 .article-body h2,
@@ -341,7 +354,14 @@ input {
   gap: 1rem;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
 .post-card,
+.project-card,
 .resource-card,
 .story-panel,
 .taxonomy-card,
@@ -355,6 +375,7 @@ input {
 }
 
 .post-card,
+.project-card,
 .resource-card,
 .story-panel {
   padding: 1.15rem;
@@ -365,6 +386,70 @@ input {
   margin: 0.75rem 0;
   font-size: 1.45rem;
   line-height: 1.2;
+}
+
+.project-card {
+  min-width: 0;
+  min-height: 24rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.project-card.is-compact {
+  min-height: 20rem;
+}
+
+.project-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.project-scope,
+.project-status {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #0d1117;
+  color: var(--teal);
+  padding: 0.18rem 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.project-status {
+  color: var(--green);
+}
+
+.project-status.is-fork {
+  color: var(--amber);
+}
+
+.project-card h2 {
+  font-size: 1.35rem;
+  overflow-wrap: anywhere;
+}
+
+.project-note {
+  margin: 0;
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.project-stack span {
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: #050505;
+  color: var(--muted);
+  padding: 0.22rem 0.5rem;
+  font-size: 0.78rem;
 }
 
 .card-meta,
@@ -842,6 +927,7 @@ input {
 
   .signal-strip,
   .post-grid,
+  .project-grid,
   .split-section,
   .story-grid,
   .resource-grid,
