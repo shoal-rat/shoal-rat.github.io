@@ -1,474 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 7.0.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070a0c">
+  <meta name="description" content="Chronological archive of Shoal/Rat Econ-CS notes.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Archive | Shoal/Rat Econ-CS Lab">
+  <meta property="og:description" content="Chronological archive of Shoal/Rat Econ-CS notes.">
+  <meta property="og:url" content="https://shoal-rat.github.io/archives/">
+  <meta property="og:site_name" content="Shoal/Rat Econ-CS Lab">
+  <meta property="og:image" content="https://shoal-rat.github.io/images/hacker-ide-hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://shoal-rat.github.io/archives/">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
-  <script src="/lib/pace/pace.min.js"></script>
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"shoal-rat.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":2,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
-  </script>
-
-  <meta name="description" content="Eureka! Eureka!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Econ-CS Learning Blog">
-<meta property="og:url" content="https://shoal-rat.github.io/archives/index.html">
-<meta property="og:site_name" content="Econ-CS Learning Blog">
-<meta property="og:description" content="Eureka! Eureka!">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="Shoal Rat">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="https://shoal-rat.github.io/archives/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : false,
-    lang   : 'en'
-  };
-</script>
-
-  <title>Archive | Econ-CS Learning Blog</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/atom.xml" title="Econ-CS Learning Blog" type="application/atom+xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="preload" as="image" href="/images/hacker-ide-hero.png">
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="alternate" href="/atom.xml" title="Shoal/Rat Econ-CS Lab" type="application/atom+xml">
+  <script defer src="/js/lab.js"></script>
+  <title>Archive | Shoal/Rat Econ-CS Lab</title>
 </head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Econ-CS Learning Blog</h1>
-      <span class="logo-line-after"><i></i></span>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  
+<header class="site-header">
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a class="brand" href="/" aria-label="Shoal/Rat Econ-CS Lab home">
+      <span class="brand-mark">SR</span>
+      <span class="brand-copy"><strong>Shoal/Rat</strong><span>Econ-CS Lab</span></span>
     </a>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
+    <div class="nav-links">
+      <a class="" href="/"><i class="fa fa-terminal" aria-hidden="true"></i><span>Home</span></a>
+      <a class="" href="/about/"><i class="fa fa-user-astronaut" aria-hidden="true"></i><span>About</span></a>
+      <a class="is-active" href="/archives/"><i class="fa fa-archive" aria-hidden="true"></i><span>Archive</span></a>
+      <a class="" href="/tags/"><i class="fa fa-tags" aria-hidden="true"></i><span>Tags</span></a>
+      <a class="" href="/categories/"><i class="fa fa-th" aria-hidden="true"></i><span>Categories</span></a>
+      <a class="" href="/resources/"><i class="fa fa-cube" aria-hidden="true"></i><span>Resources</span></a>
+      <button class="icon-button" type="button" data-search-open aria-label="Open search"><i class="fa fa-search" aria-hidden="true"></i></button>
     </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
-      </li>
-  </ul>
-</nav>
-
-
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="Searching..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content archive">
-            
-
-  
-  
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 4 posts in total. Keep on posting.</span>
-      </div>
-
-      
-    <div class="collection-year">
-      <span class="collection-header">2024</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-27T20:50:14+08:00"
-              content="2024-01-27">
-          01-27
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/27/blog-SSH-error/" itemprop="url">
-            <span itemprop="name">Solution of SSH error</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-25T14:47:50+08:00"
-              content="2024-01-25">
-          01-25
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/25/GPT-introduction-2/" itemprop="url">
-            <span itemprop="name">Introducing Code Mentor: Your Virtual Coding Assistant</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-15T20:27:24+08:00"
-              content="2024-01-15">
-          01-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/15/blog-building/" itemprop="url">
-            <span itemprop="name">How to Build a Blog by Yourself - Part 1: GitHub</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2024-01-12T17:56:12+08:00"
-              content="2024-01-12">
-          01-12
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2024/01/12/GPTs/" itemprop="url">
-            <span itemprop="name">Introduction of my GPTs</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-
-    </div>
-  </div>
-  
-  
-  
-
-  
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Shoal Rat"
-      src="/images/head.png">
-  <p class="site-author-name" itemprop="name">Shoal Rat</p>
-  <div class="site-description" itemprop="description">Eureka! Eureka!</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">4</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
   </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/shoal-rat" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;shoal-rat" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="mailto:zwk@outlook.sg" title="E-mail → mailto:zwk@outlook.sg" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-mail</a>
-      </span>
-  </div>
+</header>
+  <main id="main">
 
+    <section class="page-intro">
+      <p class="eyebrow">Archive</p>
+      <h1>Archive</h1>
+      <p>4 notes indexed by date and signal.</p>
+    </section>
+    <section class="section timeline">
+      
+      <article class="timeline-row">
+        <time datetime="2024-01-27">2024-01-27</time>
+        <div>
+          <h2><a href="/2024/01/27/blog-SSH-error/">Solution of SSH error</a></h2>
+          <p>Experiencing SSH Connection Problems with GitHub? SSH Secure Shell is a common method used by developers to securely connect and interact with remote servers, including repositories hosted on GitHub However, sometimes, y...</p>
+          <div class="chip-row"><a class="chip" href="/tags/Blog/">Blog</a></div>
+        </div>
+      </article>
 
+      <article class="timeline-row">
+        <time datetime="2024-01-25">2024-01-25</time>
+        <div>
+          <h2><a href="/2024/01/25/GPT-introduction-2/">Introducing Code Mentor: Your Virtual Coding Assistant</a></h2>
+          <p>Welcome to Code Mentor , a specialized GPT designed to enhance your coding skills, assist in debugging, and deepen your understanding of programming concepts Perfect for computer science students at the undergraduate lev...</p>
+          <div class="chip-row"><a class="chip" href="/tags/AIGC/">AIGC</a><a class="chip" href="/categories/GPT/">GPT</a></div>
+        </div>
+      </article>
 
-      </div>
+      <article class="timeline-row">
+        <time datetime="2024-01-15">2024-01-15</time>
+        <div>
+          <h2><a href="/2024/01/15/blog-building/">How to Build a Blog by Yourself - Part 1: GitHub</a></h2>
+          <p>Getting Started Registering on GitHub Embarking on the journey to build your own blog? A great first step is to create an account on GitHub Get started by registering at GitHub Note Depending on your region, you might ne...</p>
+          <div class="chip-row"><a class="chip" href="/tags/Blog/">Blog</a><a class="chip" href="/categories/Computer-Science/">Computer Science</a></div>
+        </div>
+      </article>
 
+      <article class="timeline-row">
+        <time datetime="2024-01-12">2024-01-12</time>
+        <div>
+          <h2><a href="/2024/01/12/GPTs/">Introduction of my GPTs</a></h2>
+          <p>Elevating Your Personal Statement A Comprehensive Guide to Using GPT Technology Welcome to a transformative journey in crafting compelling personal statements! The Personal Statement Generator GPT is not merely a tool; i...</p>
+          <div class="chip-row"><a class="chip" href="/tags/AIGC/">AIGC</a><a class="chip" href="/categories/GPT/">GPT</a></div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div>
+      <strong>Shoal/Rat Econ-CS Lab</strong>
+      <span>Public finance, code, AI systems, and learning notes.</span>
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
+    <div class="footer-links">
+      <a href="https://github.com/shoal-rat" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+      <a href="mailto:zwk@outlook.sg"><i class="fa fa-envelope" aria-hidden="true"></i><span>Email</span></a>
+      <a href="/atom.xml"><i class="fa fa-rss" aria-hidden="true"></i><span>RSS</span></a>
+    </div>
+  </footer>
   
-  &copy; Tue Jan 09 2024 08:00:00 GMT+0800 (Singapore Standard Time) – 
-  <span itemprop="copyrightYear">2024</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Shoal Rat</span>
+<div class="search-panel" data-search-panel hidden>
+  <div class="search-surface" role="dialog" aria-modal="true" aria-labelledby="search-title">
+    <div class="search-topline">
+      <h2 id="search-title">Search the lab</h2>
+      <button class="icon-button" type="button" data-search-close aria-label="Close search"><i class="fa fa-times" aria-hidden="true"></i></button>
+    </div>
+    <label class="search-field">
+      <span>Query</span>
+      <input type="search" data-search-input autocomplete="off" spellcheck="false" placeholder="SSH, GPT, GitHub, economics">
+    </label>
+    <div class="search-results" data-search-results></div>
+  </div>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
-  </div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-  
-<script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
 </body>
 </html>
