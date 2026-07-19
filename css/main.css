@@ -238,18 +238,23 @@ input {
   background: rgba(16, 23, 32, 0.34);
 }
 
-/* vertical 格物致知 column — the classic study-of-things motto */
+/* vertical 格物致知 column — set in a print-style title cartouche (題簽)
+   so it stays legible over the wave art */
 .hero-hanzi {
   position: absolute;
   top: 50%;
-  right: clamp(1rem, 5vw, 4.5rem);
+  right: clamp(1rem, 4vw, 4rem);
   transform: translateY(-50%);
   z-index: 2;
   writing-mode: vertical-rl;
   font-family: var(--font-display);
-  font-size: clamp(1.3rem, 2.2vw, 1.75rem);
-  letter-spacing: 0.55em;
-  color: rgba(237, 230, 214, 0.62);
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  letter-spacing: 0.5em;
+  padding: 1em 0.38em 0.6em;
+  color: rgba(237, 230, 214, 0.88);
+  background: rgba(13, 18, 26, 0.66);
+  border: 1px solid rgba(237, 230, 214, 0.3);
+  border-radius: 3px;
   user-select: none;
   pointer-events: none;
 }
@@ -1312,6 +1317,148 @@ input {
   outline-offset: 3px;
 }
 
+/* ---------------------------------------------------------------------
+   Zen-hacker interaction layer
+   --------------------------------------------------------------------- */
+
+/* Idle block cursor on the static console line; retired once the live
+   terminal takes over. */
+.hero-console:not(.is-live) code::after {
+  content: "▊";
+  margin-left: 0.25em;
+  color: var(--vermilion);
+  animation: cursor-blink 1.3s steps(2) infinite;
+}
+
+@keyframes cursor-blink {
+  50% { opacity: 0; }
+}
+
+.console-out {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.console-line {
+  color: var(--muted);
+  font-size: 0.92rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.console-line.is-cmd {
+  color: var(--text);
+}
+
+.console-line.is-quiet {
+  color: rgba(163, 160, 143, 0.75);
+}
+
+.console-input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.console-field {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  color: var(--amber);
+  font: inherit;
+  caret-color: var(--vermilion);
+}
+
+.console-field::placeholder {
+  color: rgba(163, 160, 143, 0.55);
+}
+
+/* Quiet reveal: JS marks below-the-fold cards, the observer breathes them in */
+.reveal-wait {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.reveal-wait.is-seen {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+/* Calm card lift */
+.post-card,
+.project-card,
+.resource-card,
+.story-panel,
+.taxonomy-card,
+.article-nav a,
+.matrix-list a,
+.link-stack a {
+  transition: transform 0.2s ease, border-color 0.2s ease, opacity 0.55s ease;
+}
+
+.post-card:hover,
+.project-card:hover,
+.resource-card:hover,
+.story-panel:hover {
+  transform: translateY(-2px);
+  border-color: var(--line-strong);
+}
+
+/* 404 — the empty circle */
+.error-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.enso-figure {
+  margin: 0;
+}
+
+.enso-figure img {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-console:not(.is-live) code::after {
+    animation: none;
+  }
+
+  .reveal-wait {
+    opacity: 1;
+    transform: none;
+  }
+
+  .post-card,
+  .project-card,
+  .resource-card,
+  .story-panel,
+  .taxonomy-card,
+  .article-nav a,
+  .matrix-list a,
+  .link-stack a {
+    transition: border-color 0.2s ease;
+  }
+
+  .post-card:hover,
+  .project-card:hover,
+  .resource-card:hover,
+  .story-panel:hover {
+    transform: none;
+  }
+}
+
 @media (max-width: 880px) {
   .site-nav {
     align-items: flex-start;
@@ -1339,6 +1486,14 @@ input {
 
   .hero-hanzi {
     display: none;
+  }
+
+  .error-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .error-grid .enso-figure {
+    max-width: 240px;
   }
 
   .signal-strip,
