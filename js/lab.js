@@ -139,7 +139,7 @@
     print("$ " + raw.trim(), "is-cmd");
     switch (cmd) {
       case "help":
-        print("commands: ls · open <place> · whoami · zen · clear", "is-quiet");
+        print("commands: ls · open <place> · wake · still · whoami · zen · clear", "is-quiet");
         print("places: " + Object.keys(ROUTES).filter(k => k !== "archives" && k !== "about").join(" · ") + " · github", "is-quiet");
         break;
       case "ls":
@@ -160,6 +160,13 @@
         break;
       case "clear":
         out.innerHTML = "";
+        break;
+      case "wake":
+        print(window.__setSea && window.__setSea(true) ? "the sea stirs." : "the sea rests today.", "is-quiet");
+        break;
+      case "still":
+      case "sleep":
+        print(window.__setSea && window.__setSea(false) !== false ? "the sea settles." : "…", "is-quiet");
         break;
       case "sudo":
         print("the sea does not take orders.", "is-quiet");
@@ -206,4 +213,23 @@
     });
   }, { rootMargin: "0px 0px -4% 0px", threshold: 0.05 });
   waiting.forEach((el) => observer.observe(el));
+})();
+
+/* Click the sea to wake it: waves sway, the shoal leaps */
+(function () {
+  const scene = document.getElementById("hero-scene");
+  const hero = scene && scene.closest(".hero");
+  if (!scene || !hero) return;
+  const calm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  window.__setSea = function (alive) {
+    if (calm) return false;
+    hero.classList.toggle("is-alive", alive);
+    scene.setAttribute("title", alive ? "click — still the sea" : "click — wake the sea");
+    return true;
+  };
+
+  scene.addEventListener("click", () => {
+    window.__setSea(!hero.classList.contains("is-alive"));
+  });
 })();

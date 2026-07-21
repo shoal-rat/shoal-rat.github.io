@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="alternate icon" href="/images/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="preload" as="image" href="/images/ukiyo-wave-hero.jpg">
+  <link rel="preload" as="image" href="/images/hero-base.jpg">
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="alternate" href="/atom.xml" title="Shoal/Rat Econ-CS Lab" type="application/atom+xml">
@@ -47,7 +47,14 @@
   <main id="main">
 
     <section class="hero">
-      <img class="hero-art" src="/images/ukiyo-wave-hero.jpg" alt="Indigo woodblock-style night sea: layered waves with foam, a paper moon, and a small shoal of leaping fish">
+      <div class="hero-scene" id="hero-scene" role="img" aria-label="Indigo woodblock night sea: layered waves with foam, a paper moon, and leaping fish. Click to set the sea in motion." title="click — wake the sea">
+        <img class="hero-art" src="/images/hero-base.jpg" alt="">
+        <img class="hero-layer hero-wave-mid" src="/images/hero-wave-mid.png" alt="">
+        <img class="hero-fish hero-fish-1" src="/images/hero-fish-1.png" alt="">
+        <img class="hero-fish hero-fish-2" src="/images/hero-fish-2.png" alt="">
+        <img class="hero-fish hero-fish-3" src="/images/hero-fish-3.png" alt="">
+        <img class="hero-layer hero-wave-front" src="/images/hero-wave-front.png" alt="">
+      </div>
       <div class="hero-shade"></div>
       <img class="hero-hanzi" src="/images/hanzi-gewuzhizhi.jpg" alt="" aria-hidden="true" loading="lazy" width="749" height="2100">
       <div class="hero-content">
@@ -86,7 +93,7 @@
       <span class="project-status">public</span>
     </div>
     <div class="project-media">
-      <img src="/images/projects/quant-research-lab.svg" alt="quant-research-lab system glyph">
+      <img src="/images/projects/quant-research-lab.jpg" alt="quant-research-lab system glyph">
     </div>
     <h2><a href="https://github.com/shoal-rat/quant-research-lab" target="_blank" rel="noopener">quant-research-lab</a></h2>
     <p class="project-note">Autonomous quant research office where a simulated team proposes, backtests, gates, debates, and iterates on equity strategy ideas. The README shows real research mechanics behind the anime surface: 15 documented strategy families, deflated-Sharpe gates, alpha-pool correlation penalties, cost and drawdown checks, memory, lineage, boss directives, and desktop-wallpaper packaging.</p>
@@ -107,7 +114,7 @@
       <span class="project-status">public</span>
     </div>
     <div class="project-media">
-      <img src="/images/projects/horizon-fsd.svg" alt="Horizon_FSD system glyph">
+      <img src="/images/projects/horizon-fsd.jpg" alt="Horizon_FSD system glyph">
     </div>
     <h2><a href="https://github.com/shoal-rat/Horizon_FSD" target="_blank" rel="noopener">Horizon_FSD</a></h2>
     <p class="project-note">World-model driving stack for Forza Horizon 6 in Offline Solo / Free Roam. It connects Windows screen capture, Forza Data Out UDP telemetry, route features, a DreamerV3 actor-critic, virtual Xbox controller output, crash recovery, replay storage, and stress tests under a tight live decision budget.</p>
@@ -128,7 +135,7 @@
       <span class="project-status">public</span>
     </div>
     <div class="project-media">
-      <img src="/images/projects/econoclast.svg" alt="econoclast system glyph">
+      <img src="/images/projects/econoclast.jpg" alt="econoclast system glyph">
     </div>
     <h2><a href="https://github.com/shoal-rat/econoclast" target="_blank" rel="noopener">econoclast</a></h2>
     <p class="project-note">Adversarial AI referee for empirical economics. It reads a paper, identifies hidden specification choices, researches unfamiliar methods, looks for public data, re-runs headline results across defensible alternatives, and reports fragility, p-hacking, cherry-picking, and replication risks in plain language.</p>
@@ -149,7 +156,7 @@
       <span class="project-status">public</span>
     </div>
     <div class="project-media">
-      <img src="/images/projects/digital-unconscious.svg" alt="digital-unconscious system glyph">
+      <img src="/images/projects/digital-unconscious.jpg" alt="digital-unconscious system glyph">
     </div>
     <h2><a href="https://github.com/shoal-rat/digital-unconscious" target="_blank" rel="noopener">digital-unconscious</a></h2>
     <p class="project-note">Local-first research assistant that turns workday traces into private notes, idea candidates, daily briefings, and a searchable research backlog. The project includes passive observation, novelty and feasibility judging, multi-provider model routing, optional screenpipe/OCR capture, RAG context, and a staged research pipeline.</p>
