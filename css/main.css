@@ -239,13 +239,30 @@ input {
   pointer-events: none;
 }
 
-/* --- the living sea: stacked woodblock layers, woken by a click --- */
+/* --- the living sea ---------------------------------------------------
+   One click = one complete tidal breath (~2.7s), then exact rest.
+   States are managed by SeaAnimationController in lab.js:
+     idle → waking → settling → idle   (reduced: opacity-only breath)
+   All motion shares one master duration (--sea-dur); the front wave is
+   the same movement delayed 150ms and slightly deeper; one primary fish
+   arcs, one secondary fish bobs; every keyframe track starts AND ends on
+   the element's exact resting transform, so class removal never snaps. */
+
+.hero {
+  --sea-dur: 2.7s;
+  --sea-ease: cubic-bezier(0.37, 0, 0.63, 1);
+  --tide-mid-x: -5px;
+  --tide-mid-y: 2px;
+  --tide-front-x: -8px;
+  --tide-front-y: 3px;
+  --tide-back-x: 3px;
+  --tide-back-y: -1px;
+}
 
 .hero-scene {
   position: absolute;
   inset: 0;
   overflow: hidden;
-  cursor: pointer;
 }
 
 .hero-layer {
@@ -255,73 +272,122 @@ input {
   height: 100%;
   object-fit: cover;
   object-position: center right;
+  /* base scale keeps sway from exposing empty edges */
   transform: scale(1.045);
-  will-change: transform;
 }
 
 .hero-fish {
   position: absolute;
   width: clamp(38px, 5vw, 74px);
   height: auto;
-  will-change: transform;
 }
 
 .hero-fish-1 { left: 36%; bottom: 38%; transform: rotate(-6deg); }
 .hero-fish-2 { left: 43%; bottom: 44%; width: clamp(30px, 4vw, 58px); transform: rotate(14deg) scaleX(-1); }
 .hero-fish-3 { left: 50%; bottom: 36%; width: clamp(24px, 3.2vw, 46px); transform: rotate(-18deg); }
 
-.hero.is-alive .hero-wave-mid {
-  animation: sway-mid 9s ease-in-out infinite alternate;
+/* invisible control over the wave area; real button semantics */
+.sea-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 62%;
+  height: 60%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 14px;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.hero.is-alive .hero-wave-front {
-  animation: sway-front 6.5s ease-in-out infinite alternate;
+.sea-button:focus-visible {
+  outline: 2px solid var(--vermilion);
+  outline-offset: -3px;
 }
 
-.hero.is-alive .hero-fish-1 {
-  animation: fish-leap-1 5.2s ease-in-out infinite;
+.sea-button[aria-busy="true"] {
+  cursor: default;
 }
 
-.hero.is-alive .hero-fish-2 {
-  animation: fish-leap-2 6.6s ease-in-out infinite 0.9s;
+/* loading: overlays stay hidden until every sprite has decoded, then the
+   finished scene fades in as one (JS-gated — without JS nothing is hidden) */
+.hero-scene.is-priming .hero-layer,
+.hero-scene.is-priming .hero-fish {
+  opacity: 0;
 }
 
-.hero.is-alive .hero-fish-3 {
-  animation: fish-leap-3 7.8s ease-in-out infinite 1.8s;
+.hero-scene.is-ready .hero-layer,
+.hero-scene.is-ready .hero-fish {
+  opacity: 1;
+  transition: opacity 250ms ease;
 }
 
-@keyframes sway-mid {
-  from { transform: scale(1.045) translate(-0.7%, 0.15%); }
-  to   { transform: scale(1.045) translate(0.7%, -0.2%); }
+/* the tidal breath — one shot, no fill, will-change only while running */
+.hero.is-waking .hero-layer,
+.hero.is-waking .hero-fish-1,
+.hero.is-waking .hero-fish-3 {
+  will-change: transform, opacity;
 }
 
-@keyframes sway-front {
-  from { transform: scale(1.045) translate(0.9%, -0.25%); }
-  to   { transform: scale(1.045) translate(-0.9%, 0.3%); }
+.hero.is-waking .hero-wave-mid {
+  animation: tide-mid var(--sea-dur) var(--sea-ease) 1;
 }
 
-@keyframes fish-leap-1 {
-  0%   { transform: translate(0, 0) rotate(-6deg); opacity: 1; }
-  45%  { transform: translate(46px, -34px) rotate(-24deg); opacity: 1; }
-  70%  { transform: translate(84px, 6px) rotate(-52deg); opacity: 0; }
-  71%  { transform: translate(-30px, 26px) rotate(10deg); opacity: 0; }
-  100% { transform: translate(0, 0) rotate(-6deg); opacity: 1; }
+.hero.is-waking .hero-wave-front {
+  /* same movement, 150ms behind and slightly deeper; ends with the mid wave */
+  animation: tide-front calc(var(--sea-dur) - 0.15s) var(--sea-ease) 0.15s 1;
 }
 
-@keyframes fish-leap-2 {
-  0%   { transform: rotate(14deg) scaleX(-1) translate(0, 0); opacity: 1; }
-  40%  { transform: rotate(30deg) scaleX(-1) translate(38px, -30px); opacity: 1; }
-  68%  { transform: rotate(56deg) scaleX(-1) translate(72px, 10px); opacity: 0; }
-  69%  { transform: rotate(4deg) scaleX(-1) translate(-24px, 22px); opacity: 0; }
-  100% { transform: rotate(14deg) scaleX(-1) translate(0, 0); opacity: 1; }
+.hero.is-waking .hero-fish-1 {
+  animation: fish-arc-primary var(--sea-dur) var(--sea-ease) 1;
 }
 
-@keyframes fish-leap-3 {
-  0%   { transform: translate(0, 0) rotate(-18deg); opacity: 1; }
-  50%  { transform: translate(30px, -24px) rotate(-34deg); opacity: 1; }
-  74%  { transform: translate(58px, 8px) rotate(-58deg); opacity: 0; }
-  75%  { transform: translate(-20px, 18px) rotate(-2deg); opacity: 0; }
-  100% { transform: translate(0, 0) rotate(-18deg); opacity: 1; }
+.hero.is-waking .hero-fish-3 {
+  animation: fish-bob-soft calc(var(--sea-dur) - 0.4s) var(--sea-ease) 0.4s 1;
+}
+
+/* reduced-motion response: a barely-there brightening, opacity only */
+.hero.is-breathing .hero-wave-mid,
+.hero.is-breathing .hero-wave-front {
+  animation: sea-breath 1.2s ease-in-out 1;
+}
+
+@keyframes tide-mid {
+  0%, 100% { transform: scale(1.045) translate(0, 0); }
+  38%      { transform: scale(1.045) translate(var(--tide-mid-x), var(--tide-mid-y)); }
+  72%      { transform: scale(1.045) translate(var(--tide-back-x), var(--tide-back-y)); }
+}
+
+@keyframes tide-front {
+  0%, 100% { transform: scale(1.045) translate(0, 0); }
+  38%      { transform: scale(1.045) translate(var(--tide-front-x), var(--tide-front-y)); }
+  72%      { transform: scale(1.045) translate(var(--tide-back-x), var(--tide-back-y)); }
+}
+
+/* one arc: rest → rise → crest → dive (fading while moving, never while
+   visible-and-still) → glide home invisible → surface at exact rest */
+@keyframes fish-arc-primary {
+  0%, 12%  { transform: translate(0, 0) rotate(-6deg); opacity: 1; }
+  30%      { transform: translate(26px, -34px) rotate(-16deg); opacity: 1; }
+  46%      { transform: translate(52px, -46px) rotate(-30deg); opacity: 1; }
+  62%      { transform: translate(78px, -18px) rotate(-46deg); opacity: 1; }
+  72%      { transform: translate(92px, 14px) rotate(-56deg); opacity: 0; }
+  80%      { transform: translate(0, 6px) rotate(-6deg); opacity: 0; }
+  92%, 100% { transform: translate(0, 0) rotate(-6deg); opacity: 1; }
+}
+
+@keyframes fish-bob-soft {
+  0%, 18%   { transform: rotate(-18deg) translate(0, 0); }
+  50%       { transform: rotate(-13deg) translate(6px, -9px); }
+  85%, 100% { transform: rotate(-18deg) translate(0, 0); }
+}
+
+@keyframes sea-breath {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.9; }
 }
 
 /* 格物致知 — a brush-calligraphy title slip (題簽), generated artwork
@@ -342,9 +408,19 @@ input {
 
 .hero-content {
   position: relative;
+  z-index: 2;
+  /* let clicks in empty areas fall through to the sea button below;
+     real controls re-enable their own hit areas just after */
+  pointer-events: none;
   width: min(1180px, calc(100% - 2rem));
   margin: 0 auto;
   padding: 5rem 0;
+}
+
+.hero-content a,
+.hero-content button,
+.hero-content .hero-console {
+  pointer-events: auto;
 }
 
 .eyebrow {
@@ -1520,16 +1596,18 @@ input {
     animation: none;
   }
 
-  .hero.is-alive .hero-wave-mid,
-  .hero.is-alive .hero-wave-front,
-  .hero.is-alive .hero-fish-1,
-  .hero.is-alive .hero-fish-2,
-  .hero.is-alive .hero-fish-3 {
+  /* reduced state: the sea stays a still print; only the opacity-only
+     sea-breath response (on .is-breathing) is allowed */
+  .hero.is-waking .hero-wave-mid,
+  .hero.is-waking .hero-wave-front,
+  .hero.is-waking .hero-fish-1,
+  .hero.is-waking .hero-fish-3 {
     animation: none;
   }
 
-  .hero-scene {
-    cursor: default;
+  .hero-scene.is-ready .hero-layer,
+  .hero-scene.is-ready .hero-fish {
+    transition: none;
   }
 
   .reveal-wait {
@@ -1583,6 +1661,24 @@ input {
 
   .hero-hanzi {
     display: none;
+  }
+
+  /* mobile sea: shallower tide, one animated fish, shorter button zone */
+  .hero {
+    --tide-mid-x: -3px;
+    --tide-mid-y: 1px;
+    --tide-front-x: -4px;
+    --tide-front-y: 2px;
+    --tide-back-x: 2px;
+    --tide-back-y: -1px;
+  }
+
+  .hero.is-waking .hero-fish-3 {
+    animation: none;
+  }
+
+  .sea-button {
+    height: 52%;
   }
 
   .error-grid {

@@ -161,13 +161,19 @@
       case "clear":
         out.innerHTML = "";
         break;
-      case "wake":
-        print(window.__setSea && window.__setSea(true) ? "the sea stirs." : "the sea rests today.", "is-quiet");
+      case "wake": {
+        const r = window.__setSea ? window.__setSea(true) : false;
+        if (r === true) print("the sea stirs.", "is-quiet");
+        else if (r === "busy") print("the sea is already breathing.", "is-quiet");
+        else print("the sea rests today.", "is-quiet");
         break;
+      }
       case "still":
-      case "sleep":
-        print(window.__setSea && window.__setSea(false) !== false ? "the sea settles." : "…", "is-quiet");
+      case "sleep": {
+        const r = window.__setSea ? window.__setSea(false) : false;
+        print(r === "settling" ? "the sea will settle on its own." : "the sea is already still.", "is-quiet");
         break;
+      }
       case "sudo":
         print("the sea does not take orders.", "is-quiet");
         break;
@@ -215,21 +221,114 @@
   waiting.forEach((el) => observer.observe(el));
 })();
 
-/* Click the sea to wake it: waves sway, the shoal leaps */
+/* SeaAnimationController — one click, one complete tidal breath.
+   States: idle → waking → settling → idle; "reduced" plays an
+   opacity-only breath. CSS owns the motion; this owns the state. */
 (function () {
   const scene = document.getElementById("hero-scene");
   const hero = scene && scene.closest(".hero");
-  if (!scene || !hero) return;
-  const calm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const button = document.getElementById("sea-button");
+  if (!scene || !hero || !button) return;
 
-  window.__setSea = function (alive) {
-    if (calm) return false;
-    hero.classList.toggle("is-alive", alive);
-    scene.setAttribute("title", alive ? "click — still the sea" : "click — wake the sea");
-    return true;
+  const reduced = window.matchMedia
+    ? window.matchMedia("(prefers-reduced-motion: reduce)")
+    : { matches: false };
+
+  const MASTER_MS = 2700;  // --sea-dur; every track ends here
+  const BREATH_MS = 1200;  // reduced-motion opacity breath
+
+  /* -- loading: if any overlay hasn't arrived yet, hide them all and fade
+     the finished scene in as one once every sprite is decoded. Without
+     JavaScript no class is ever added, so the static hero always shows. */
+  const overlays = Array.prototype.slice.call(
+    scene.querySelectorAll(".hero-layer, .hero-fish")
+  );
+  if (overlays.some((img) => !img.complete)) {
+    scene.classList.add("is-priming");
+    const settled = overlays.map((img) => {
+      if (img.complete) return Promise.resolve();
+      if (img.decode) return img.decode().catch(() => {});
+      return new Promise((res) => {
+        img.addEventListener("load", res, { once: true });
+        img.addEventListener("error", res, { once: true });
+      });
+    });
+    // reveal no matter what after 2.5s so a stalled sprite can't hold the sea
+    Promise.race([
+      Promise.all(settled),
+      new Promise((res) => setTimeout(res, 2500)),
+    ]).then(() => {
+      requestAnimationFrame(() => scene.classList.add("is-ready"));
+    });
+  }
+
+  const sea = {
+    state: "idle", // idle | waking | settling | reduced
+    timer: 0,
+
+    play() {
+      if (this.state !== "idle") return "busy";
+      if (reduced.matches) {
+        this.state = "reduced";
+        button.setAttribute("aria-busy", "true");
+        hero.classList.add("is-breathing");
+        this.timer = window.setTimeout(() => this.settle(), BREATH_MS + 300);
+        return false; // reduced: the sea rests
+      }
+      this.state = "waking";
+      button.setAttribute("aria-busy", "true");
+      hero.classList.add("is-waking");
+      // animationend closes the cycle; this is only the safety net
+      this.timer = window.setTimeout(() => this.settle(), MASTER_MS + 500);
+      return true;
+    },
+
+    /* The keyframes start and end on each element's resting transform and
+       run with fill:none, so removing the classes at cycle end (or while
+       the hero is off-screen / the tab hidden) lands exactly on rest. */
+    settle() {
+      if (this.state === "idle") return;
+      this.state = "settling";
+      window.clearTimeout(this.timer);
+      this.timer = 0;
+      hero.classList.remove("is-waking", "is-breathing");
+      button.removeAttribute("aria-busy");
+      this.state = "idle";
+    },
   };
 
-  scene.addEventListener("click", () => {
-    window.__setSea(!hero.classList.contains("is-alive"));
+  hero.addEventListener("animationend", (event) => {
+    if (event.animationName === "tide-mid" || event.animationName === "sea-breath") {
+      sea.settle();
+    }
   });
+
+  button.addEventListener("click", () => {
+    sea.play(); // "busy" while playing → repeated clicks are ignored
+  });
+
+  // safety: never keep animating unseen
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) sea.settle();
+  });
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) sea.settle();
+      });
+    }, { threshold: 0 }).observe(hero);
+  }
+  if (reduced.addEventListener) {
+    reduced.addEventListener("change", () => sea.settle());
+  }
+
+  /* Compatibility layer for the terminal (and anything else):
+     __setSea(true)  → plays one breath: true | "busy" | false (reduced)
+     __setSea(false) → "settling" if a breath is in flight (it finishes on
+                       its own — no snap), false if already still. */
+  window.__sea = sea;
+  window.__setSea = function (alive) {
+    if (alive) return sea.play();
+    return sea.state === "idle" ? false : "settling";
+  };
 })();
