@@ -134,7 +134,8 @@
 }
 
 .lab-terminal.is-hero-terminal .terminal-screen {
-  min-height: 7.7rem;
+  height: 8.9rem;
+  min-height: 8.9rem;
   max-height: 14rem;
 }
 
@@ -228,6 +229,7 @@
 .lab-terminal .console-field::placeholder {
   color: #788592;
   font-weight: 400;
+  text-indent: 1.35ch;
   opacity: 1;
 }
 
@@ -244,13 +246,13 @@
   z-index: 2;
   left: var(--cursor-x);
   top: 50%;
-  width: 0.66em;
-  height: 1.16em;
+  width: 1ch;
+  height: 1em;
   border-radius: 1px;
   background: var(--terminal-gold);
   opacity: 0.28;
   pointer-events: none;
-  transform: translateY(-50%);
+  transform: translateY(-44%);
 }
 
 .lab-terminal .console-input-row:focus-within .terminal-block-cursor {
