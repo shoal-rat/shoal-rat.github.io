@@ -358,6 +358,8 @@
         const result = window.__setSea ? window.__setSea(true) : false;
         if (result === true) print("the wave runs; the fish leap.", "is-success");
         else if (result === "busy") print("the sea is already in motion.", "is-quiet");
+        else if (result === "loading") print("the woodblock layers are still drying.", "is-quiet");
+        else if (result === "unavailable") print("ocean renderer unavailable; the static print remains.", "is-error");
         else if (result === "reduced") print("reduced motion: a quiet tide only.", "is-quiet");
         else print("ocean controller: cd home", "is-quiet");
         break;
@@ -365,7 +367,10 @@
       case "still":
       case "sleep": {
         const result = window.__setSea ? window.__setSea(false) : false;
-        print(result === "settling" ? "the current will finish at the shoreline." : "the sea is already still.", "is-quiet");
+        if (result === "settled" || result === "settling") print("the sea is still.", "is-quiet");
+        else if (result === "loading") print("the woodblock layers are still drying.", "is-quiet");
+        else if (result === "unavailable") print("ocean renderer unavailable; the static print remains.", "is-error");
+        else print("the sea is already still.", "is-quiet");
         break;
       }
       case "sudo":
@@ -493,6 +498,7 @@
    States: idle → waking → settling → idle; "reduced" plays an
    opacity-only breath. CSS owns the motion; this owns the state. */
 (function () {
+  if (window.__sea) return; // sea.js owns the Chrome-first timeline on home
   const scene = document.getElementById("hero-scene");
   const hero = scene && scene.closest(".hero");
   const button = document.getElementById("sea-button");
@@ -589,7 +595,9 @@
   window.__sea = sea;
   window.__setSea = function (alive) {
     if (alive) return sea.play();
-    return sea.state === "idle" ? false : "settling";
+    if (sea.state === "idle") return false;
+    sea.settle();
+    return "settled";
   };
 
   button.addEventListener("click", () => {
