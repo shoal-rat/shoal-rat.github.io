@@ -1,0 +1,344 @@
+/* Shared, namespaced terminal component. */
+.site-terminal-section {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 1.4rem auto 0;
+}
+
+.lab-terminal {
+  --terminal-bg: #0a1017;
+  --terminal-panel: #101923;
+  --terminal-border: #405365;
+  --terminal-text: #e8e2d5;
+  --terminal-muted: #aab3bc;
+  --terminal-green: #9dcca5;
+  --terminal-blue: #91bce0;
+  --terminal-gold: #dec267;
+  --terminal-red: #ed7866;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--terminal-border);
+  border-radius: 8px;
+  background: var(--terminal-bg);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.32);
+  color: var(--terminal-text);
+  font-family: "Cascadia Code", "JetBrains Mono", "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.9rem;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "calt" 0;
+  letter-spacing: -0.012em;
+  line-height: 1.55;
+  color-scheme: dark;
+  isolation: isolate;
+}
+
+.lab-terminal:focus-within {
+  border-color: var(--terminal-blue);
+  outline: 1px solid var(--terminal-blue);
+  outline-offset: 1px;
+  box-shadow: 0 0 0 1px var(--terminal-blue), 0 14px 36px rgba(0, 0, 0, 0.32);
+}
+
+.hero-console.lab-terminal {
+  display: block;
+  width: min(660px, 100%);
+  margin-top: 1.6rem;
+  padding: 0;
+  border: 1px solid var(--terminal-border);
+  border-radius: 8px;
+  background: var(--terminal-bg);
+  box-shadow: 0 12px 34px rgba(4, 8, 14, 0.5);
+}
+
+.lab-terminal .terminal-chrome {
+  min-height: 2.25rem;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.42rem 0.65rem;
+  border-bottom: 1px solid rgba(145, 188, 224, 0.2);
+  background: var(--terminal-panel);
+  user-select: none;
+}
+
+.lab-terminal .terminal-lights {
+  display: inline-flex;
+  gap: 0.36rem;
+}
+
+.lab-terminal .terminal-lights i {
+  width: 0.62rem;
+  height: 0.62rem;
+  display: block;
+  border-radius: 50%;
+  background: var(--terminal-red);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.lab-terminal .terminal-lights i:nth-child(2) { background: var(--terminal-gold); }
+.lab-terminal .terminal-lights i:nth-child(3) { background: var(--terminal-green); }
+
+.lab-terminal .terminal-window-title {
+  min-width: 0;
+  overflow: hidden;
+  color: #c7d0d8;
+  font-size: 0.78rem;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lab-terminal .terminal-chrome kbd {
+  border: 1px solid #435466;
+  border-bottom-color: #657789;
+  border-radius: 4px;
+  background: #18232f;
+  color: #b9c4ce;
+  padding: 0.05rem 0.35rem;
+  font: inherit;
+  font-size: 0.68rem;
+  line-height: 1.4;
+}
+
+.lab-terminal .terminal-toggle {
+  width: 1.75rem;
+  height: 1.75rem;
+  display: inline-grid;
+  place-items: center;
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background: transparent;
+  color: var(--terminal-muted);
+  font: inherit;
+  font-size: 0.95rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lab-terminal .terminal-toggle:hover,
+.lab-terminal .terminal-toggle:focus-visible {
+  border-color: var(--terminal-border);
+  color: var(--terminal-text);
+  outline: none;
+}
+
+.lab-terminal .terminal-screen {
+  min-height: 8.4rem;
+  max-height: 18rem;
+  overflow: auto;
+  padding: 0.8rem 1rem 0.9rem;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.012) 1px, transparent 1px);
+  background-size: 100% 3px;
+}
+
+.lab-terminal.is-hero-terminal .terminal-screen {
+  min-height: 7.7rem;
+  max-height: 14rem;
+}
+
+.lab-terminal.is-collapsed .terminal-screen { display: none; }
+.lab-terminal.is-collapsed .terminal-chrome { border-bottom: 0; }
+
+.lab-terminal .console-out {
+  display: grid;
+  gap: 0.12rem;
+  min-height: 3.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.lab-terminal .console-line {
+  color: var(--terminal-text);
+  font-size: inherit;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.lab-terminal .console-line.is-quiet { color: var(--terminal-muted); }
+.lab-terminal .console-line.is-info { color: var(--terminal-blue); }
+.lab-terminal .console-line.is-success { color: var(--terminal-green); }
+.lab-terminal .console-line.is-error { color: var(--terminal-red); }
+
+.lab-terminal .terminal-prompt {
+  display: inline-flex;
+  flex: none;
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.lab-terminal .terminal-user { color: var(--terminal-green); font-weight: 650; }
+.lab-terminal .terminal-divider { color: var(--terminal-muted); }
+.lab-terminal .terminal-path { color: var(--terminal-blue); }
+
+.lab-terminal .terminal-mark {
+  margin-left: 0.58ch;
+  color: var(--terminal-red);
+  font-weight: 750;
+}
+
+.lab-terminal .terminal-command {
+  margin-left: 0.72ch;
+  color: var(--terminal-gold);
+  font-weight: 600;
+}
+
+.lab-terminal .console-input-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.72ch;
+  min-height: 1.55rem;
+}
+
+.lab-terminal .terminal-input-shell {
+  --cursor-x: 0px;
+  position: relative;
+  flex: 1;
+  min-width: 2rem;
+  min-height: 1.55rem;
+}
+
+.lab-terminal .console-field {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--terminal-gold);
+  caret-color: transparent;
+  caret-shape: block;
+  font: inherit;
+  font-weight: 600;
+  line-height: inherit;
+}
+
+.lab-terminal .console-field:focus,
+.lab-terminal .console-field:focus-visible {
+  outline: 0;
+  box-shadow: none;
+}
+
+.lab-terminal .console-field::placeholder {
+  color: #788592;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.lab-terminal .terminal-input-measure {
+  position: absolute;
+  visibility: hidden;
+  white-space: pre;
+  font: inherit;
+  font-weight: 600;
+}
+
+.lab-terminal .terminal-block-cursor {
+  position: absolute;
+  z-index: 2;
+  left: var(--cursor-x);
+  top: 50%;
+  width: 0.66em;
+  height: 1.16em;
+  border-radius: 1px;
+  background: var(--terminal-gold);
+  opacity: 0.28;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.lab-terminal .console-input-row:focus-within .terminal-block-cursor {
+  opacity: 0.86;
+  animation: terminal-cursor-blink 1.05s steps(1, end) infinite;
+}
+
+@keyframes terminal-cursor-blink {
+  0%, 48% { opacity: 0.86; }
+  49%, 100% { opacity: 0; }
+}
+
+.site-terminal-section.is-standalone-terminal {
+  position: fixed;
+  z-index: 2147482000;
+  right: 1rem;
+  bottom: 1rem;
+  width: min(560px, calc(100vw - 2rem));
+  margin: 0;
+  pointer-events: none;
+}
+
+.site-terminal-section.is-standalone-terminal.is-collapsed {
+  width: min(270px, calc(100vw - 2rem));
+}
+
+.site-terminal-section.is-standalone-terminal .lab-terminal { pointer-events: auto; }
+
+body[data-site-terminal-standalone="map"] .site-terminal-section.is-standalone-terminal {
+  bottom: 6rem;
+}
+
+@media (max-width: 720px) {
+  .site-terminal-section {
+    width: min(100% - 1rem, 1180px);
+    margin-top: 0.8rem;
+  }
+
+  .lab-terminal { font-size: 0.8rem; }
+  .lab-terminal .terminal-chrome { gap: 0.48rem; }
+  .lab-terminal .terminal-chrome kbd { display: none; }
+
+  .lab-terminal .terminal-screen {
+    min-height: 7.4rem;
+    max-height: 42vh;
+    padding: 0.7rem 0.72rem 0.78rem;
+  }
+
+  .site-terminal-section.is-standalone-terminal {
+    right: 0.5rem;
+    bottom: 0.5rem;
+    width: calc(100vw - 1rem);
+  }
+
+  .site-terminal-section.is-standalone-terminal.is-collapsed {
+    width: min(240px, calc(100vw - 1rem));
+  }
+
+  body[data-site-terminal-standalone="map"] .site-terminal-section.is-standalone-terminal {
+    bottom: 5.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .lab-terminal .console-input-row {
+    display: grid;
+    gap: 0.18rem;
+  }
+
+  .lab-terminal .terminal-prompt {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .lab-terminal .terminal-path {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .lab-terminal .terminal-input-shell {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lab-terminal .console-input-row:focus-within .terminal-block-cursor {
+    animation: none;
+    opacity: 0.86;
+  }
+}

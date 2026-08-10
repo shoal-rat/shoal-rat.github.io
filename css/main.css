@@ -1,3 +1,5 @@
+@import url("/css/site-terminal.css");
+
 /* Shoal/Rat Econ-CS Lab — 墨浪 (ink-wave) theme.
    Ukiyo-e indigo night × terminal bones × Chinese seal accents.
    Palette: aizuri Prussian-blue grounds, rice-paper text, vermilion 印章 red,
@@ -240,23 +242,14 @@ input {
 }
 
 /* --- the living sea ---------------------------------------------------
-   One click = one complete tidal breath (~2.7s), then exact rest.
-   States are managed by SeaAnimationController in lab.js:
-     idle → waking → settling → idle   (reduced: opacity-only breath)
-   All motion shares one master duration (--sea-dur); the front wave is
-   the same movement delayed 150ms and slightly deeper; one primary fish
-   arcs, one secondary fish bobs; every keyframe track starts AND ends on
-   the element's exact resting transform, so class removal never snaps. */
+   One click = one physical-looking cycle (~3.6s): the existing foreground
+   wave clears the right edge, resets while invisible, then a matching wave
+   enters from the left and brakes at the original composition. Fish live
+   behind the mid-water layer, jump on sampled parabolic paths, and disappear
+   only after they are back below the waterline. */
 
 .hero {
-  --sea-dur: 2.7s;
-  --sea-ease: cubic-bezier(0.37, 0, 0.63, 1);
-  --tide-mid-x: -5px;
-  --tide-mid-y: 2px;
-  --tide-front-x: -8px;
-  --tide-front-y: 3px;
-  --tide-back-x: 3px;
-  --tide-back-y: -1px;
+  --sea-dur: 3.6s;
 }
 
 .hero-scene {
@@ -280,11 +273,28 @@ input {
   position: absolute;
   width: clamp(38px, 5vw, 74px);
   height: auto;
+  transform-origin: 50% 55%;
 }
 
-.hero-fish-1 { left: 36%; bottom: 38%; transform: rotate(-6deg); }
-.hero-fish-2 { left: 43%; bottom: 44%; width: clamp(30px, 4vw, 58px); transform: rotate(14deg) scaleX(-1); }
-.hero-fish-3 { left: 50%; bottom: 36%; width: clamp(24px, 3.2vw, 46px); transform: rotate(-18deg); }
+.hero-fish-1 {
+  left: 50%;
+  bottom: 19%;
+  transform: translate3d(0, 62%, 0) rotate(-18deg);
+}
+
+.hero-fish-2 {
+  left: 59%;
+  bottom: 18%;
+  width: clamp(30px, 4vw, 58px);
+  transform: translate3d(0, 72%, 0) rotate(-85deg);
+}
+
+.hero-fish-3 {
+  left: 67%;
+  bottom: 20%;
+  width: clamp(24px, 3.2vw, 46px);
+  transform: translate3d(0, 68%, 0) rotate(-22deg) scaleX(-1);
+}
 
 /* invisible control over the wave area; real button semantics */
 .sea-button {
@@ -325,28 +335,27 @@ input {
   transition: opacity 250ms ease;
 }
 
-/* the tidal breath — one shot, no fill, will-change only while running */
-.hero.is-waking .hero-layer,
-.hero.is-waking .hero-fish-1,
-.hero.is-waking .hero-fish-3 {
+/* One shot, no persistent GPU hint. The middle wave stays planted so there
+   is always a waterline while the foreground print crosses the frame. */
+.hero.is-waking .hero-wave-front,
+.hero.is-waking .hero-fish {
   will-change: transform, opacity;
 }
 
-.hero.is-waking .hero-wave-mid {
-  animation: tide-mid var(--sea-dur) var(--sea-ease) 1;
-}
-
 .hero.is-waking .hero-wave-front {
-  /* same movement, 150ms behind and slightly deeper; ends with the mid wave */
-  animation: tide-front calc(var(--sea-dur) - 0.15s) var(--sea-ease) 0.15s 1;
+  animation: wave-sweep var(--sea-dur) linear 1;
 }
 
 .hero.is-waking .hero-fish-1 {
-  animation: fish-arc-primary var(--sea-dur) var(--sea-ease) 1;
+  animation: fish-leap-main 2.45s linear 0.42s 1 both;
+}
+
+.hero.is-waking .hero-fish-2 {
+  animation: fish-leap-far 1.95s linear 0.96s 1 both;
 }
 
 .hero.is-waking .hero-fish-3 {
-  animation: fish-bob-soft calc(var(--sea-dur) - 0.4s) var(--sea-ease) 0.4s 1;
+  animation: fish-leap-near 1.72s linear 1.32s 1 both;
 }
 
 /* reduced-motion response: a barely-there brightening, opacity only */
@@ -355,34 +364,92 @@ input {
   animation: sea-breath 1.2s ease-in-out 1;
 }
 
-@keyframes tide-mid {
-  0%, 100% { transform: scale(1.045) translate(0, 0); }
-  38%      { transform: scale(1.045) translate(var(--tide-mid-x), var(--tide-mid-y)); }
-  72%      { transform: scale(1.045) translate(var(--tide-back-x), var(--tide-back-y)); }
+@keyframes wave-sweep {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1.045);
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.36, 0, 0.78, 1);
+  }
+  35% {
+    transform: translate3d(106vw, 1%, 0) scale(1.045);
+    opacity: 1;
+  }
+  35.01% {
+    transform: translate3d(106vw, 1%, 0) scale(1.045);
+    opacity: 0;
+  }
+  35.02%, 41% {
+    transform: translate3d(-106vw, 1%, 0) scale(1.045);
+    opacity: 0;
+  }
+  41.01% {
+    transform: translate3d(-106vw, 1%, 0) scale(1.045);
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.16, 0.7, 0.22, 1);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1.045);
+    opacity: 1;
+  }
 }
 
-@keyframes tide-front {
-  0%, 100% { transform: scale(1.045) translate(0, 0); }
-  38%      { transform: scale(1.045) translate(var(--tide-front-x), var(--tide-front-y)); }
-  72%      { transform: scale(1.045) translate(var(--tide-back-x), var(--tide-back-y)); }
+/* Linear, evenly-spaced samples of parabolic height keep the fish moving
+   through the crest instead of easing to a stop at every keyframe. */
+@keyframes fish-leap-main {
+  0%, 7% { transform: translate3d(0, 62%, 0) rotate(-18deg); opacity: 1; }
+  18% { transform: translate3d(31%, -55%, 0) rotate(-13deg); opacity: 1; }
+  29% { transform: translate3d(63%, -165%, 0) rotate(-4deg); opacity: 1; }
+  40% { transform: translate3d(94%, -240%, 0) rotate(10deg); opacity: 1; }
+  51% { transform: translate3d(125%, -275%, 0) rotate(31deg); opacity: 1; }
+  62% { transform: translate3d(156%, -240%, 0) rotate(57deg); opacity: 1; }
+  73% { transform: translate3d(188%, -165%, 0) rotate(82deg); opacity: 1; }
+  84% { transform: translate3d(219%, -55%, 0) rotate(105deg); opacity: 1; }
+  95% { transform: translate3d(250%, 62%, 0) rotate(124deg); opacity: 1; }
+  97% { transform: translate3d(250%, 88%, 0) rotate(124deg); opacity: 0; }
+  97.01% { transform: translate3d(0, 88%, 0) rotate(-18deg); opacity: 0; }
+  100% { transform: translate3d(0, 62%, 0) rotate(-18deg); opacity: 0; }
 }
 
-/* one arc: rest → rise → crest → dive (fading while moving, never while
-   visible-and-still) → glide home invisible → surface at exact rest */
-@keyframes fish-arc-primary {
-  0%, 12%  { transform: translate(0, 0) rotate(-6deg); opacity: 1; }
-  30%      { transform: translate(26px, -34px) rotate(-16deg); opacity: 1; }
-  46%      { transform: translate(52px, -46px) rotate(-30deg); opacity: 1; }
-  62%      { transform: translate(78px, -18px) rotate(-46deg); opacity: 1; }
-  72%      { transform: translate(92px, 14px) rotate(-56deg); opacity: 0; }
-  80%      { transform: translate(0, 6px) rotate(-6deg); opacity: 0; }
-  92%, 100% { transform: translate(0, 0) rotate(-6deg); opacity: 1; }
+/* Taller portrait canvases place the illustrated crest much higher, so the
+   same physical arc needs more vertical clearance to break the waterline. */
+@keyframes fish-leap-compact {
+  0%, 7% { transform: translate3d(0, 62%, 0) rotate(-18deg); opacity: 1; }
+  18% { transform: translate3d(31%, -92%, 0) rotate(-13deg); opacity: 1; }
+  29% { transform: translate3d(63%, -236%, 0) rotate(-4deg); opacity: 1; }
+  40% { transform: translate3d(94%, -335%, 0) rotate(10deg); opacity: 1; }
+  51% { transform: translate3d(125%, -380%, 0) rotate(31deg); opacity: 1; }
+  62% { transform: translate3d(156%, -335%, 0) rotate(57deg); opacity: 1; }
+  73% { transform: translate3d(188%, -236%, 0) rotate(82deg); opacity: 1; }
+  84% { transform: translate3d(219%, -92%, 0) rotate(105deg); opacity: 1; }
+  95% { transform: translate3d(250%, 62%, 0) rotate(124deg); opacity: 1; }
+  97% { transform: translate3d(250%, 88%, 0) rotate(124deg); opacity: 0; }
+  97.01% { transform: translate3d(0, 88%, 0) rotate(-18deg); opacity: 0; }
+  100% { transform: translate3d(0, 62%, 0) rotate(-18deg); opacity: 0; }
 }
 
-@keyframes fish-bob-soft {
-  0%, 18%   { transform: rotate(-18deg) translate(0, 0); }
-  50%       { transform: rotate(-13deg) translate(6px, -9px); }
-  85%, 100% { transform: rotate(-18deg) translate(0, 0); }
+@keyframes fish-leap-far {
+  0%, 9% { transform: translate3d(0, 72%, 0) rotate(-85deg); opacity: 1; }
+  23% { transform: translate3d(38%, -88%, 0) rotate(-70deg); opacity: 1; }
+  38% { transform: translate3d(78%, -220%, 0) rotate(-50deg); opacity: 1; }
+  52% { transform: translate3d(112%, -265%, 0) rotate(-42deg); opacity: 1; }
+  66% { transform: translate3d(150%, -205%, 0) rotate(-20deg); opacity: 1; }
+  81% { transform: translate3d(188%, -54%, 0) rotate(5deg); opacity: 1; }
+  95% { transform: translate3d(216%, 74%, 0) rotate(25deg); opacity: 1; }
+  98% { transform: translate3d(216%, 96%, 0) rotate(25deg); opacity: 0; }
+  98.01% { transform: translate3d(0, 96%, 0) rotate(-85deg); opacity: 0; }
+  100% { transform: translate3d(0, 72%, 0) rotate(-85deg); opacity: 0; }
+}
+
+@keyframes fish-leap-near {
+  0%, 10% { transform: translate3d(0, 68%, 0) rotate(-22deg) scaleX(-1); opacity: 1; }
+  28% { transform: translate3d(42%, -118%, 0) rotate(-10deg) scaleX(-1); opacity: 1; }
+  48% { transform: translate3d(88%, -278%, 0) rotate(24deg) scaleX(-1); opacity: 1; }
+  67% { transform: translate3d(132%, -205%, 0) rotate(62deg) scaleX(-1); opacity: 1; }
+  86% { transform: translate3d(176%, -42%, 0) rotate(96deg) scaleX(-1); opacity: 1; }
+  96% { transform: translate3d(198%, 72%, 0) rotate(112deg) scaleX(-1); opacity: 1; }
+  99% { transform: translate3d(198%, 94%, 0) rotate(112deg) scaleX(-1); opacity: 0; }
+  99.01% { transform: translate3d(0, 94%, 0) rotate(-22deg) scaleX(-1); opacity: 0; }
+  100% { transform: translate3d(0, 68%, 0) rotate(-22deg) scaleX(-1); opacity: 0; }
 }
 
 @keyframes sea-breath {
@@ -1464,61 +1531,6 @@ input {
    Zen-hacker interaction layer
    --------------------------------------------------------------------- */
 
-/* Idle block cursor on the static console line; retired once the live
-   terminal takes over. */
-.hero-console:not(.is-live) code::after {
-  content: "▊";
-  margin-left: 0.25em;
-  color: var(--vermilion);
-  animation: cursor-blink 1.3s steps(2) infinite;
-}
-
-@keyframes cursor-blink {
-  50% { opacity: 0; }
-}
-
-.console-out {
-  display: grid;
-  gap: 0.15rem;
-}
-
-.console-line {
-  color: var(--muted);
-  font-size: 0.92rem;
-  white-space: pre-wrap;
-  overflow-wrap: anywhere;
-}
-
-.console-line.is-cmd {
-  color: var(--text);
-}
-
-.console-line.is-quiet {
-  color: rgba(163, 160, 143, 0.75);
-}
-
-.console-input-row {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.console-field {
-  flex: 1;
-  min-width: 0;
-  background: transparent;
-  border: 0;
-  outline: 0;
-  padding: 0;
-  color: var(--amber);
-  font: inherit;
-  caret-color: var(--vermilion);
-}
-
-.console-field::placeholder {
-  color: rgba(163, 160, 143, 0.55);
-}
-
 /* Quiet reveal: JS marks below-the-fold cards, the observer breathes them in */
 .reveal-wait {
   opacity: 0;
@@ -1592,16 +1604,10 @@ input {
     scroll-behavior: auto;
   }
 
-  .hero-console:not(.is-live) code::after {
-    animation: none;
-  }
-
   /* reduced state: the sea stays a still print; only the opacity-only
      sea-breath response (on .is-breathing) is allowed */
-  .hero.is-waking .hero-wave-mid,
   .hero.is-waking .hero-wave-front,
-  .hero.is-waking .hero-fish-1,
-  .hero.is-waking .hero-fish-3 {
+  .hero.is-waking .hero-fish {
     animation: none;
   }
 
@@ -1634,6 +1640,19 @@ input {
   }
 }
 
+/* Large portrait tablets keep the desktop navigation, but their tall hero
+   raises the illustrated crest enough to hide the standard jump. */
+@media (min-width: 881px) and (max-width: 1100px) and (orientation: portrait) {
+  .hero-fish-1 {
+    left: 64%;
+    width: clamp(54px, 6vw, 68px);
+  }
+
+  .hero.is-waking .hero-fish-1 {
+    animation-name: fish-leap-compact;
+  }
+}
+
 @media (max-width: 880px) {
   .site-nav {
     align-items: flex-start;
@@ -1663,16 +1682,20 @@ input {
     display: none;
   }
 
-  /* mobile sea: shallower tide, one animated fish, shorter button zone */
+  /* Mobile sea: keep one readable arc and shorten the large-layer sweep. */
   .hero {
-    --tide-mid-x: -3px;
-    --tide-mid-y: 1px;
-    --tide-front-x: -4px;
-    --tide-front-y: 2px;
-    --tide-back-x: 2px;
-    --tide-back-y: -1px;
+    --sea-dur: 3.2s;
   }
 
+  .hero-fish-1 {
+    width: clamp(46px, 8vw, 62px);
+  }
+
+  .hero.is-waking .hero-fish-1 {
+    animation-name: fish-leap-compact;
+  }
+
+  .hero.is-waking .hero-fish-2,
   .hero.is-waking .hero-fish-3 {
     animation: none;
   }
