@@ -1,0 +1,25 @@
+{
+  "id": "vfx_draw",
+  "decorative_only": true,
+  "duration_ms": 250,
+  "easing": "cubic-bezier(.2,.8,.2,1)",
+  "reduced_motion_ms": 250,
+  "keyframes": [
+    {
+      "transform": "translateY(90px) rotate(10deg)",
+      "opacity": 0
+    },
+    {
+      "transform": "translateY(0) rotate(0)",
+      "opacity": 1
+    }
+  ],
+  "layers": [
+    "symbol",
+    "motion",
+    "fade"
+  ],
+  "cssClass": "fx-draw",
+  "pointerEvents": "none",
+  "cancellable": true
+}

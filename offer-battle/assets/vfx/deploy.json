@@ -1,0 +1,29 @@
+{
+  "id": "vfx_deploy",
+  "decorative_only": true,
+  "duration_ms": 350,
+  "easing": "cubic-bezier(.2,.8,.2,1)",
+  "reduced_motion_ms": 300,
+  "keyframes": [
+    {
+      "transform": "translateY(-35px) scale(1.16)",
+      "opacity": 0
+    },
+    {
+      "transform": "translateY(3px) scale(.97)",
+      "opacity": 1
+    },
+    {
+      "transform": "translateY(0) scale(1)",
+      "opacity": 1
+    }
+  ],
+  "layers": [
+    "symbol",
+    "motion",
+    "fade"
+  ],
+  "cssClass": "fx-deploy",
+  "pointerEvents": "none",
+  "cancellable": true
+}

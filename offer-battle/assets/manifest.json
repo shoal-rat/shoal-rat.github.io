@@ -1,0 +1,4605 @@
+{
+  "schemaVersion": "1.0.0",
+  "rulesVersion": "2.0.0",
+  "generatedAt": "2026-09-26T10:38:15.512351+00:00",
+  "summary": {
+    "totalRequired": 190,
+    "produced": 190,
+    "pending": 0,
+    "sourceCounts": {
+      "builtin_imagegen": 56,
+      "derived_crop": 36,
+      "shared_generated_master": 6,
+      "original_vector": 59,
+      "procedural_animation": 12,
+      "original_synthesis": 18,
+      "composition_template": 3
+    }
+  },
+  "assets": {
+    "hero_h01_full": {
+      "id": "hero_h01_full",
+      "label": "清北主角母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/hero-H01.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 174502,
+      "sha256": "f94a46f05e7f95cd93b5a68d571cff28dcf627c11f71b47e5bb6ff3f23d03d4c",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 统一秋招二次元世界观，成年职场小人，约2.8头身，全身独立人物。深色短发，发梢整齐。奶白衬衫与深红短外套。道具：细框眼镜、写满批注的小册。表情：轻轻抬眼，像已经看过答案。可爱、机灵、稍显欠揍。赛璐璐阴影，干净轮廓，透明背景，预留头顶与脚下边距。文字、Logo、数字由界面后期叠加。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/hero_h01_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "hero_h01_portrait": {
+      "id": "hero_h01_portrait",
+      "label": "清北头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "hero_h01_full",
+      "url": "/assets/heroes/h01/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 38784,
+      "sha256": "0fd0919c4dbd399a75e12e97924f4fa635e003ebd75ddf5b6f3ac80a1b82366f",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "hero_h02_full": {
+      "id": "hero_h02_full",
+      "label": "C9主角母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/hero-H02.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 194514,
+      "sha256": "9399c3b18f4612169aa9b58c17514aef7c1a4e061bfcb583a3693fbec13cb178",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 统一秋招二次元世界观，成年职场小人，约2.8头身，全身独立人物。柔软黑发，中分。靛蓝学院外套。道具：便条、文件夹、小型毕业帽别针。表情：从容微笑，一只手递便条。可爱、机灵、稍显欠揍。赛璐璐阴影，干净轮廓，透明背景，预留头顶与脚下边距。文字、Logo、数字由界面后期叠加。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/hero_h02_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "hero_h02_portrait": {
+      "id": "hero_h02_portrait",
+      "label": "C9头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "hero_h02_full",
+      "url": "/assets/heroes/h02/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 37192,
+      "sha256": "6511e592fe48bee6a3f12e951bc06f512a33567289d9aba946a56ebfad3ebde7",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "hero_h03_full": {
+      "id": "hero_h03_full",
+      "label": "985主角母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/hero-H03.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 257618,
+      "sha256": "30b825fc9a7a7bd156ab126f130fcdd957b02002b23f55df9ea7670528870336",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 统一秋招二次元世界观，成年职场小人，约2.8头身，全身独立人物。深棕高马尾或短碎发。橙棕连帽外套。道具：咖啡、打卡本、歪掉的领带。表情：熬夜后仍然兴奋。可爱、机灵、稍显欠揍。赛璐璐阴影，干净轮廓，透明背景，预留头顶与脚下边距。文字、Logo、数字由界面后期叠加。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/hero_h03_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "hero_h03_portrait": {
+      "id": "hero_h03_portrait",
+      "label": "985头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "hero_h03_full",
+      "url": "/assets/heroes/h03/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 50644,
+      "sha256": "79874a06e9d38a53191e14279e229433a0e05c41baba853f489091e2e765cf08",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "hero_h04_full": {
+      "id": "hero_h04_full",
+      "label": "211主角母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/hero-H04.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 179238,
+      "sha256": "ddd1dcf60540faa52bccba5c61123b063463df2dfe9f9e14901797b0372a8390",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 统一秋招二次元世界观，成年职场小人，约2.8头身，全身独立人物。栗色短发，小翘毛。青绿色休闲西装。道具：手机上的校友消息、工牌。表情：一脸刚打听到消息的得意。可爱、机灵、稍显欠揍。赛璐璐阴影，干净轮廓，透明背景，预留头顶与脚下边距。文字、Logo、数字由界面后期叠加。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/hero_h04_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "hero_h04_portrait": {
+      "id": "hero_h04_portrait",
+      "label": "211头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "hero_h04_full",
+      "url": "/assets/heroes/h04/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 38772,
+      "sha256": "cb8492e7a1287ded4d2fdc12bf5dbd53d3d4c7534ed172433cb1d60a0d1db1b2",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "hero_h05_full": {
+      "id": "hero_h05_full",
+      "label": "一本主角母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/hero-H05.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 186422,
+      "sha256": "530d0602f210438d72c2577fcd375da2f0d3f9223758d9adea3d2cd38428ebc9",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 统一秋招二次元世界观，成年职场小人，约2.8头身，全身独立人物。柔顺齐肩发或整齐短发。米色针织背心与衬衫。道具：便当袋、备忘录。表情：淡定，嘴角微扬。可爱、机灵、稍显欠揍。赛璐璐阴影，干净轮廓，透明背景，预留头顶与脚下边距。文字、Logo、数字由界面后期叠加。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/hero_h05_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "hero_h05_portrait": {
+      "id": "hero_h05_portrait",
+      "label": "一本头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "hero_h05_full",
+      "url": "/assets/heroes/h05/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 41098,
+      "sha256": "c6c9dd38806db14f02117289f725251890398ea3830115c4766760268de7e03d",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "hero_h06_full": {
+      "id": "hero_h06_full",
+      "label": "二本／双非主角母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/hero-H06.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 171742,
+      "sha256": "1af37db8a05f6f3eaa2493a29da57e0153199a930a49b94e96e9bcb2c0697798",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 统一秋招二次元世界观，成年职场小人，约2.8头身，全身独立人物。利落黑色短发。牛仔色工作外套。道具：作品文件夹、袖口铅笔。表情：向前一步，准备直接动手。可爱、机灵、稍显欠揍。赛璐璐阴影，干净轮廓，透明背景，预留头顶与脚下边距。文字、Logo、数字由界面后期叠加。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/hero_h06_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "hero_h06_portrait": {
+      "id": "hero_h06_portrait",
+      "label": "二本／双非头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "hero_h06_full",
+      "url": "/assets/heroes/h06/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 35072,
+      "sha256": "61a7a6e91a61a3781c72e9b0a0566fab317731eb1237d39fd1b84782dd26458f",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "hero_h07_full": {
+      "id": "hero_h07_full",
+      "label": "海外 Top 50主角母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/hero-H07.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 294662,
+      "sha256": "2794d956572eacc4c65defbc4ec7c0053318c2c03d208c45f651bbd50702f9e5",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 统一秋招二次元世界观，成年职场小人，约2.8头身，全身独立人物。浅棕波浪短发。海军蓝毕业披肩与白色通勤装。道具：登机箱、护照夹、环形行程图。表情：像在安排下一趟行程。可爱、机灵、稍显欠揍。赛璐璐阴影，干净轮廓，透明背景，预留头顶与脚下边距。文字、Logo、数字由界面后期叠加。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/hero_h07_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "hero_h07_portrait": {
+      "id": "hero_h07_portrait",
+      "label": "海外 Top 50头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "hero_h07_full",
+      "url": "/assets/heroes/h07/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 55576,
+      "sha256": "22d867207f98fc2cd790befbae3f8121b651c83679705c0ec660e8fbd1e411fe",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "hero_h08_full": {
+      "id": "hero_h08_full",
+      "label": "海外 Top 100主角母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/hero-H08.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 239306,
+      "sha256": "69ae269ca77828b99a81b08e4f0cb99fd6ecad316b8b471ab7b33f33955d113e",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 统一秋招二次元世界观，成年职场小人，约2.8头身，全身独立人物。茶色卷发，发卡。湖蓝项目外套。道具：作品集、折叠展示板。表情：笑得自信，正在讲项目。可爱、机灵、稍显欠揍。赛璐璐阴影，干净轮廓，透明背景，预留头顶与脚下边距。文字、Logo、数字由界面后期叠加。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/hero_h08_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "hero_h08_portrait": {
+      "id": "hero_h08_portrait",
+      "label": "海外 Top 100头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "hero_h08_full",
+      "url": "/assets/heroes/h08/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 51672,
+      "sha256": "f9981de84dac0b6aee6728ecc0ba2e36a54b99f0256a6c3d92b2c20f8284fde3",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "hero_h09_full": {
+      "id": "hero_h09_full",
+      "label": "海外 100+主角母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/hero-H09.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 187470,
+      "sha256": "137e636df16e55f2eec861820f6ce8d791ad85c4c4c9de62bc8656ca453156f6",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 统一秋招二次元世界观，成年职场小人，约2.8头身，全身独立人物。暖棕蓬松短发。砖红通勤卫衣。道具：贴满旅行贴纸的电脑包。表情：耸肩微笑，随时换招。可爱、机灵、稍显欠揍。赛璐璐阴影，干净轮廓，透明背景，预留头顶与脚下边距。文字、Logo、数字由界面后期叠加。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/hero_h09_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "hero_h09_portrait": {
+      "id": "hero_h09_portrait",
+      "label": "海外 100+头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "hero_h09_full",
+      "url": "/assets/heroes/h09/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 39994,
+      "sha256": "86f7f97335ae49522f0725d5dda45327712607e97d9e4a71bc250bf2065c79b1",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "hero_h10_full": {
+      "id": "hero_h10_full",
+      "label": "吉林大学主角母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/hero-H10.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 309048,
+      "sha256": "4296eb4d4218002d4d912adba3b335470e67541874d59bfb72fd19d52dd03cf4",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: collectible card game character master, isolated 1024x1536 portrait format full body with 8% safety margin. 统一秋招二次元世界观，成年职场小人，约2.8头身，全身独立人物。浅栗色蓬松短发，头顶一根翘毛。奶油白短羽绒外套、深蓝内搭、长围巾。道具：小圆毕业帽、两枚签到章、写字留白的牌匾。表情：脸软，眼神嚣张，笑得像全校都站在身后。可爱、机灵、稍显欠揍。赛璐璐阴影，干净轮廓，透明背景，预留头顶与脚下边距。文字、Logo、数字由界面后期叠加。 Premium art direction: beautiful original anime collectible card character, sophisticated rounded adult chibi 2.8 head proportion, luminous detailed expressive eyes, elegant tapered ink lines, refined three-level cel shading with softly painted textile shading, warm cream highlights, subtle cool reflected light, exquisite face, polished professional illustration, dynamic three-quarter pose. Two major props max; no readable text, numbers, logos, background or card border. True transparent background.",
+      "original": "/assets/originals/hero_h10_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "hero_h10_portrait": {
+      "id": "hero_h10_portrait",
+      "label": "吉林大学头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "hero_h10_full",
+      "url": "/assets/heroes/h10/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 48154,
+      "sha256": "6cf5857c61c3bc9f61265ff64fa12fc2a0c8099eea57c564a54a046e03571003",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "offer_t00_full": {
+      "id": "offer_t00_full",
+      "label": "普通同事母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/offer-T00.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 205286,
+      "sha256": "b58e4b6c4a816d2fdb8fef6e95692db54b528ab3ed9f8bf06d4c74eb49d14754",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 成年可爱二次元职场小人，2.8头身，衬衫、基础工牌、电脑包。人物气质对应普通同事。眼神机灵、表情带一点得意，统一赛璐璐画法。透明背景，完整轮廓，画面不嵌入卡框与技能文字。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/offer_t00_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "offer_t00_portrait": {
+      "id": "offer_t00_portrait",
+      "label": "普通同事头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "offer_t00_full",
+      "url": "/assets/offers/t00/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 43218,
+      "sha256": "96bce307c3b0b8d76429fbd8ff36d69b5b5ff63f9576e9659c1c8c7e5e1a2748",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "offer_t01_full": {
+      "id": "offer_t01_full",
+      "label": "一线卷王母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/offer-T01.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 333778,
+      "sha256": "6d91f306cf3aa0092d97f706325b5b7d6728bac4eb42edb8943586132e5498c0",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: collectible card game character master, isolated 1024x1536 portrait format full body with 8% safety margin. 成年可爱二次元职场小人，2.8头身，连帽衫、咖啡、终端投影。人物气质对应一线卷王。眼神机灵、表情带一点得意，统一赛璐璐画法。透明背景，完整轮廓，画面不嵌入卡框与技能文字。 Premium art direction: beautiful original anime collectible card character, sophisticated rounded adult chibi 2.8 head proportion, luminous detailed expressive eyes, elegant tapered ink lines, refined three-level cel shading with softly painted textile shading, warm cream highlights, subtle cool reflected light, exquisite face, polished professional illustration, dynamic three-quarter pose. Two major props max; no readable text, numbers, logos, background or card border. True transparent background.",
+      "original": "/assets/originals/offer_t01_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "offer_t01_portrait": {
+      "id": "offer_t01_portrait",
+      "label": "一线卷王头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "offer_t01_full",
+      "url": "/assets/offers/t01/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 59424,
+      "sha256": "86d9f9f9cc74758e24322bba784d06c2559d8fae99159344d635c94cc2181359",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "offer_t02_full": {
+      "id": "offer_t02_full",
+      "label": "稳定守岗母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/offer-T02.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 240226,
+      "sha256": "d96e855c3ca76f9136968666ae20e267932b0e800535773cb180af5fafd2a6ad",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: collectible card game character master, isolated 1024x1536 portrait format full body with 8% safety margin. 成年可爱二次元职场小人，2.8头身，针织外套、文件夹、保温杯。人物气质对应稳定守岗。眼神机灵、表情带一点得意，统一赛璐璐画法。透明背景，完整轮廓，画面不嵌入卡框与技能文字。 Premium art direction: beautiful original anime collectible card character, sophisticated rounded adult chibi 2.8 head proportion, luminous detailed expressive eyes, elegant tapered ink lines, refined three-level cel shading with softly painted textile shading, warm cream highlights, subtle cool reflected light, exquisite face, polished professional illustration, dynamic three-quarter pose. Two major props max; no readable text, numbers, logos, background or card border. True transparent background.",
+      "original": "/assets/originals/offer_t02_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "offer_t02_portrait": {
+      "id": "offer_t02_portrait",
+      "label": "稳定守岗头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "offer_t02_full",
+      "url": "/assets/offers/t02/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 48486,
+      "sha256": "124011f1a1ef3ece426aca01174ff40910aea1b44d130125ed45e606b8772642",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "offer_t03_full": {
+      "id": "offer_t03_full",
+      "label": "流程大师母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/offer-T03.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 183468,
+      "sha256": "6d0a98186546a8bc32ac3f1614c09bfc6a82b50380d82af86d7071cfb2f267ec",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: collectible card game character master, isolated 1024x1536 portrait format full body with 8% safety margin. 成年可爱二次元职场小人，2.8头身，西装、平板、便利贴。人物气质对应流程大师。眼神机灵、表情带一点得意，统一赛璐璐画法。透明背景，完整轮廓，画面不嵌入卡框与技能文字。 Premium art direction: beautiful original anime collectible card character, sophisticated rounded adult chibi 2.8 head proportion, luminous detailed expressive eyes, elegant tapered ink lines, refined three-level cel shading with softly painted textile shading, warm cream highlights, subtle cool reflected light, exquisite face, polished professional illustration, dynamic three-quarter pose. Two major props max; no readable text, numbers, logos, background or card border. True transparent background.",
+      "original": "/assets/originals/offer_t03_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "offer_t03_portrait": {
+      "id": "offer_t03_portrait",
+      "label": "流程大师头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "offer_t03_full",
+      "url": "/assets/offers/t03/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 40132,
+      "sha256": "3c6eb092d61e269e991d747f978bd4b6a2639613a223c4b769f69beaba893ea4",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "offer_t04_full": {
+      "id": "offer_t04_full",
+      "label": "硬件老法师母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/offer-T04.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 342494,
+      "sha256": "4c99d5aa45433b76952b50e9ffa70e975be2e436c842da7b71fd90c1a4483ae1",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: collectible card game character master, isolated 1024x1536 portrait format full body with 8% safety margin. 成年可爱二次元职场小人，2.8头身，工装、量具、卷起袖口。人物气质对应硬件老法师。眼神机灵、表情带一点得意，统一赛璐璐画法。透明背景，完整轮廓，画面不嵌入卡框与技能文字。 Premium art direction: beautiful original anime collectible card character, sophisticated rounded adult chibi 2.8 head proportion, luminous detailed expressive eyes, elegant tapered ink lines, refined three-level cel shading with softly painted textile shading, warm cream highlights, subtle cool reflected light, exquisite face, polished professional illustration, dynamic three-quarter pose. Two major props max; no readable text, numbers, logos, background or card border. True transparent background.",
+      "original": "/assets/originals/offer_t04_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "offer_t04_portrait": {
+      "id": "offer_t04_portrait",
+      "label": "硬件老法师头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "offer_t04_full",
+      "url": "/assets/offers/t04/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 58342,
+      "sha256": "ca45f37124111d2ae8e49433862398558c7177ae42777db2275c5c03f5183a3c",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "offer_t05_full": {
+      "id": "offer_t05_full",
+      "label": "项目经理母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/offer-T05.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 188556,
+      "sha256": "187a010b60fcb8ba5e90f4c1c05e7394e7246647d0a631f72fb9708347d1fcd0",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 成年可爱二次元职场小人，2.8头身，文件夹、袖珍排期板、领带。人物气质对应项目经理。眼神机灵、表情带一点得意，统一赛璐璐画法。透明背景，完整轮廓，画面不嵌入卡框与技能文字。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/offer_t05_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "offer_t05_portrait": {
+      "id": "offer_t05_portrait",
+      "label": "项目经理头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "offer_t05_full",
+      "url": "/assets/offers/t05/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 41662,
+      "sha256": "40563ae479cc6ca907038dbc446f0fff70cc5ad1b95f74acf2f1fd150370fc24",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "offer_t06_full": {
+      "id": "offer_t06_full",
+      "label": "销售冠军母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/offer-T06.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 204100,
+      "sha256": "bc9e176095c88098c070f85dbe98adad420a5536e42bd75e9d8578030807dbf0",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 成年可爱二次元职场小人，2.8头身，商务外套、手机、合同夹。人物气质对应销售冠军。眼神机灵、表情带一点得意，统一赛璐璐画法。透明背景，完整轮廓，画面不嵌入卡框与技能文字。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/offer_t06_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "offer_t06_portrait": {
+      "id": "offer_t06_portrait",
+      "label": "销售冠军头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "offer_t06_full",
+      "url": "/assets/offers/t06/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 44768,
+      "sha256": "cf85fa3ca7cbfc80d77aabfcda106cf9cdba68e32a8244dd954069fb73349f7c",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "offer_t07_full": {
+      "id": "offer_t07_full",
+      "label": "测试拆台王母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/offer-T07.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 219554,
+      "sha256": "7d427827eff24da2303e3ff46aeacb9f23e826a85b2f0229bb8151924b17991a",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 成年可爱二次元职场小人，2.8头身，放大镜、测试清单、故障贴纸。人物气质对应测试拆台王。眼神机灵、表情带一点得意，统一赛璐璐画法。透明背景，完整轮廓，画面不嵌入卡框与技能文字。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/offer_t07_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "offer_t07_portrait": {
+      "id": "offer_t07_portrait",
+      "label": "测试拆台王头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "offer_t07_full",
+      "url": "/assets/offers/t07/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 48784,
+      "sha256": "940924cba41b876eb75cdfdd920c5fa5e1b891a528d37a302bd13e5719515dec",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "offer_t08_full": {
+      "id": "offer_t08_full",
+      "label": "人事终面官母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/offer-T08.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 194060,
+      "sha256": "0581e02aa3c53d0b51a420712633b43e6b2afa6d66bae80f3140ab89e6ffce7b",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 成年可爱二次元职场小人，2.8头身，衬衫、简历夹、印章。人物气质对应人事终面官。眼神机灵、表情带一点得意，统一赛璐璐画法。透明背景，完整轮廓，画面不嵌入卡框与技能文字。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/offer_t08_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "offer_t08_portrait": {
+      "id": "offer_t08_portrait",
+      "label": "人事终面官头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "offer_t08_full",
+      "url": "/assets/offers/t08/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 44694,
+      "sha256": "38a7d82bc9c9be187bfc1d855da5ad796ff05d382a74b7c29440e1325aa86b1e",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "offer_t09_full": {
+      "id": "offer_t09_full",
+      "label": "咨询方案师母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/offer-T09.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 186424,
+      "sha256": "3783a3787174674d124e7b5ac4b465f50bf4178e9580f323920b08dc98ead5c6",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 成年可爱二次元职场小人，2.8头身，汇报板、文件袋、眼镜。人物气质对应咨询方案师。眼神机灵、表情带一点得意，统一赛璐璐画法。透明背景，完整轮廓，画面不嵌入卡框与技能文字。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/offer_t09_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "offer_t09_portrait": {
+      "id": "offer_t09_portrait",
+      "label": "咨询方案师头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "offer_t09_full",
+      "url": "/assets/offers/t09/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 41564,
+      "sha256": "e6dc394e211b69631037b73f6ec0ed556f8de094e03feb48b528beef86342f1b",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "offer_t10_full": {
+      "id": "offer_t10_full",
+      "label": "创业合伙人母版",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/offer-T10.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 214808,
+      "sha256": "16fdbd7841667d82360eb03859b209fb501a339ee9dd8f943498212b40e24d6e",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: single collectible card game character master, isolated 1024x1536 full body portrait format with safety margin. 成年可爱二次元职场小人，2.8头身，卫衣、透明筹码、饼状投影。人物气质对应创业合伙人。眼神机灵、表情带一点得意，统一赛璐璐画法。透明背景，完整轮廓，画面不嵌入卡框与技能文字。 Professional premium anime game illustration with sophisticated rounded adult chibi 2.8-head proportion, finely detailed expressive amber eyes, elegant fine tapered dark outline, refined three-level cel shading with beautiful softly painted fabric folds, warm cream highlights, cool reflected edge light. Exquisite face, smug confident charm, elegant dynamic three-quarter standing pose. One character alone. Full figure entirely inside image. At most two major props. True transparent background, NO glow or shadow outside silhouette, no text, numbers, logos, environment or card border.",
+      "original": "/assets/originals/offer_t10_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "offer_t10_portrait": {
+      "id": "offer_t10_portrait",
+      "label": "创业合伙人头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "offer_t10_full",
+      "url": "/assets/offers/t10/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 45032,
+      "sha256": "c823038e8ab9d91a77463527fc8975bf90e15cd30e8ececc91e6a2d96ece1ed0",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "example_e01_full": {
+      "id": "example_e01_full",
+      "label": "方盒科技专属示例",
+      "kind": "character",
+      "status": "produced",
+      "source": "shared_generated_master",
+      "parent": "offer_t01_full",
+      "url": "/assets/example-E01.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 333778,
+      "sha256": "6d91f306cf3aa0092d97f706325b5b7d6728bac4eb42edb8943586132e5498c0",
+      "visualReview": "Example uses its matching generated template character; company/job text is composed by UI. No bespoke example character claimed.",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "example_e01_portrait": {
+      "id": "example_e01_portrait",
+      "label": "方盒科技头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "example_e01_full",
+      "url": "/assets/examples/e01/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 59424,
+      "sha256": "86d9f9f9cc74758e24322bba784d06c2559d8fae99159344d635c94cc2181359",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "example_e02_full": {
+      "id": "example_e02_full",
+      "label": "城建服务中心专属示例",
+      "kind": "character",
+      "status": "produced",
+      "source": "shared_generated_master",
+      "parent": "offer_t02_full",
+      "url": "/assets/example-E02.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 240226,
+      "sha256": "d96e855c3ca76f9136968666ae20e267932b0e800535773cb180af5fafd2a6ad",
+      "visualReview": "Example uses its matching generated template character; company/job text is composed by UI. No bespoke example character claimed.",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "example_e02_portrait": {
+      "id": "example_e02_portrait",
+      "label": "城建服务中心头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "example_e02_full",
+      "url": "/assets/examples/e02/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 48486,
+      "sha256": "124011f1a1ef3ece426aca01174ff40910aea1b44d130125ed45e606b8772642",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "example_e03_full": {
+      "id": "example_e03_full",
+      "label": "蓝帆产品部专属示例",
+      "kind": "character",
+      "status": "produced",
+      "source": "shared_generated_master",
+      "parent": "offer_t03_full",
+      "url": "/assets/example-E03.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 183468,
+      "sha256": "6d0a98186546a8bc32ac3f1614c09bfc6a82b50380d82af86d7071cfb2f267ec",
+      "visualReview": "Example uses its matching generated template character; company/job text is composed by UI. No bespoke example character claimed.",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "example_e03_portrait": {
+      "id": "example_e03_portrait",
+      "label": "蓝帆产品部头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "example_e03_full",
+      "url": "/assets/examples/e03/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 40132,
+      "sha256": "3c6eb092d61e269e991d747f978bd4b6a2639613a223c4b769f69beaba893ea4",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "example_e04_full": {
+      "id": "example_e04_full",
+      "label": "小锤制造专属示例",
+      "kind": "character",
+      "status": "produced",
+      "source": "shared_generated_master",
+      "parent": "offer_t04_full",
+      "url": "/assets/example-E04.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 342494,
+      "sha256": "4c99d5aa45433b76952b50e9ffa70e975be2e436c842da7b71fd90c1a4483ae1",
+      "visualReview": "Example uses its matching generated template character; company/job text is composed by UI. No bespoke example character claimed.",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "example_e04_portrait": {
+      "id": "example_e04_portrait",
+      "label": "小锤制造头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "example_e04_full",
+      "url": "/assets/examples/e04/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 58342,
+      "sha256": "ca45f37124111d2ae8e49433862398558c7177ae42777db2275c5c03f5183a3c",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "example_e05_full": {
+      "id": "example_e05_full",
+      "label": "新饼科技专属示例",
+      "kind": "character",
+      "status": "produced",
+      "source": "shared_generated_master",
+      "parent": "offer_t10_full",
+      "url": "/assets/example-E05.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 214808,
+      "sha256": "16fdbd7841667d82360eb03859b209fb501a339ee9dd8f943498212b40e24d6e",
+      "visualReview": "Example uses its matching generated template character; company/job text is composed by UI. No bespoke example character claimed.",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "example_e05_portrait": {
+      "id": "example_e05_portrait",
+      "label": "新饼科技头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "example_e05_full",
+      "url": "/assets/examples/e05/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 45032,
+      "sha256": "c823038e8ab9d91a77463527fc8975bf90e15cd30e8ececc91e6a2d96ece1ed0",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "example_e06_full": {
+      "id": "example_e06_full",
+      "label": "电话金融专属示例",
+      "kind": "character",
+      "status": "produced",
+      "source": "shared_generated_master",
+      "parent": "offer_t06_full",
+      "url": "/assets/example-E06.webp",
+      "requestedDimensions": [
+        1024,
+        1536
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 204100,
+      "sha256": "bc9e176095c88098c070f85dbe98adad420a5536e42bd75e9d8578030807dbf0",
+      "visualReview": "Example uses its matching generated template character; company/job text is composed by UI. No bespoke example character claimed.",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "example_e06_portrait": {
+      "id": "example_e06_portrait",
+      "label": "电话金融头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "example_e06_full",
+      "url": "/assets/examples/e06/portrait.webp",
+      "requestedDimensions": [
+        384,
+        384
+      ],
+      "dimensions": [
+        384,
+        384
+      ],
+      "transparent": true,
+      "bytes": 44768,
+      "sha256": "cf85fa3ca7cbfc80d77aabfcda106cf9cdba68e32a8244dd954069fb73349f7c",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "support_n01_full": {
+      "id": "support_n01_full",
+      "label": "实习搭子",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/support-N01.webp",
+      "requestedDimensions": [
+        768,
+        1024
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 200178,
+      "sha256": "831129ce71cacec2d87507d85fd70da2b7d2cfe555728c57e33a404982279680",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: premium anime collectible card game character master, one single full-body adult 2.8-head chibi figure isolated in 2:3 portrait format. 同一世界观的成年可爱二次元小人，身份是实习搭子，用姿态和一个职场道具表现角色；工牌、通勤服装，干净线条，透明背景。校招生鼠鼠使用鼠鼠发夹，人形主体。. Specific anchors: short auburn hair, mint cardigan, coffee tumbler, jaunty thumbs up. Sophisticated expressive eyes, fine tapered ink lines, refined cel shading plus exquisitely painted fabric highlights, cream warm key light and cool reflected rim, detailed confident face, playful smug smile. Complete shoes and head in frame, 8% safe border. NO card frame, letters, words, logos or numbers. True transparent background. No surrounding glow or scenery.",
+      "original": "/assets/originals/support_n01_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "support_n01_portrait": {
+      "id": "support_n01_portrait",
+      "label": "实习搭子头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "support_n01_full",
+      "url": "/assets/support/n01/portrait.webp",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 23680,
+      "sha256": "c704c6637411290e6b98bf7853b5edbedca505d48c5bbabdf4839c5df9eb122c",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "support_n02_full": {
+      "id": "support_n02_full",
+      "label": "面经收集员",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/support-N02.webp",
+      "requestedDimensions": [
+        768,
+        1024
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 243532,
+      "sha256": "3d17ca38c51b24eb8af9088ffd0b94f1481c3ab334bccba484ec37b86f888374",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: premium anime collectible card game character master, one single full-body adult 2.8-head chibi figure isolated in 2:3 portrait format. 同一世界观的成年可爱二次元小人，身份是面经收集员，用姿态和一个职场道具表现角色；工牌、通勤服装，干净线条，透明背景。校招生鼠鼠使用鼠鼠发夹，人形主体。. Specific anchors: young adult with long black hair, lilac blouse, holding a thick collection of blank memo cards. Sophisticated expressive eyes, fine tapered ink lines, refined cel shading plus exquisitely painted fabric highlights, cream warm key light and cool reflected rim, detailed confident face, playful smug smile. Complete shoes and head in frame, 8% safe border. NO card frame, letters, words, logos or numbers. True transparent background. No surrounding glow or scenery.",
+      "original": "/assets/originals/support_n02_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "support_n02_portrait": {
+      "id": "support_n02_portrait",
+      "label": "面经收集员头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "support_n02_full",
+      "url": "/assets/support/n02/portrait.webp",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 27028,
+      "sha256": "cb6774e5dce82f8c830c3f57a6257ad4f1175e87e5970d553fe90c26f7adbd74",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "support_n03_full": {
+      "id": "support_n03_full",
+      "label": "校招生鼠鼠",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/support-N03.webp",
+      "requestedDimensions": [
+        768,
+        1024
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 181196,
+      "sha256": "16cc146ec26522e24608600d5c102dc0ad566a56ecba3474959bf24d4f3507b1",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: premium anime collectible card game character master, one single full-body adult 2.8-head chibi figure isolated in 2:3 portrait format. 同一世界观的成年可爱二次元小人，身份是校招生鼠鼠，用姿态和一个职场道具表现角色；工牌、通勤服装，干净线条，透明背景。校招生鼠鼠使用鼠鼠发夹，人形主体。. Specific anchors: young adult with soft gray bob haircut, cute mouse-shaped hair clip, cream jacket, hugging a folder; human not animal. Sophisticated expressive eyes, fine tapered ink lines, refined cel shading plus exquisitely painted fabric highlights, cream warm key light and cool reflected rim, detailed confident face, playful smug smile. Complete shoes and head in frame, 8% safe border. NO card frame, letters, words, logos or numbers. True transparent background. No surrounding glow or scenery.",
+      "original": "/assets/originals/support_n03_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "support_n03_portrait": {
+      "id": "support_n03_portrait",
+      "label": "校招生鼠鼠头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "support_n03_full",
+      "url": "/assets/support/n03/portrait.webp",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 20516,
+      "sha256": "746db77d2c07f09f2e876ee277543401bdd12f0e0d4452d05da791d399a3f8e3",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "support_n04_full": {
+      "id": "support_n04_full",
+      "label": "内推学长",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/support-N04.webp",
+      "requestedDimensions": [
+        768,
+        1024
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 180206,
+      "sha256": "6529e11ee1d3ee6a798efaccf1b12e1f68e75511fda3e2ebcc75269ed569e432",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: premium anime collectible card game character master, one single full-body adult 2.8-head chibi figure isolated in 2:3 portrait format. 同一世界观的成年可爱二次元小人，身份是内推学长，用姿态和一个职场道具表现角色；工牌、通勤服装，干净线条，透明背景。校招生鼠鼠使用鼠鼠发夹，人形主体。. Specific anchors: adult with ash brown swept hair, navy blazer, extending phone in one hand. Sophisticated expressive eyes, fine tapered ink lines, refined cel shading plus exquisitely painted fabric highlights, cream warm key light and cool reflected rim, detailed confident face, playful smug smile. Complete shoes and head in frame, 8% safe border. NO card frame, letters, words, logos or numbers. True transparent background. No surrounding glow or scenery.",
+      "original": "/assets/originals/support_n04_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "support_n04_portrait": {
+      "id": "support_n04_portrait",
+      "label": "内推学长头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "support_n04_full",
+      "url": "/assets/support/n04/portrait.webp",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 20994,
+      "sha256": "3d1784fe3e9dcc06499c652484d3fd401affb245943159d09e4a0996bd87eb97",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "support_n05_full": {
+      "id": "support_n05_full",
+      "label": "老员工",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/support-N05.webp",
+      "requestedDimensions": [
+        768,
+        1024
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 206234,
+      "sha256": "82e3c6e8c010c94adefd9f4e976f06cbb15a51a160f27dd9664688cfedd1240d",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: premium anime collectible card game character master, one single full-body adult 2.8-head chibi figure isolated in 2:3 portrait format. 同一世界观的成年可爱二次元小人，身份是老员工，用姿态和一个职场道具表现角色；工牌、通勤服装，干净线条，透明背景。校招生鼠鼠使用鼠鼠发夹，人形主体。. Specific anchors: adult with silvery short hair and glasses, sand sweater, tea mug, composed knowing grin. Sophisticated expressive eyes, fine tapered ink lines, refined cel shading plus exquisitely painted fabric highlights, cream warm key light and cool reflected rim, detailed confident face, playful smug smile. Complete shoes and head in frame, 8% safe border. NO card frame, letters, words, logos or numbers. True transparent background. No surrounding glow or scenery.",
+      "original": "/assets/originals/support_n05_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "support_n05_portrait": {
+      "id": "support_n05_portrait",
+      "label": "老员工头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "support_n05_full",
+      "url": "/assets/support/n05/portrait.webp",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 21146,
+      "sha256": "ce8e253aab4964b2b0a91b16ed096323eb2d1bd01c3bc638c2f2ff9765936aad",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "support_n06_full": {
+      "id": "support_n06_full",
+      "label": "猎头姐姐",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/support-N06.webp",
+      "requestedDimensions": [
+        768,
+        1024
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 192346,
+      "sha256": "445f3efa71a6b76c407dda38cf50c096390e8f9e22a23f28c37331d572cf5320",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: premium anime collectible card game character master, one single full-body adult 2.8-head chibi figure isolated in 2:3 portrait format. 同一世界观的成年可爱二次元小人，身份是猎头姐姐，用姿态和一个职场道具表现角色；工牌、通勤服装，干净线条，透明背景。校招生鼠鼠使用鼠鼠发夹，人形主体。. Specific anchors: adult female with refined auburn ponytail, crimson office blazer, mobile phone and black folder. Sophisticated expressive eyes, fine tapered ink lines, refined cel shading plus exquisitely painted fabric highlights, cream warm key light and cool reflected rim, detailed confident face, playful smug smile. Complete shoes and head in frame, 8% safe border. NO card frame, letters, words, logos or numbers. True transparent background. No surrounding glow or scenery.",
+      "original": "/assets/originals/support_n06_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "support_n06_portrait": {
+      "id": "support_n06_portrait",
+      "label": "猎头姐姐头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "support_n06_full",
+      "url": "/assets/support/n06/portrait.webp",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 24016,
+      "sha256": "90b11fd8e6e12a135d9221ecb0d4f3b06543d8eb634a4a6858e8ea0f6ecf64ed",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "token_k01_full": {
+      "id": "token_k01_full",
+      "label": "实习生",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/token-K01.webp",
+      "requestedDimensions": [
+        512,
+        768
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 202916,
+      "sha256": "c3ee104cdb17555ae925b598b2347e7ba36c65edd1d90c658e6bb551d5a0b457",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: premium anime collectible card game character master, one single full-body adult 2.8-head chibi figure isolated in 2:3 portrait format. 成年可爱二次元职场小人，实习生，休闲通勤装，抱着文件夹；K03带项目小工具。透明背景，和学校主角统一画风。. Specific anchors: adult, warm brown short hair, beige cardigan, holding files. Sophisticated expressive eyes, fine tapered ink lines, refined cel shading plus exquisitely painted fabric highlights, cream warm key light and cool reflected rim, detailed confident face, playful smug smile. Complete shoes and head in frame, 8% safe border. NO card frame, letters, words, logos or numbers. True transparent background. No surrounding glow or scenery.",
+      "original": "/assets/originals/token_k01_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "token_k01_portrait": {
+      "id": "token_k01_portrait",
+      "label": "实习生头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "token_k01_full",
+      "url": "/assets/tokens/k01/portrait.webp",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 22898,
+      "sha256": "8a27619dd2a758feffb58e856e3c23701c45f4329b976a8196366767dbc81092",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "token_k02_full": {
+      "id": "token_k02_full",
+      "label": "临时同事",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/token-K02.webp",
+      "requestedDimensions": [
+        512,
+        768
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 175260,
+      "sha256": "686fc78a36b4a9e4156c3f6da03a19095879cc8ec6d5e03ddd8a593caf3ae696",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: premium anime collectible card game character master, one single full-body adult 2.8-head chibi figure isolated in 2:3 portrait format. 成年可爱二次元职场小人，临时同事，休闲通勤装，抱着文件夹；K03带项目小工具。透明背景，和学校主角统一画风。. Specific anchors: adult, black bob hair, teal zip jacket, holding laptop. Sophisticated expressive eyes, fine tapered ink lines, refined cel shading plus exquisitely painted fabric highlights, cream warm key light and cool reflected rim, detailed confident face, playful smug smile. Complete shoes and head in frame, 8% safe border. NO card frame, letters, words, logos or numbers. True transparent background. No surrounding glow or scenery.",
+      "original": "/assets/originals/token_k02_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "token_k02_portrait": {
+      "id": "token_k02_portrait",
+      "label": "临时同事头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "token_k02_full",
+      "url": "/assets/tokens/k02/portrait.webp",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 19254,
+      "sha256": "2c938bc65af8ae50d33c1099617ff4eddaf6566c9e1a3a6914926e83e3c68d90",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "token_k03_full": {
+      "id": "token_k03_full",
+      "label": "项目搭子",
+      "kind": "character",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/token-K03.webp",
+      "requestedDimensions": [
+        512,
+        768
+      ],
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "transparent": true,
+      "bytes": 216594,
+      "sha256": "fc6f18087a847ffb5c3271b516fd8d44992ae8bf94f48d78ed2eb0ee4c68ffde",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable.",
+      "prompt": "Use case: stylized-concept. Asset type: premium anime collectible card game character master, one single full-body adult 2.8-head chibi figure isolated in 2:3 portrait format. 成年可爱二次元职场小人，项目搭子，休闲通勤装，抱着文件夹；K03带项目小工具。透明背景，和学校主角统一画风。. Specific anchors: adult, light brown short hair, denim jacket and dark orange shirt, holding miniature office project model. Sophisticated expressive eyes, fine tapered ink lines, refined cel shading plus exquisitely painted fabric highlights, cream warm key light and cool reflected rim, detailed confident face, playful smug smile. Complete shoes and head in frame, 8% safe border. NO card frame, letters, words, logos or numbers. True transparent background. No surrounding glow or scenery.",
+      "original": "/assets/originals/token_k03_full.png",
+      "anchors": {
+        "chest": [
+          0.64,
+          0.4
+        ],
+        "shoulder": [
+          0.52,
+          0.32
+        ],
+        "portraitCrop": [
+          0.02,
+          0,
+          0.96,
+          0.64
+        ]
+      }
+    },
+    "token_k03_portrait": {
+      "id": "token_k03_portrait",
+      "label": "项目搭子头像",
+      "kind": "portrait",
+      "status": "produced",
+      "source": "derived_crop",
+      "parent": "token_k03_full",
+      "url": "/assets/tokens/k03/portrait.webp",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 23408,
+      "sha256": "aa16dae45fb43f7a3431dc09ba3082d8c81cb2ecacdec3887d192da8f78e1405",
+      "visualReview": "Inspected generated output and contact sheet: clean silhouette, face and role props readable."
+    },
+    "card_n07_illustration": {
+      "id": "card_n07_illustration",
+      "label": "追问细节卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N07.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 183930,
+      "sha256": "9eafed6716515bbe00b1d4d1d54c03d4d5d707abd8104fca081cd3c4989ea029",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: a jewelled brass magnifying glass enlarging a tiny hidden clause on an ivory office contract, dramatic interrogation spotlight. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n07_illustration.png"
+    },
+    "card_n08_illustration": {
+      "id": "card_n08_illustration",
+      "label": "今晚不卷卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N08.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 238830,
+      "sha256": "5486aebada0d419e8ef69ff297312082f16e4b006e676069325b82ed824fd3f7",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: a steaming warm tea mug beside a cozy folded blanket and closed laptop at sunset, peaceful evening outside an office window. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n08_illustration.png"
+    },
+    "card_n09_illustration": {
+      "id": "card_n09_illustration",
+      "label": "面经复盘卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N09.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 229846,
+      "sha256": "da98f8ad39b68acb05656f4f43776b157ec3712740a62135cff44382628d08e9",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: an open beautiful notebook with abstract colored tabs, two floating blank cream flashcards and a fountain pen, smart reflective study mood. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n09_illustration.png"
+    },
+    "card_n10_illustration": {
+      "id": "card_n10_illustration",
+      "label": "打听工时卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N10.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 248104,
+      "sha256": "3c08cb8594619304c5b10cbf59a938c0faed93327a13932888eba791c0509f5c",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: an oversized brass mechanical office clock looming beside a work calendar and a cold coffee, interrogative teal shadows. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n10_illustration.png"
+    },
+    "card_n11_illustration": {
+      "id": "card_n11_illustration",
+      "label": "补充材料卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N11.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 239724,
+      "sha256": "ae45a10f817cb039c942a53059a14e96ad13f4c28a68e83e0076553fe5efa11a",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: a towering orderly stack of manila document folders and blank papers with binder clips, small red urgent stamp at foreground. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n11_illustration.png"
+    },
+    "card_n12_illustration": {
+      "id": "card_n12_illustration",
+      "label": "流程重走卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N12.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 223896,
+      "sha256": "78220cb682c2f4b310a11d40c3d3b3c65c41e17a64cc924008989a82ca182c91",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: a looping queue of colored sticky notes around one thick folder, circular sweeping dynamic motion, office bureaucracy. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n12_illustration.png"
+    },
+    "card_n13_illustration": {
+      "id": "card_n13_illustration",
+      "label": "跳槽卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N13.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 216968,
+      "sha256": "35bece2a3056b4d2ebfa9b4cdd278df4aaa0f6b599a82b03ccba2f0ef2b2c1ed",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: an elegant brown leather laptop satchel packed with a plant and notebook, open office doorway glowing invitingly behind. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n13_illustration.png"
+    },
+    "card_n14_illustration": {
+      "id": "card_n14_illustration",
+      "label": "别画饼了卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N14.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": true,
+      "bytes": 497670,
+      "sha256": "d9e2ef13379105eb6dd8f7b7266227b517afbf56724f1c8cd862fdfa99c29305",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: a glowing translucent golden pie chart floating over an empty plate, a fountain pen sharply puncturing the illusion, witty satire. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n14_illustration.png"
+    },
+    "card_n15_illustration": {
+      "id": "card_n15_illustration",
+      "label": "临时加班卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N15.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 251166,
+      "sha256": "0a7c72fe1dc02c6f9c252f5bcdf1165189dbd09749e43bb12be8061b20f9abc3",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: a beautiful brass desk lamp shining on laptop keyboard and coffee during a stormy midnight, sparks of tired energy. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n15_illustration.png"
+    },
+    "card_n16_illustration": {
+      "id": "card_n16_illustration",
+      "label": "做出成果卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N16.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 287350,
+      "sha256": "c7e1e79e682c8b253250cdf04319b0f9bd7ec803e8d8a6eb9c88f72d831c1b6e",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: a solid miniature golden trophy beside a completed architectural project model and thick notebook, bright triumphant light. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n16_illustration.png"
+    },
+    "card_n17_illustration": {
+      "id": "card_n17_illustration",
+      "label": "部门聚餐卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N17.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 290428,
+      "sha256": "29bb47097c0d48e91004f424d2c97d7192246a7ccd83bef4c5a8b03f73e688bb",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: a tabletop full of steaming dumplings and bamboo baskets, two tea cups, warmly celebratory team meal still-life. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n17_illustration.png"
+    },
+    "card_n18_illustration": {
+      "id": "card_n18_illustration",
+      "label": "群面拷打卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N18.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 239014,
+      "sha256": "96c2d09b3c0afc5103796ade90e520af44f303840d24b69c299dfcfccb9f4a6d",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: three dramatic microphones pointing toward one empty office interview chair, expressive sharp rays and tense blue backdrop. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n18_illustration.png"
+    },
+    "card_n19_illustration": {
+      "id": "card_n19_illustration",
+      "label": "预算砍半卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N19.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 236640,
+      "sha256": "6f9eb0bf5cc2a173239a7ef79a5bf6f0ddebb6b8841d2127d618f2a561a5f9ed",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: a pair of polished scissors cutting a ribbon connecting two stacks of golden coins, energetic dramatic red and gold composition. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n19_illustration.png"
+    },
+    "card_n20_illustration": {
+      "id": "card_n20_illustration",
+      "label": "组织优化卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N20.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 211732,
+      "sha256": "4c3af7f48e8da8f4d8e8de4787d1dc9d7fa0204df39c6f57efdb9eb0f3d1547a",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: an empty office chair beside an open cardboard moving box containing a tiny plant and personal desk objects, bittersweet corporate satire. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n20_illustration.png"
+    },
+    "card_n21_illustration": {
+      "id": "card_n21_illustration",
+      "label": "终面摊牌卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N21.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 209632,
+      "sha256": "bb347e36ea5cf95e3efa867883a2d8ac782598a7ff72bfe18b55f497133d9ae6",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: a black portfolio flung open revealing a blank official cream contract with a crimson seal, dramatic frontal spotlight. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n21_illustration.png"
+    },
+    "card_n22_illustration": {
+      "id": "card_n22_illustration",
+      "label": "反问环节卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N22.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 235664,
+      "sha256": "be75e0c67871a94006a98e6c300bbd3359d232359116dbd78e19ac278f0d55a1",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: two intersecting large office speech balloons made from ivory folded paper above a dark desk, one golden question-shaped sculpture. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n22_illustration.png"
+    },
+    "card_n23_illustration": {
+      "id": "card_n23_illustration",
+      "label": "截图发群里卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N23.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 240812,
+      "sha256": "ef531d4576004c9920cd412fd3805a56d05b400e5b44a7ca16488ac1494f735b",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: a smartphone capturing a glowing blank message window which branches outward into three smaller message windows, mischievous energetic blue and gold. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n23_illustration.png"
+    },
+    "card_n24_illustration": {
+      "id": "card_n24_illustration",
+      "label": "这届同学真卷卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-N24.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 296190,
+      "sha256": "48f76661f71cc47d2a0b9135e0dffb0f902a39c3ca28354cb853358dd1e8e586",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: two polished empty office ID lanyards next to two coffee mugs and notebooks, lively teal and amber teamwork still-life. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_n24_illustration.png"
+    },
+    "card_f01_illustration": {
+      "id": "card_f01_illustration",
+      "label": "三十五岁卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-F01.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 261404,
+      "sha256": "8ccd1baff912c323d558c85aeb86cb6becb7e07b6f92853ff13c857066bdd1ba",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: a torn desk calendar page and a red sealed office notification on a dark mahogany desk, ticking brass clock behind, cinematic urgency, no printed numbers. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_f01_illustration.png"
+    },
+    "card_f02_illustration": {
+      "id": "card_f02_illustration",
+      "label": "股权重估卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-F02.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 305204,
+      "sha256": "8a75044332f7d413817d59ae0d71224620abe41193ffd9e7577f1e66c3418544",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: a stack of translucent frosted equity chips dissolving into thin dust, a small deflating golden pie-chart balloon behind, wry corporate humor. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_f02_illustration.png"
+    },
+    "card_f03_illustration": {
+      "id": "card_f03_illustration",
+      "label": "转管理卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-F03.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 267802,
+      "sha256": "cab5ed2b7b4a2b1d08a1110d0e9948826e46d75eae34d067a99c046a1c061727",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: an elegant swivel chair behind a small command desk with three connected cuboid office models, managerial promotion, plum and gold palette. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_f03_illustration.png"
+    },
+    "card_f04_illustration": {
+      "id": "card_f04_illustration",
+      "label": "合同写着呢卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-F04.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 222468,
+      "sha256": "c1571386ea3cc16d6d6aedb8d2feccb893ad4ffb8cc1741185686046b7d3c2d2",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: a crisp cream formal office contract with a bold crimson wax seal and heavy fountain pen, protective teal light around document. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_f04_illustration.png"
+    },
+    "card_f05_illustration": {
+      "id": "card_f05_illustration",
+      "label": "换个话题卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-F05.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 251708,
+      "sha256": "b94612b1fc569843ee8bc7f4be6286b5e9c74ccba61a980fa85ec694cb3449ea",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: three elegant round office discussion tokens with coin, leaf, and rising sun pictograms orbiting a central coffee cup, dynamic amber ribbons. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_f05_illustration.png"
+    },
+    "card_f06_illustration": {
+      "id": "card_f06_illustration",
+      "label": "先问工时卡图",
+      "kind": "action_art",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/action-F06.webp",
+      "requestedDimensions": [
+        768,
+        576
+      ],
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "transparent": false,
+      "bytes": 264844,
+      "sha256": "cb129847908c66a721903e4cc485aef6dc17c6f7229bbb2bf859be27ac61b3ac",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: single landscape 4:3 collectible office card game action illustration. Main request: a brass time clock and a dark smartphone in front of an imposing office megaphone, the clock intercepts the speaking sound wave, teal and red. Exquisite premium hand painted anime game still-life, dramatic readable silhouette and chunky elegant shapes, sophisticated rich painterly materials, fine golden rim highlights and deep teal shadows, cream parchment accents, whimsical modern office satire. Full bleed environment, composition dominated by one to three large objects, clean readable at tiny card thumbnail size. All objects must be office world, no fantasy weapons or magic runes. No people, NO readable letters, words, numerals, text, logos, card borders or watermarks. Painted depth, attractive cinematic lighting.",
+      "original": "/assets/originals/card_f06_illustration.png"
+    },
+    "school_h01_badge": {
+      "id": "school_h01_badge",
+      "label": "清北主学历章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/h01/badge.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "a60acf238d75090296d3280308e1dce7405a4c32ee56b8021094a2c3036b405c",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "school_h02_badge": {
+      "id": "school_h02_badge",
+      "label": "C9主学历章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/h02/badge.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "a5b8c4ed9bb571a44ba1410127206eeef8645746e2de5669e47745fc0cee8d64",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "school_h03_badge": {
+      "id": "school_h03_badge",
+      "label": "985主学历章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/h03/badge.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "a28b5da9f167743e9981409037bf8d818b5528f68d08f4c5a0cc2a5230891c87",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "school_h04_badge": {
+      "id": "school_h04_badge",
+      "label": "211主学历章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/h04/badge.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "308ad356ca56eb5c31c2c3f4923576c85c96f36229f299d434daa13ab0e3e30d",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "school_h05_badge": {
+      "id": "school_h05_badge",
+      "label": "一本主学历章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/h05/badge.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "959b5350ed724c77f2cb2d07a7799b4aa11c433041181cf729a6992716a6b521",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "school_h06_badge": {
+      "id": "school_h06_badge",
+      "label": "二本／双非主学历章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/h06/badge.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "df059e886ef11f00e137538271a946450d5a51404495153818ba8e48d5f9de85",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "school_h07_badge": {
+      "id": "school_h07_badge",
+      "label": "海外 Top 50主学历章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/h07/badge.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "aea39360dde1229f9490b864b7c2bdc280214802a2617a230ae53b8a2ff47ebe",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "school_h08_badge": {
+      "id": "school_h08_badge",
+      "label": "海外 Top 100主学历章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/h08/badge.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "f4243a497bab9dc200529b3f28a28ed62bca66784466e737d354a198ec541019",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "school_h09_badge": {
+      "id": "school_h09_badge",
+      "label": "海外 100+主学历章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/h09/badge.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "a489bc7a8eeb9c06d42399c7293907a7217c567048f095c3d3b4781859812560",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "school_h10_badge": {
+      "id": "school_h10_badge",
+      "label": "吉林大学主学历章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/h10/badge.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "644b9702b6550cc8497bcf0b1aad63abb74daf98a419c66a407368649b21992e",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s00_seal": {
+      "id": "education_s00_seal",
+      "label": "直接就业进修章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s00/seal.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "cb4ff380ec789589219ae30a01dfff90ac6849e130c77c02ceb1254476745d05",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s00_accessory": {
+      "id": "education_s00_accessory",
+      "label": "直接就业配饰",
+      "kind": "accessory",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s00/accessory.svg",
+      "requestedDimensions": [
+        512,
+        512
+      ],
+      "dimensions": [
+        512,
+        512
+      ],
+      "transparent": true,
+      "bytes": 923,
+      "sha256": "01744a679254bb8cadf72c49ff80d1aefecee9c9f7fa16469b303f0e2dc0ceb9",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s01_seal": {
+      "id": "education_s01_seal",
+      "label": "清北进修章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s01/seal.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "a60acf238d75090296d3280308e1dce7405a4c32ee56b8021094a2c3036b405c",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s01_accessory": {
+      "id": "education_s01_accessory",
+      "label": "清北配饰",
+      "kind": "accessory",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s01/accessory.svg",
+      "requestedDimensions": [
+        512,
+        512
+      ],
+      "dimensions": [
+        512,
+        512
+      ],
+      "transparent": true,
+      "bytes": 923,
+      "sha256": "5bcad19b3f19a048c817c0aab044f5935a0276d7127b5fdc665ba1684ddfb574",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s02_seal": {
+      "id": "education_s02_seal",
+      "label": "C9进修章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s02/seal.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "a5b8c4ed9bb571a44ba1410127206eeef8645746e2de5669e47745fc0cee8d64",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s02_accessory": {
+      "id": "education_s02_accessory",
+      "label": "C9配饰",
+      "kind": "accessory",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s02/accessory.svg",
+      "requestedDimensions": [
+        512,
+        512
+      ],
+      "dimensions": [
+        512,
+        512
+      ],
+      "transparent": true,
+      "bytes": 923,
+      "sha256": "587b3c23c89e8cec7c57a7959aa5dd12c5a6deb8a26b16f2b866ad951766295e",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s03_seal": {
+      "id": "education_s03_seal",
+      "label": "985进修章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s03/seal.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "a28b5da9f167743e9981409037bf8d818b5528f68d08f4c5a0cc2a5230891c87",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s03_accessory": {
+      "id": "education_s03_accessory",
+      "label": "985配饰",
+      "kind": "accessory",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s03/accessory.svg",
+      "requestedDimensions": [
+        512,
+        512
+      ],
+      "dimensions": [
+        512,
+        512
+      ],
+      "transparent": true,
+      "bytes": 923,
+      "sha256": "0161568025ac1f0b4cfe1b5bf58fe53a3087eb954cc92303de11a52d263a79c1",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s04_seal": {
+      "id": "education_s04_seal",
+      "label": "211进修章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s04/seal.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "308ad356ca56eb5c31c2c3f4923576c85c96f36229f299d434daa13ab0e3e30d",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s04_accessory": {
+      "id": "education_s04_accessory",
+      "label": "211配饰",
+      "kind": "accessory",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s04/accessory.svg",
+      "requestedDimensions": [
+        512,
+        512
+      ],
+      "dimensions": [
+        512,
+        512
+      ],
+      "transparent": true,
+      "bytes": 923,
+      "sha256": "b80d17a911d8f48fa7b7549a81bedb01cb8584ea5bc099d73fd89dbb31d19c2a",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s05_seal": {
+      "id": "education_s05_seal",
+      "label": "一本进修章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s05/seal.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "959b5350ed724c77f2cb2d07a7799b4aa11c433041181cf729a6992716a6b521",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s05_accessory": {
+      "id": "education_s05_accessory",
+      "label": "一本配饰",
+      "kind": "accessory",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s05/accessory.svg",
+      "requestedDimensions": [
+        512,
+        512
+      ],
+      "dimensions": [
+        512,
+        512
+      ],
+      "transparent": true,
+      "bytes": 923,
+      "sha256": "6dce4b6477ed6c8acc2a3a007d4b6cae38ee76ac772475cd53b379e1fa8b9117",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s06_seal": {
+      "id": "education_s06_seal",
+      "label": "二本／双非进修章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s06/seal.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "df059e886ef11f00e137538271a946450d5a51404495153818ba8e48d5f9de85",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s06_accessory": {
+      "id": "education_s06_accessory",
+      "label": "二本／双非配饰",
+      "kind": "accessory",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s06/accessory.svg",
+      "requestedDimensions": [
+        512,
+        512
+      ],
+      "dimensions": [
+        512,
+        512
+      ],
+      "transparent": true,
+      "bytes": 923,
+      "sha256": "3660c2bb363d100b5ca7a295385e7aad26d6b89a8ff361cc83e5eb5ae07e8ef7",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s07_seal": {
+      "id": "education_s07_seal",
+      "label": "海外 Top 50进修章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s07/seal.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "aea39360dde1229f9490b864b7c2bdc280214802a2617a230ae53b8a2ff47ebe",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s07_accessory": {
+      "id": "education_s07_accessory",
+      "label": "海外 Top 50配饰",
+      "kind": "accessory",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s07/accessory.svg",
+      "requestedDimensions": [
+        512,
+        512
+      ],
+      "dimensions": [
+        512,
+        512
+      ],
+      "transparent": true,
+      "bytes": 923,
+      "sha256": "c346ff9427e4252a91b2f05f7d5a7c56065c54e7d60927cf242b99649f48b649",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s08_seal": {
+      "id": "education_s08_seal",
+      "label": "海外 Top 100进修章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s08/seal.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "f4243a497bab9dc200529b3f28a28ed62bca66784466e737d354a198ec541019",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s08_accessory": {
+      "id": "education_s08_accessory",
+      "label": "海外 Top 100配饰",
+      "kind": "accessory",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s08/accessory.svg",
+      "requestedDimensions": [
+        512,
+        512
+      ],
+      "dimensions": [
+        512,
+        512
+      ],
+      "transparent": true,
+      "bytes": 923,
+      "sha256": "1c028493109565a1cbaac57994c23574b3c51936efd397e9a7d6350d4c2965c1",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s09_seal": {
+      "id": "education_s09_seal",
+      "label": "海外 100+进修章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s09/seal.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "a489bc7a8eeb9c06d42399c7293907a7217c567048f095c3d3b4781859812560",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s09_accessory": {
+      "id": "education_s09_accessory",
+      "label": "海外 100+配饰",
+      "kind": "accessory",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s09/accessory.svg",
+      "requestedDimensions": [
+        512,
+        512
+      ],
+      "dimensions": [
+        512,
+        512
+      ],
+      "transparent": true,
+      "bytes": 923,
+      "sha256": "fcaf9ba42c15917676b77cc77c6dd19ec61e2fb6d1fded4f3fcf8ac7bc70eac1",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s10_seal": {
+      "id": "education_s10_seal",
+      "label": "吉林大学进修章",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s10/seal.svg",
+      "requestedDimensions": [
+        256,
+        256
+      ],
+      "dimensions": [
+        256,
+        256
+      ],
+      "transparent": true,
+      "bytes": 2603,
+      "sha256": "644b9702b6550cc8497bcf0b1aad63abb74daf98a419c66a407368649b21992e",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "education_s10_accessory": {
+      "id": "education_s10_accessory",
+      "label": "吉林大学配饰",
+      "kind": "accessory",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/education/s10/accessory.svg",
+      "requestedDimensions": [
+        512,
+        512
+      ],
+      "dimensions": [
+        512,
+        512
+      ],
+      "transparent": true,
+      "bytes": 923,
+      "sha256": "51c62904cdc006dac026501b64083453dc48fedcc3f3b113d69c4cbb854732ff",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_mind": {
+      "id": "icon_mind",
+      "label": "mind图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/mind.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 715,
+      "sha256": "1486b3e63719ebafb687f4741c6461a6c44de775429880d8e9d1c35a2cc90d3d",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_time": {
+      "id": "icon_time",
+      "label": "time图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/time.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 701,
+      "sha256": "67ab052878f72f6e386ccdf105aca056d6b6da17fcbe131bf4e8495c97eacdf0",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_attack": {
+      "id": "icon_attack",
+      "label": "attack图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/attack.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 721,
+      "sha256": "efb0812e292a9f6b196368aad170af0dc87fbb2efc55b2e826861e25150fa999",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_health": {
+      "id": "icon_health",
+      "label": "health图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/health.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 719,
+      "sha256": "2c7fb24c987b3a3821d08bb659de802ae0e9156252ad4e08d5188c1f558d51e8",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_age": {
+      "id": "icon_age",
+      "label": "age图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/age.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 747,
+      "sha256": "fb1d8cdcf17bdd60386cf2e6bf76d350c4284a3759e8baf4564cef4cc762aea6",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_guard": {
+      "id": "icon_guard",
+      "label": "guard图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/guard.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 718,
+      "sha256": "675bc5a79c6c69a406348abbc69d7eb710be59d31d5fa10df807d35bc9537a45",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_frontline": {
+      "id": "icon_frontline",
+      "label": "frontline图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/frontline.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 735,
+      "sha256": "c4cdd3a1905f999aaf477fecd5dc8915195192b01b2c4ff098e897bcf48a5a94",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_life": {
+      "id": "icon_life",
+      "label": "life图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/life.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 727,
+      "sha256": "df09248985af13bb9559d8ba3b62679c69a0a71c01d3f313e39ae7f7ff7f968d",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_salary": {
+      "id": "icon_salary",
+      "label": "salary图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/salary.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 722,
+      "sha256": "89d14b0b834d7ec0e3d5cfa90b115f63eb6e3fd1c25be6cb5069ff7dcab6ca5b",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_future": {
+      "id": "icon_future",
+      "label": "future图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/future.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 708,
+      "sha256": "51ebb4d889a260cd56b4e37ba821bb63380aa7307ab9c0a9740685a90d039352",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_referral": {
+      "id": "icon_referral",
+      "label": "referral图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/referral.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 764,
+      "sha256": "562630a104e9de5c30c06a7b35c418f96354ed451f2649791af11709ddd83ce0",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_return_ticket": {
+      "id": "icon_return_ticket",
+      "label": "return_ticket图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/return_ticket.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 734,
+      "sha256": "5aebd35e9e87bf5bd9fe1385dbefbb97609c0e2b2dad541d466b0b7f3b5267c2",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_optimization": {
+      "id": "icon_optimization",
+      "label": "optimization图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/optimization.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 719,
+      "sha256": "631394d008b8f660bf19194ee691b3ee4b852c891dde3861e047c5e1c2b1ea11",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_retort": {
+      "id": "icon_retort",
+      "label": "retort图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/retort.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 715,
+      "sha256": "45166f76a2b8b61a97495c5dbbad9296514e2478f240e6564a914b131b6d90a6",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_primary_skill": {
+      "id": "icon_primary_skill",
+      "label": "primary_skill图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/primary_skill.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 709,
+      "sha256": "8bddea1b0ef6ab8591fd05d57aab676e90f8dc1a090cd75d9a503984f79fcaaa",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_secondary_skill": {
+      "id": "icon_secondary_skill",
+      "label": "secondary_skill图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/secondary_skill.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 726,
+      "sha256": "49bbc3e05ee1e93036fa66a79c754d63c278be5eaa0fb4869b40ee7980d26c51",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_jlu_stamp": {
+      "id": "icon_jlu_stamp",
+      "label": "jlu_stamp图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/jlu_stamp.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 715,
+      "sha256": "83a0f8e539d593052550cfcf17d22e272679b73942cff6b1dfcb9878545be573",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "icon_jlu_ready": {
+      "id": "icon_jlu_ready",
+      "label": "jlu_ready图标",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/icons/jlu_ready.svg",
+      "requestedDimensions": [
+        96,
+        96
+      ],
+      "dimensions": [
+        96,
+        96
+      ],
+      "transparent": true,
+      "bytes": 747,
+      "sha256": "0a60a587029f2624855820f503171fb8f238ec518bfa981cf1b46c07cc33276d",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "frame_offer": {
+      "id": "frame_offer",
+      "label": "offer卡框",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/frames/offer.svg",
+      "requestedDimensions": [
+        768,
+        1024
+      ],
+      "dimensions": [
+        768,
+        1024
+      ],
+      "transparent": true,
+      "bytes": 1155,
+      "sha256": "d20d9f5e0daec1673f81c0de3f69acb9f53f79fa27f7ef3cac5e4e6b575b58eb",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "frame_support": {
+      "id": "frame_support",
+      "label": "support卡框",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/frames/support.svg",
+      "requestedDimensions": [
+        768,
+        1024
+      ],
+      "dimensions": [
+        768,
+        1024
+      ],
+      "transparent": true,
+      "bytes": 1155,
+      "sha256": "fd2f5a60787dc0607558f5a9961869a104783f1fcf9e6221abfd7e2b9ac0868d",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "frame_action": {
+      "id": "frame_action",
+      "label": "action卡框",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/frames/action.svg",
+      "requestedDimensions": [
+        768,
+        1024
+      ],
+      "dimensions": [
+        768,
+        1024
+      ],
+      "transparent": true,
+      "bytes": 1155,
+      "sha256": "8419f7505c9a45706475e3ba48fc377f933bf8c45b112267c45b93d37e879c55",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "frame_retort": {
+      "id": "frame_retort",
+      "label": "retort卡框",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/frames/retort.svg",
+      "requestedDimensions": [
+        768,
+        1024
+      ],
+      "dimensions": [
+        768,
+        1024
+      ],
+      "transparent": true,
+      "bytes": 1155,
+      "sha256": "e110536efd4e451c89afa277d048e57f2b18ca3d4e2a8f7bb2d270007d90a8d0",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "frame_back_default": {
+      "id": "frame_back_default",
+      "label": "back_default卡框",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/frames/back_default.svg",
+      "requestedDimensions": [
+        768,
+        1024
+      ],
+      "dimensions": [
+        768,
+        1024
+      ],
+      "transparent": true,
+      "bytes": 1036,
+      "sha256": "d5bb7acddd2ac101e09f22605d387536c05ce3e9befad61176227f9600401926",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "frame_back_jlu": {
+      "id": "frame_back_jlu",
+      "label": "back_jlu卡框",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/frames/back_jlu.svg",
+      "requestedDimensions": [
+        768,
+        1024
+      ],
+      "dimensions": [
+        768,
+        1024
+      ],
+      "transparent": true,
+      "bytes": 1036,
+      "sha256": "d5bb7acddd2ac101e09f22605d387536c05ce3e9befad61176227f9600401926",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "background_home": {
+      "id": "background_home",
+      "label": "home背景",
+      "kind": "background",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/background-home.webp",
+      "requestedDimensions": [
+        1920,
+        1080
+      ],
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": false,
+      "bytes": 219468,
+      "sha256": "e51b9d59819a291359f39210101281c0641c4871526d4a19bb2e4810bf64ad48",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept\nAsset type: 16:9 videogame main menu background, luxury collectible card game set in a modern office. Primary request: exquisitely painted cozy executive study and empty walnut meeting table at blue hour, amber brass banker lamps, papers and coffee and a tiny succulent at table edges, towering distant glass city visible through rain windows, refined carved wood and brushed antique brass, fantasy collectible-card-game level material richness while ALL props remain modern office objects. Composition: table and furniture mostly at image edges, broad calm dark teal empty central space for interface. Warm amber highlights versus midnight teal shadows. Painterly illustration, detailed textures, hand crafted cinematic game environment. No characters, no cards, no letters, no text, no watermark. Wide landscape.",
+      "original": "/assets/originals/background_home.png"
+    },
+    "background_table": {
+      "id": "background_table",
+      "label": "table背景",
+      "kind": "background",
+      "status": "produced",
+      "source": "builtin_imagegen",
+      "parent": null,
+      "url": "/assets/background-board.webp",
+      "requestedDimensions": [
+        1920,
+        1080
+      ],
+      "dimensions": [
+        1672,
+        941
+      ],
+      "transparent": false,
+      "bytes": 316042,
+      "sha256": "b5ea1621349bc1415816d1220e5085d4554aa3cfc4279f2fa16487968407561e",
+      "visualReview": "Inspected generated output: clear focal objects, painterly office materials, no UI text baked in.",
+      "prompt": "Use case: stylized-concept. Asset type: wide 16:9 collectible card battle game board environment. Exquisite painted walnut office meeting table seen from directly overhead, a huge empty central dark desaturated teal leather inset with subtle embossed geometric ornament, rich ornate but modern brass trim; papers, a pen, coffee cup at lower left, a brass clock and leafy little plant at upper right, calendar corners and binders at far edges. All props occupy only the outermost 12 percent; center 75 percent absolutely clear for playable cards. Warm amber lamp light upper left, cool blue edge light right. Premium tactile wood grain, antique brass fasteners, subtly worn leather, very high end handmade game-board art. No people, no text, no cards, no card slots, no interface, no magic, no crystal, no watermark. Landscape.",
+      "original": "/assets/originals/background_table.png"
+    },
+    "topic_salary": {
+      "id": "topic_salary",
+      "label": "聊年包话题条",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/topics/salary.svg",
+      "requestedDimensions": [
+        960,
+        120
+      ],
+      "dimensions": [
+        960,
+        120
+      ],
+      "transparent": true,
+      "bytes": 949,
+      "sha256": "db27549b4fe74a31cd3607f2ea474aae662552dffda8eb2c51f0f84f650edb80",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "topic_life": {
+      "id": "topic_life",
+      "label": "聊生活话题条",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/topics/life.svg",
+      "requestedDimensions": [
+        960,
+        120
+      ],
+      "dimensions": [
+        960,
+        120
+      ],
+      "transparent": true,
+      "bytes": 954,
+      "sha256": "36260cdf311e16f2fb1c541255d2c40d706a6ccb49235654ebfd957c48787bf0",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "topic_future": {
+      "id": "topic_future",
+      "label": "聊以后话题条",
+      "kind": "vector_ui",
+      "status": "produced",
+      "source": "original_vector",
+      "parent": null,
+      "url": "/assets/ui/topics/future.svg",
+      "requestedDimensions": [
+        960,
+        120
+      ],
+      "dimensions": [
+        960,
+        120
+      ],
+      "transparent": true,
+      "bytes": 935,
+      "sha256": "f2678d7e21ef555a6a74ee02202ec599d7cdd9dc6e20401ae99ae6d63c1e1269",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "vfx_deploy": {
+      "id": "vfx_deploy",
+      "label": "deploy特效",
+      "kind": "vfx",
+      "status": "produced",
+      "source": "procedural_animation",
+      "parent": null,
+      "url": "/assets/vfx/deploy.json",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 539,
+      "sha256": "f3ff5ebad9dc389bc73a3c5efd53bffbf922caed394283e60f9a449b23e6078f",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "vfx_damage": {
+      "id": "vfx_damage",
+      "label": "damage特效",
+      "kind": "vfx",
+      "status": "produced",
+      "source": "procedural_animation",
+      "parent": null,
+      "url": "/assets/vfx/damage.json",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 595,
+      "sha256": "01c6e0eb5cc34b05637740fab5fc8186efb53f7b9822ed926324d529fdc3e509",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "vfx_heal": {
+      "id": "vfx_heal",
+      "label": "heal特效",
+      "kind": "vfx",
+      "status": "produced",
+      "source": "procedural_animation",
+      "parent": null,
+      "url": "/assets/vfx/heal.json",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 526,
+      "sha256": "6c260ee451db00618d7a1048f4bb39ad11fd2faa57cbb5c0f0ab11fe00e6a23a",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "vfx_draw": {
+      "id": "vfx_draw",
+      "label": "draw特效",
+      "kind": "vfx",
+      "status": "produced",
+      "source": "procedural_animation",
+      "parent": null,
+      "url": "/assets/vfx/draw.json",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 456,
+      "sha256": "9a57c77ca847f8f16195c70b2d2ce13dfc0ca720adc5b78d249a24e1777164c6",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "vfx_negotiate": {
+      "id": "vfx_negotiate",
+      "label": "negotiate特效",
+      "kind": "vfx",
+      "status": "produced",
+      "source": "procedural_animation",
+      "parent": null,
+      "url": "/assets/vfx/negotiate.json",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 528,
+      "sha256": "97dfbc63bc9febc1489db0ac0a389749d4fcae4937ff894543bbbea89fde6320",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "vfx_retort_flip": {
+      "id": "vfx_retort_flip",
+      "label": "retort_flip特效",
+      "kind": "vfx",
+      "status": "produced",
+      "source": "procedural_animation",
+      "parent": null,
+      "url": "/assets/vfx/retort_flip.json",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 452,
+      "sha256": "1a801c91620b1570e35b43c5d4fa5782e52a9c8b3752d9482ad08e4f683b827d",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "vfx_age_up": {
+      "id": "vfx_age_up",
+      "label": "age_up特效",
+      "kind": "vfx",
+      "status": "produced",
+      "source": "procedural_animation",
+      "parent": null,
+      "url": "/assets/vfx/age_up.json",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 522,
+      "sha256": "bce3b5b9407bac185fa225c5d43daa878c018ba04e1ce5d24a11f4f0c8705d8f",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "vfx_optimization": {
+      "id": "vfx_optimization",
+      "label": "optimization特效",
+      "kind": "vfx",
+      "status": "produced",
+      "source": "procedural_animation",
+      "parent": null,
+      "url": "/assets/vfx/optimization.json",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 453,
+      "sha256": "721f2fd381792098ec7393c995101f33391d33f8a7c5fad1d3920ad60a4db159",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "vfx_graduation": {
+      "id": "vfx_graduation",
+      "label": "graduation特效",
+      "kind": "vfx",
+      "status": "produced",
+      "source": "procedural_animation",
+      "parent": null,
+      "url": "/assets/vfx/graduation.json",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 530,
+      "sha256": "786a15530ea1c5e2e80e9ee2d65887fb2d258d8750674e7ec63699f0fcd433bb",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "vfx_jlu_collect": {
+      "id": "vfx_jlu_collect",
+      "label": "jlu_collect特效",
+      "kind": "vfx",
+      "status": "produced",
+      "source": "procedural_animation",
+      "parent": null,
+      "url": "/assets/vfx/jlu_collect.json",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 936,
+      "sha256": "0b80f251a5aa3c8e556d6505762f5b2d418d2044317b935c255a1b4ab4ff5f51",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "vfx_jlu_ultimate": {
+      "id": "vfx_jlu_ultimate",
+      "label": "jlu_ultimate特效",
+      "kind": "vfx",
+      "status": "produced",
+      "source": "procedural_animation",
+      "parent": null,
+      "url": "/assets/vfx/jlu_ultimate.json",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 1006,
+      "sha256": "32782315c74d0961ed97a994e2f9294347891292a6dbf1bc35311d765415e55a",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "vfx_jlu_double": {
+      "id": "vfx_jlu_double",
+      "label": "jlu_double特效",
+      "kind": "vfx",
+      "status": "produced",
+      "source": "procedural_animation",
+      "parent": null,
+      "url": "/assets/vfx/jlu_double.json",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 1029,
+      "sha256": "5d4cabda72a5b0a8bde5c69fcf3f0e486cf68f9250e8d7741ad0fa091e205dac",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "sfx_click": {
+      "id": "sfx_click",
+      "label": "click音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/click.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 10628,
+      "sha256": "453b520b19455f60bfed524eedcc30c37a35ac1f00134de6d78c39e09683157f",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 0.12,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "sfx_card_pick": {
+      "id": "sfx_card_pick",
+      "label": "card_pick音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/card_pick.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 22976,
+      "sha256": "5314bcdf20575e76d5c559df005e82ff4f01f1701c9a6426309f81b363de099e",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 0.26,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "sfx_deploy": {
+      "id": "sfx_deploy",
+      "label": "deploy音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/deploy.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 47672,
+      "sha256": "8eb8702b4facc138e98219fc1a9d70c0693995479f2def7c47131d2f1dc76a8e",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 0.54,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "sfx_attack": {
+      "id": "sfx_attack",
+      "label": "attack音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/attack.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 30032,
+      "sha256": "8e38f5c398eb2eb67f658e1e11697e194ba9f76838223debd7a2fb609f93a969",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 0.34,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "sfx_damage": {
+      "id": "sfx_damage",
+      "label": "damage音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/damage.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 56492,
+      "sha256": "bf5ba4795e7a863bb17ced3f0ebb38dc932c7f423b00ba2e81ff0c0345d3c97a",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 0.64,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "sfx_heal": {
+      "id": "sfx_heal",
+      "label": "heal音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/heal.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 93536,
+      "sha256": "9e3ed245e091e5fe7d70ad5502844af3bc1df6c5f44d4029566278cacc467eae",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 1.06,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "sfx_draw": {
+      "id": "sfx_draw",
+      "label": "draw音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/draw.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 34442,
+      "sha256": "e7127a6c731b445a2a19f57a1299a4f7ac4f8d15e857e79f5186f0f0851bb898",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 0.39,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "sfx_negotiate": {
+      "id": "sfx_negotiate",
+      "label": "negotiate音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/negotiate.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 52964,
+      "sha256": "e36e526863afaf2f8ee9c3e1424daa8335d110f018deb8223c0557f32ea39e88",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 0.6,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "sfx_retort": {
+      "id": "sfx_retort",
+      "label": "retort音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/retort.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 73250,
+      "sha256": "bc2d5e38307345a397be3debdd02723d31f7884bd203f7008cbb4586d31c9b9b",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 0.83,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "sfx_age_up": {
+      "id": "sfx_age_up",
+      "label": "age_up音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/age_up.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 34442,
+      "sha256": "7432194c04e6f16b835af9c326b76893b92b979109f3d0b899132e8dcc284cc6",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 0.39,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "sfx_optimization": {
+      "id": "sfx_optimization",
+      "label": "optimization音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/optimization.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 73250,
+      "sha256": "e85e7ed839c355c4ecddd682bf72f8394d6a3b87167fc681cbf98b49d440a8f6",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 0.83,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "sfx_graduation": {
+      "id": "sfx_graduation",
+      "label": "graduation音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/graduation.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 125288,
+      "sha256": "4e9fe0e63951b4b9f90758ad500d798f760da6764e11d703629103c6070a8f04",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 1.42,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "sfx_jlu_collect": {
+      "id": "sfx_jlu_collect",
+      "label": "jlu_collect音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/jlu_collect.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 60020,
+      "sha256": "7d1a93ab6e806bd8a64b9fe8d6a9141945f67a6d14d455c421e5c6b436a9af0d",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 0.68,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "sfx_jlu_ultimate": {
+      "id": "sfx_jlu_ultimate",
+      "label": "jlu_ultimate音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/jlu_ultimate.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 153512,
+      "sha256": "91567f4c70bbaf165d83afa601e398401a052dac051bf2aa75114625c1016ca5",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 1.74,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "sfx_win": {
+      "id": "sfx_win",
+      "label": "win音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/win.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 187028,
+      "sha256": "aa00254e334b42e38d8368a28ccbf0ae9b4656f6f8780d4cac2528fc98d28932",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 2.12,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "sfx_lose": {
+      "id": "sfx_lose",
+      "label": "lose音效",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_layered_procedural_synthesis",
+      "parent": null,
+      "url": "/assets/audio/sfx/lose.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 172034,
+      "sha256": "bb2a271d50fb4e1eca5515e07e75ca8ad3a063fa400087d70735ca83d360bfa6",
+      "visualReview": "Audio quality metrics validated; source layers and envelopes documented in evidence/sfx-quality.json.",
+      "sampleRate": 44100,
+      "channels": 1,
+      "durationSeconds": 1.95,
+      "soundDesignVersion": "2.0",
+      "audioReview": "Layered paper/wood/body/air/chime synthesis; 44.1kHz PCM16 mono, DC removal, soft high-frequency rolloff, headroom >=3.5dB, zero clipped samples, zero endpoints."
+    },
+    "music_lobby": {
+      "id": "music_lobby",
+      "label": "lobby音乐",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_synthesis",
+      "parent": null,
+      "url": "/assets/audio/music/lobby.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 5773132,
+      "sha256": "efee0cd00e263fc304036380f98c71322782b8689c088e4a08dfd48040bc87c1",
+      "visualReview": "PCM header, channel count, sample rate, fade envelopes and peak headroom verified.",
+      "sampleRate": 44100,
+      "channels": 2,
+      "durationSeconds": 32.727
+    },
+    "music_battle": {
+      "id": "music_battle",
+      "label": "battle音乐",
+      "kind": "audio",
+      "status": "produced",
+      "source": "original_synthesis",
+      "parent": null,
+      "url": "/assets/audio/music/battle.wav",
+      "requestedDimensions": null,
+      "dimensions": null,
+      "transparent": false,
+      "bytes": 4536044,
+      "sha256": "46ac410760b56626d551cbbcded15be25bf069435485aeb556d12869bfa11d70",
+      "visualReview": "PCM header, channel count, sample rate, fade envelopes and peak headroom verified.",
+      "sampleRate": 44100,
+      "channels": 2,
+      "durationSeconds": 25.714
+    },
+    "share_invitation": {
+      "id": "share_invitation",
+      "label": "invitation分享模板",
+      "kind": "layout",
+      "status": "produced",
+      "source": "composition_template",
+      "parent": null,
+      "url": "/assets/share/invitation.json",
+      "requestedDimensions": [
+        1080,
+        1440
+      ],
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "transparent": false,
+      "bytes": 1366,
+      "sha256": "8c1c228727a70f4a7ec263d6efb0c17dd4834efee840fc28808b965c89cb7e28",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "share_battle_report": {
+      "id": "share_battle_report",
+      "label": "battle_report分享模板",
+      "kind": "layout",
+      "status": "produced",
+      "source": "composition_template",
+      "parent": null,
+      "url": "/assets/share/battle_report.json",
+      "requestedDimensions": [
+        1080,
+        1440
+      ],
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "transparent": false,
+      "bytes": 1369,
+      "sha256": "a866ee66af65fc96833c5aa24cd860edbc29bb97479521a9dfed5a25282f249b",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    },
+    "share_graduation_photo": {
+      "id": "share_graduation_photo",
+      "label": "graduation_photo分享模板",
+      "kind": "layout",
+      "status": "produced",
+      "source": "composition_template",
+      "parent": null,
+      "url": "/assets/share/graduation_photo.json",
+      "requestedDimensions": [
+        1080,
+        1440
+      ],
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "transparent": false,
+      "bytes": 1372,
+      "sha256": "12f008f6402b287686c9c3bdd4e36fb5949242ef1a008eea8e9e5f54f27c3bfd",
+      "visualReview": "Readable structured source; original geometry or declarative animation."
+    }
+  }
+}

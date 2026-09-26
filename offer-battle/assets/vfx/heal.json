@@ -1,0 +1,29 @@
+{
+  "id": "vfx_heal",
+  "decorative_only": true,
+  "duration_ms": 300,
+  "easing": "cubic-bezier(.2,.8,.2,1)",
+  "reduced_motion_ms": 300,
+  "keyframes": [
+    {
+      "filter": "brightness(1)",
+      "transform": "scale(1)"
+    },
+    {
+      "filter": "brightness(1.5)",
+      "transform": "scale(1.06)"
+    },
+    {
+      "filter": "brightness(1)",
+      "transform": "scale(1)"
+    }
+  ],
+  "layers": [
+    "symbol",
+    "motion",
+    "fade"
+  ],
+  "cssClass": "fx-heal",
+  "pointerEvents": "none",
+  "cancellable": true
+}

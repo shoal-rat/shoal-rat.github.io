@@ -1,0 +1,278 @@
+{
+  "version": 2,
+  "production": "Original creative direction and AI-assisted instrumental performance; individual sources, prompts, task provenance and mastering retained. Earlier procedural MIDI sketches are prototypes, not transcriptions of this score.",
+  "generator": "https://www.runninghub.cn/ai-detail/2043228996799832066",
+  "masteringScript": "scripts/master_music.py",
+  "tracks": [
+    {
+      "id": "lobby",
+      "title": "金秋会客厅",
+      "file": "/assets/audio/music/lobby.mp3",
+      "duration": 88.4,
+      "sourceDuration": 90.0,
+      "loop": true,
+      "overlapSeconds": 1.6,
+      "sampleRate": 48000,
+      "sha256": "488a1917f8c11b790f71baed5f8425461b0fc70c40d0b4ea508e75ff03c29abb",
+      "originals": [
+        {
+          "file": "assets/music-production-v2/lobby-source.mp3",
+          "sha256": "eabc60615867a9ca70bd0faa1cb334c7683158208e45e374a29ffd1311c7dc78"
+        },
+        {
+          "file": "assets/music-production-v2/creative-briefs.json",
+          "sha256": "56529afa1bf042f07cf75a240ff996ee2782c383b0a71dc10565b86e30e92ad2"
+        }
+      ],
+      "provenance": {
+        "title": "金秋会客厅",
+        "taskId": "2103816422038917122",
+        "actualCredits": 12,
+        "requestedSeconds": 90,
+        "creativeBrief": "D major, 88 BPM, 6/8. Warm witty chamber folk: acoustic guitar/lute arpeggios, clarinet/flute lead, viola/cello and natural bass, sparse celesta and hand drum. D-F#-A-B-A-E motif, eight-bar question/answer. A theme, B minor development, richer A return. Natural dynamics and room sound; no vocals, chiptune, pop drums or existing melody.",
+        "lyricsInstruction": "[Instrumental]; no vocals, humming, spoken word or lyrics"
+      },
+      "mastering": {
+        "input_i": "-14.60",
+        "input_tp": "-0.12",
+        "input_lra": "5.10",
+        "input_thresh": "-24.64",
+        "output_i": "-20.93",
+        "output_tp": "-6.45",
+        "output_lra": "5.10",
+        "output_thresh": "-30.97",
+        "normalization_type": "linear",
+        "target_offset": "-0.07"
+      },
+      "peak": 0.4631149470806122,
+      "rms": 0.06441187113523483,
+      "clippedSamples": 0,
+      "loopSeam": 0.003704685717821121
+    },
+    {
+      "id": "tutorial",
+      "title": "第一张底牌",
+      "file": "/assets/audio/music/tutorial.mp3",
+      "duration": 88.4,
+      "sourceDuration": 90.0,
+      "loop": true,
+      "overlapSeconds": 1.6,
+      "sampleRate": 48000,
+      "sha256": "349457895a80680e8987d2bcd44bad3efccf0f945d67aa7a95a74125df494624",
+      "originals": [
+        {
+          "file": "assets/music-production-v2/tutorial-source.mp3",
+          "sha256": "9bb33c5efb32e72f007981c1a90700dcb5ab3e547f95d994224c07ca615fdec6"
+        },
+        {
+          "file": "assets/music-production-v2/creative-briefs.json",
+          "sha256": "56529afa1bf042f07cf75a240ff996ee2782c383b0a71dc10565b86e30e92ad2"
+        }
+      ],
+      "provenance": {
+        "title": "第一张底牌",
+        "taskId": "2103817749972353025",
+        "actualCredits": 6,
+        "requestedSeconds": 90,
+        "creativeBrief": "D major, 80 BPM, 6/8. Supportive mentor mood: fingerpicked acoustic guitar, sparse harp, breathing flute melody, gently humorous bassoon, soft piano and pizzicato strings. D-F#-A-B-A-E motif. A/B-minor variation/A form. Half the density of combat music, restrained dynamics, no voices or heavy drums.",
+        "lyricsInstruction": "[Instrumental]; no vocals, humming, spoken word or lyrics"
+      },
+      "mastering": {
+        "input_i": "-17.33",
+        "input_tp": "-3.02",
+        "input_lra": "10.10",
+        "input_thresh": "-27.84",
+        "output_i": "-21.01",
+        "output_tp": "-5.14",
+        "output_lra": "7.00",
+        "output_thresh": "-31.35",
+        "normalization_type": "dynamic",
+        "target_offset": "0.01"
+      },
+      "peak": 0.5351777076721191,
+      "rms": 0.06377870589494705,
+      "clippedSamples": 0,
+      "loopSeam": 0.021162092685699463
+    },
+    {
+      "id": "battle",
+      "title": "底牌后出",
+      "file": "/assets/audio/music/battle.mp3",
+      "duration": 88.4,
+      "sourceDuration": 90.0,
+      "loop": true,
+      "overlapSeconds": 1.6,
+      "sampleRate": 48000,
+      "sha256": "d511322148016a60c2fc81e9e7329f715f4e27eecaef4fcef88dac6d790d0e16",
+      "originals": [
+        {
+          "file": "assets/music-production-v2/battle-source.mp3",
+          "sha256": "cde04e02ec1112c7208a5bdc82fd8468103dd1dd42f38aa3b1cfbd5a9e0d39b7"
+        },
+        {
+          "file": "assets/music-production-v2/creative-briefs.json",
+          "sha256": "56529afa1bf042f07cf75a240ff996ee2782c383b0a71dc10565b86e30e92ad2"
+        }
+      ],
+      "provenance": {
+        "title": "底牌后出",
+        "taskId": "2103817151440969730",
+        "actualCredits": 8,
+        "requestedSeconds": 90,
+        "creativeBrief": "D minor, 106 BPM, 4/4. Tactically playful chamber orchestra: pizzicato bass and short cello, interlocking spiccato strings, bassoon/clarinet question-answer, restrained French horns and frame/timpani/shaker percussion. D-F-A-Bb-A-E motif. Dm(add9)-Bbmaj7-Gm6-A7sus-A7, A/F-major B/A counterpoint form. Dynamic rests every eight bars; no vocals, EDM, harsh MIDI or known music.",
+        "lyricsInstruction": "[Instrumental]; no vocals, humming, spoken word or lyrics"
+      },
+      "mastering": {
+        "input_i": "-13.75",
+        "input_tp": "0.05",
+        "input_lra": "4.70",
+        "input_thresh": "-23.92",
+        "output_i": "-20.93",
+        "output_tp": "-7.13",
+        "output_lra": "4.60",
+        "output_thresh": "-31.09",
+        "normalization_type": "linear",
+        "target_offset": "-0.07"
+      },
+      "peak": 0.4282766282558441,
+      "rms": 0.06656016409397125,
+      "clippedSamples": 0,
+      "loopSeam": 0.0014007911086082458
+    },
+    {
+      "id": "danger",
+      "title": "最后一份底气",
+      "file": "/assets/audio/music/danger.mp3",
+      "duration": 88.4,
+      "sourceDuration": 90.0,
+      "loop": true,
+      "overlapSeconds": 1.6,
+      "sampleRate": 48000,
+      "sha256": "7f862a1965326de2a59846c7f0aef43e3deb8baf8e5967dbbc9379dcb88b9bdd",
+      "originals": [
+        {
+          "file": "assets/music-production-v2/danger-source.mp3",
+          "sha256": "c2989fc839e90db982741d45a1a9d2498e7a57e1eb90e3e15dbb5c5c4196e503"
+        },
+        {
+          "file": "assets/music-production-v2/creative-briefs.json",
+          "sha256": "56529afa1bf042f07cf75a240ff996ee2782c383b0a71dc10565b86e30e92ad2"
+        }
+      ],
+      "provenance": {
+        "title": "最后一份底气",
+        "taskId": "2103818334452809730",
+        "actualCredits": 12,
+        "requestedSeconds": 90,
+        "creativeBrief": "D minor, 106 BPM, 4/4. Same D-F-A-Bb-A-E motif under pressure: low-string ostinato, quiet viola sixteenths, spare woodwind, hopeful horn fragments, structural timpani and light syncopated tambourine. Dm-A7/C#-Bbmaj7-Gm6-A7 chromatic inner voice. Alternate tension, build, small peak and retreat every sixteen bars. No voices, horror noise or EDM.",
+        "lyricsInstruction": "[Instrumental]; no vocals, humming, spoken word or lyrics"
+      },
+      "mastering": {
+        "input_i": "-12.51",
+        "input_tp": "3.90",
+        "input_lra": "4.60",
+        "input_thresh": "-22.58",
+        "output_i": "-20.94",
+        "output_tp": "-4.53",
+        "output_lra": "4.70",
+        "output_thresh": "-31.01",
+        "normalization_type": "linear",
+        "target_offset": "-0.06"
+      },
+      "peak": 0.5686020255088806,
+      "rms": 0.07060359418392181,
+      "clippedSamples": 0,
+      "loopSeam": 0.023338327184319496
+    },
+    {
+      "id": "victory",
+      "title": "好消息，录用了",
+      "file": "/assets/audio/music/victory.mp3",
+      "duration": 30.0,
+      "sourceDuration": 30.0,
+      "loop": false,
+      "overlapSeconds": 0,
+      "sampleRate": 48000,
+      "sha256": "f5cff5723d3df9221d4389247d792d9188d1d9aee0d11e51a515fcea15d89235",
+      "originals": [
+        {
+          "file": "assets/music-production-v2/victory-source.mp3",
+          "sha256": "91266d1b73213731a0530fa1b25fa394dbf2326f5c93e846fc02eb93f55b1d8f"
+        },
+        {
+          "file": "assets/music-production-v2/creative-briefs.json",
+          "sha256": "56529afa1bf042f07cf75a240ff996ee2782c383b0a71dc10565b86e30e92ad2"
+        }
+      ],
+      "provenance": {
+        "title": "好消息，录用了",
+        "taskId": "2103818813593309186",
+        "actualCredits": 11,
+        "requestedSeconds": 30,
+        "creativeBrief": "D major. Compact orchestral victory cue; warm horns, strings, harp and celesta resolve original motif into an inviting acceptance celebration. No vocals.",
+        "lyricsInstruction": "[Instrumental]; no vocals, humming, spoken word or lyrics"
+      },
+      "mastering": {
+        "input_i": "-16.49",
+        "input_tp": "-1.00",
+        "input_lra": "6.40",
+        "input_thresh": "-26.81",
+        "output_i": "-20.96",
+        "output_tp": "-5.47",
+        "output_lra": "6.30",
+        "output_thresh": "-31.26",
+        "normalization_type": "linear",
+        "target_offset": "-0.04"
+      },
+      "peak": 0.5114460587501526,
+      "rms": 0.06330928951501846,
+      "clippedSamples": 0,
+      "loopSeam": 8.44076021166984e-06
+    },
+    {
+      "id": "defeat",
+      "title": "明天再赴约",
+      "file": "/assets/audio/music/defeat.mp3",
+      "duration": 30.0,
+      "sourceDuration": 30.0,
+      "loop": false,
+      "overlapSeconds": 0,
+      "sampleRate": 48000,
+      "sha256": "8082d9122cf4d1cefd6d872cf6734ec4f7bfa362a3edd7bd86a6ce998c805c53",
+      "originals": [
+        {
+          "file": "assets/music-production-v2/defeat-source.mp3",
+          "sha256": "5d29bb59834585319add11b81b46b9f41105aaa0e9546906317ba86c82e231ab"
+        },
+        {
+          "file": "assets/music-production-v2/creative-briefs.json",
+          "sha256": "56529afa1bf042f07cf75a240ff996ee2782c383b0a71dc10565b86e30e92ad2"
+        }
+      ],
+      "provenance": {
+        "title": "明天再赴约",
+        "taskId": "2103819586288971778",
+        "actualCredits": 9,
+        "requestedSeconds": 30,
+        "creativeBrief": "B minor to D major. Bittersweet, dignified chamber coda with piano, cello and clarinet, a hopeful final cadence. No vocals.",
+        "lyricsInstruction": "[Instrumental]; no vocals, humming, spoken word or lyrics"
+      },
+      "mastering": {
+        "input_i": "-16.73",
+        "input_tp": "-2.38",
+        "input_lra": "18.50",
+        "input_thresh": "-28.90",
+        "output_i": "-22.06",
+        "output_tp": "-6.94",
+        "output_lra": "20.20",
+        "output_thresh": "-34.12",
+        "normalization_type": "dynamic",
+        "target_offset": "1.06"
+      },
+      "peak": 0.4357479512691498,
+      "rms": 0.042860981076955795,
+      "clippedSamples": 0,
+      "loopSeam": 3.0993149380265095e-07
+    }
+  ]
+}

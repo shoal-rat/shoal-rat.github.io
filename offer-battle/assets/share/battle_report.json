@@ -1,0 +1,83 @@
+{
+  "id": "share_battle_report",
+  "width": 1080,
+  "height": 1440,
+  "background": "#102b35",
+  "foreground": "#f5e5bd",
+  "accent": "#c6a468",
+  "font": "system-ui, sans-serif",
+  "layers": [
+    {
+      "type": "image",
+      "source": "/assets/background-home.webp",
+      "rect": [
+        0,
+        0,
+        1080,
+        1440
+      ],
+      "opacity": 0.4
+    },
+    {
+      "type": "text",
+      "text": "秋招斗兽棋",
+      "position": [
+        540,
+        140
+      ],
+      "fontSize": 74,
+      "align": "center"
+    },
+    {
+      "type": "hero",
+      "source": "player.primary",
+      "rect": [
+        210,
+        250,
+        660,
+        720
+      ]
+    },
+    {
+      "type": "badge",
+      "source": "player.secondary",
+      "rect": [
+        810,
+        230,
+        140,
+        140
+      ]
+    },
+    {
+      "type": "text",
+      "source": "headline",
+      "position": [
+        540,
+        1080
+      ],
+      "fontSize": 52,
+      "align": "center"
+    },
+    {
+      "type": "text",
+      "source": "description",
+      "position": [
+        540,
+        1190
+      ],
+      "fontSize": 30,
+      "maxWidth": 880,
+      "align": "center"
+    },
+    {
+      "type": "text",
+      "text": "OFFER BATTLE · 好友桌",
+      "position": [
+        540,
+        1350
+      ],
+      "fontSize": 26,
+      "align": "center"
+    }
+  ]
+}

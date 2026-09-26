@@ -1,0 +1,22 @@
+{
+  "id": "alumni-burst",
+  "kind": "video-vfx",
+  "source": "Running Hub · MiniMax H3 Max Turbo",
+  "created": "2026-09-26T19:05:40+08:00",
+  "taskId": "2103803183221661697",
+  "costCNY": 1.7,
+  "original": "assets/animation-originals/alumni-burst.mp4",
+  "runtime": "/assets/animations/alumni-burst.mp4",
+  "durationSeconds": 5.166667,
+  "runtimeDimensions": [
+    960,
+    548
+  ],
+  "fps": 24,
+  "audio": false,
+  "blendMode": "screen",
+  "use": "Graduation and JLU school-skill burst. Dynamic target tracking is rendered separately by the battle engine.",
+  "sha256": "c14d67fc32dbb9a3e6faca0b42bf853adef8cb95ed9c19ea8b8ea18f516fce87",
+  "prompt": "Create a premium card game skill VFX overlay. 5 seconds, 16:9, fixed front camera, PURE BLACK background. An elegant circular alumni badge made of thin brass gold filigree forms at the center with teal and champagne gold particles. At 1 second it charges. At 2 seconds it releases a sharp golden star flare, two thin expanding shockwave rings and tiny gilded confetti. At 3-4 seconds luminous ribbons and sparks disperse and fade. At 5 seconds everything has faded completely to pure black. Beautiful professiona",
+  "notes": "Prompt limited to 500 characters by creation UI. Generated video reviewed at 2 and 3.5 seconds. Original sound stripped for consistent original game audio."
+}

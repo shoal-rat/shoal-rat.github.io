@@ -1,0 +1,26 @@
+{
+  "id": "vfx_retort_flip",
+  "decorative_only": true,
+  "duration_ms": 450,
+  "easing": "cubic-bezier(.2,.8,.2,1)",
+  "reduced_motion_ms": 300,
+  "keyframes": [
+    {
+      "transform": "rotateY(0deg)"
+    },
+    {
+      "transform": "rotateY(90deg)"
+    },
+    {
+      "transform": "rotateY(0deg)"
+    }
+  ],
+  "layers": [
+    "symbol",
+    "motion",
+    "fade"
+  ],
+  "cssClass": "fx-retort_flip",
+  "pointerEvents": "none",
+  "cancellable": true
+}

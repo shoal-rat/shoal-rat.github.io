@@ -1,0 +1,8 @@
+{
+  "name": "offer-battle",
+  "version": "2.0.0",
+  "base": "/offer-battle/",
+  "api": "https://offer-battle-api.offer-battle.workers.dev",
+  "guestMode": "local-bot",
+  "source": "https://github.com/shoal-rat/offer-battle"
+}

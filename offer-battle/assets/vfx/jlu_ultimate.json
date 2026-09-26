@@ -1,0 +1,58 @@
+{
+  "id": "vfx_jlu_ultimate",
+  "decorative_only": true,
+  "duration_ms": 1200,
+  "easing": "cubic-bezier(.2,.8,.2,1)",
+  "reduced_motion_ms": 300,
+  "keyframes": [
+    {
+      "opacity": 0,
+      "transform": "scale(1.5)"
+    },
+    {
+      "opacity": 1,
+      "transform": "scale(.92)"
+    },
+    {
+      "opacity": 1,
+      "transform": "scale(1)"
+    },
+    {
+      "opacity": 0
+    }
+  ],
+  "layers": [
+    "camera_nudge",
+    "six_decorative_alumni",
+    "large_sign",
+    "target_stat_pop",
+    "stamp_hit"
+  ],
+  "cssClass": "fx-jlu_ultimate",
+  "pointerEvents": "none",
+  "cancellable": true,
+  "timeline": [
+    {
+      "at": 0,
+      "event": "camera_nudge"
+    },
+    {
+      "at": 150,
+      "event": "six_decorative_alumni"
+    },
+    {
+      "at": 450,
+      "event": "large_sign",
+      "text": "全校撑腰"
+    },
+    {
+      "at": 750,
+      "event": "target_stat_pop",
+      "source": "resolved_game_event"
+    },
+    {
+      "at": 1000,
+      "event": "dismiss_decoration"
+    }
+  ]
+}

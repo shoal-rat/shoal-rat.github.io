@@ -1,0 +1,25 @@
+{
+  "id": "vfx_optimization",
+  "decorative_only": true,
+  "duration_ms": 450,
+  "easing": "cubic-bezier(.2,.8,.2,1)",
+  "reduced_motion_ms": 300,
+  "keyframes": [
+    {
+      "opacity": 1,
+      "transform": "scale(1)"
+    },
+    {
+      "opacity": 0,
+      "transform": "translateY(45px) scale(.8)"
+    }
+  ],
+  "layers": [
+    "symbol",
+    "motion",
+    "fade"
+  ],
+  "cssClass": "fx-optimization",
+  "pointerEvents": "none",
+  "cancellable": true
+}

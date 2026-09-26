@@ -1,0 +1,32 @@
+{
+  "id": "vfx_damage",
+  "decorative_only": true,
+  "duration_ms": 180,
+  "easing": "cubic-bezier(.2,.8,.2,1)",
+  "reduced_motion_ms": 180,
+  "keyframes": [
+    {
+      "transform": "translateX(0)",
+      "filter": "brightness(1)"
+    },
+    {
+      "transform": "translateX(-8px)",
+      "filter": "brightness(1.8)"
+    },
+    {
+      "transform": "translateX(6px)"
+    },
+    {
+      "transform": "translateX(0)",
+      "filter": "brightness(1)"
+    }
+  ],
+  "layers": [
+    "symbol",
+    "motion",
+    "fade"
+  ],
+  "cssClass": "fx-damage",
+  "pointerEvents": "none",
+  "cancellable": true
+}

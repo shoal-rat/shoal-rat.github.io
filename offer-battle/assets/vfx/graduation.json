@@ -1,0 +1,32 @@
+{
+  "id": "vfx_graduation",
+  "decorative_only": true,
+  "duration_ms": 650,
+  "easing": "cubic-bezier(.2,.8,.2,1)",
+  "reduced_motion_ms": 300,
+  "keyframes": [
+    {
+      "opacity": 0,
+      "transform": "scale(1.5)"
+    },
+    {
+      "opacity": 1,
+      "transform": "scale(.92)"
+    },
+    {
+      "opacity": 1,
+      "transform": "scale(1)"
+    },
+    {
+      "opacity": 0
+    }
+  ],
+  "layers": [
+    "symbol",
+    "motion",
+    "fade"
+  ],
+  "cssClass": "fx-graduation",
+  "pointerEvents": "none",
+  "cancellable": true
+}
