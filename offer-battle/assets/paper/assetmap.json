@@ -1,0 +1,3816 @@
+{
+  "version": "2.2.1",
+  "assets": {
+    "algorithm": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/algorithm/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.386048,
+          "bytes": 4952,
+          "sha256": "a7c61c0287255e4462f4e61446f095916f519ceb7c31cf76f8aa223b74e479d8"
+        },
+        "256": {
+          "path": "/assets/paper/characters/algorithm/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.382677,
+          "bytes": 13416,
+          "sha256": "b0e3806f132de2416bf58c72032f2f593fd5d2ce77466c81d4d18ec82c3e6b21"
+        },
+        "768": {
+          "path": "/assets/paper/characters/algorithm/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.383125,
+          "bytes": 62664,
+          "sha256": "d68e7a686fa2dff8522e3173c35151a78240c57100d1de87936eaab82940a0fc"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/algorithm/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.744178,
+          "bytes": 9004,
+          "sha256": "e87f74e4c87c84a114b139fc16d029eac6075fb4e79bd44b310207591a1d2380"
+        },
+        "256": {
+          "path": "/assets/paper/characters/algorithm/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.744082,
+          "bytes": 23942,
+          "sha256": "83e1d7b734cfb165e6b331de07c33f245ce988ce3217d8416ea1d9283c0d2b85"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V106L163 116 148 134 130 139 100 130 78 124 56 125 0 125Z",
+          "prop": "M164 108 199 109 204 150 186 184 158 181 160 168 168 160 158 148 147 148 151 124Z M63 185 115 179 115 220 90 225 56 222 54 205Z",
+          "facePivot": [
+            121,
+            135
+          ],
+          "propPivot": [
+            166,
+            181
+          ]
+        },
+        "expressionVariants": [
+          "hit",
+          "happy",
+          "thinking",
+          "blink"
+        ],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "research": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/research/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.312097,
+          "bytes": 3802,
+          "sha256": "34205e476ba29e6a06ef76923c147a2e4bd2aee25f1c0519a6eb3aa68647f53c"
+        },
+        "256": {
+          "path": "/assets/paper/characters/research/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.311991,
+          "bytes": 10270,
+          "sha256": "83524cf9ce3af0a6c03a72a7ec50f09a189853454ee50dd26e86fff106ec345e"
+        },
+        "768": {
+          "path": "/assets/paper/characters/research/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.313259,
+          "bytes": 49452,
+          "sha256": "4937e0f402c3de99e4157d13a70cdf9d96750d5fb15926c680498484dee2b4a3"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/research/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.662382,
+          "bytes": 7654,
+          "sha256": "8f318e439ee50940fab1609cd5375e216a1b5c34bd5831ee795927dc564d58d1"
+        },
+        "256": {
+          "path": "/assets/paper/characters/research/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.662296,
+          "bytes": 20890,
+          "sha256": "dc66194bed8ed31fc9a749edfd1e07d79c2b32816c158f69eebf0bb706ec35d9"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V107L177 109 169 124 148 125 132 120 106 116 88 126 63 122 0 122Z",
+          "prop": "M165 101 187 103 193 114 182 120 177 139 170 161 168 174 158 177 149 168 152 153 156 140 162 130 166 120 157 116 155 111 161 107 159 103Z",
+          "facePivot": [
+            117,
+            120
+          ],
+          "propPivot": [
+            164,
+            178
+          ]
+        },
+        "expressionVariants": [
+          "hit",
+          "happy",
+          "thinking",
+          "blink"
+        ],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "support": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/support/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.295455,
+          "bytes": 3822,
+          "sha256": "6cffe493ad748f45a7ab2a7ed2bc043a4b6b9631d9e68975be2f04d3710c83eb"
+        },
+        "256": {
+          "path": "/assets/paper/characters/support/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.295356,
+          "bytes": 10220,
+          "sha256": "8056c8feba6e0619fe07dbcd447bdbb581a3e7528f733044bd0dfdda125e9de2"
+        },
+        "768": {
+          "path": "/assets/paper/characters/support/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.294709,
+          "bytes": 48084,
+          "sha256": "72af39b78cb3f0c3aa15da93ee871c9b2643993c83cd0a72f7a41d1376de42c2"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/support/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.615812,
+          "bytes": 6896,
+          "sha256": "496b2889008c4fc1e1efb429c2cdbc862be1229371a8ffa5711b8de77e85aa97"
+        },
+        "256": {
+          "path": "/assets/paper/characters/support/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.615722,
+          "bytes": 18476,
+          "sha256": "6afedf567478eed7d906bb34cc3964817a329ece38d03f748fae45d1295f21a5"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V119L157 123 145 127 124 122 110 121 92 128 0 126Z",
+          "prop": "M135 126 159 127 173 145 170 169 158 177 142 174 120 169 118 153 127 151Z",
+          "facePivot": [
+            122,
+            123
+          ],
+          "propPivot": [
+            142,
+            169
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "N07": {
+      "category": "action",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/actions/N07/128.webp",
+          "width": 192,
+          "height": 128,
+          "channels": "srgb  3.0",
+          "alphaMin": 2.7431e+303,
+          "alphaMax": -2.7431e+303,
+          "alphaMean": 0,
+          "bytes": 8234,
+          "sha256": "3a9aa203a1c1c7af4b9144024a81800441e78b42300d78027070dd3d2470af60"
+        },
+        "256": {
+          "path": "/assets/paper/actions/N07/256.webp",
+          "width": 384,
+          "height": 256,
+          "channels": "srgb  3.0",
+          "alphaMin": 2.7431e+303,
+          "alphaMax": -2.7431e+303,
+          "alphaMean": 0,
+          "bytes": 22144,
+          "sha256": "ecaea0d458880f7d8e74d8e037921443d2d20068ecc847372408a22a745ecceb"
+        },
+        "768": {
+          "path": "/assets/paper/actions/N07/768.webp",
+          "width": 1152,
+          "height": 768,
+          "channels": "srgb  3.0",
+          "alphaMin": 2.7431e+303,
+          "alphaMax": -2.7431e+303,
+          "alphaMean": 0,
+          "bytes": 97774,
+          "sha256": "ee6534c7ae19f2af597467b4c98d3d83b124cb3c1dde077499a2f441522a076b"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "action",
+      "rig": {
+        "body": "full-composite",
+        "face": null,
+        "frontProp": null,
+        "rearProp": null,
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "not-produced"
+      }
+    },
+    "N08": {
+      "category": "action",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/actions/N08/128.webp",
+          "width": 192,
+          "height": 128,
+          "channels": "srgb  3.0",
+          "alphaMin": 2.7431e+303,
+          "alphaMax": -2.7431e+303,
+          "alphaMean": 0,
+          "bytes": 6304,
+          "sha256": "9dc32bf011008c2483367d2c86b02872a8410d3c0c546b47647643751a7dde5d"
+        },
+        "256": {
+          "path": "/assets/paper/actions/N08/256.webp",
+          "width": 384,
+          "height": 256,
+          "channels": "srgb  3.0",
+          "alphaMin": 2.7431e+303,
+          "alphaMax": -2.7431e+303,
+          "alphaMean": 0,
+          "bytes": 15926,
+          "sha256": "aaa0650ea6653453252cf66f0832a8f809da0e0402a8fc84cb2e87a30c7aba45"
+        },
+        "768": {
+          "path": "/assets/paper/actions/N08/768.webp",
+          "width": 1152,
+          "height": 768,
+          "channels": "srgb  3.0",
+          "alphaMin": 2.7431e+303,
+          "alphaMax": -2.7431e+303,
+          "alphaMean": 0,
+          "bytes": 73278,
+          "sha256": "afbf8379a3ec7860fe00a04e6fcf3aa9b0a5b926c7bd5e794a7bbb7a30234f1f"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "action",
+      "rig": {
+        "body": "full-composite",
+        "face": null,
+        "frontProp": null,
+        "rearProp": null,
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "not-produced"
+      }
+    },
+    "N09": {
+      "category": "action",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/actions/N09/128.webp",
+          "width": 192,
+          "height": 128,
+          "channels": "srgb  3.0",
+          "alphaMin": 2.7431e+303,
+          "alphaMax": -2.7431e+303,
+          "alphaMean": 0,
+          "bytes": 7662,
+          "sha256": "e4759951299cc8dde7711deb93faa1cceb68c03a4a497b6d66e6d68c1213d384"
+        },
+        "256": {
+          "path": "/assets/paper/actions/N09/256.webp",
+          "width": 384,
+          "height": 256,
+          "channels": "srgb  3.0",
+          "alphaMin": 2.7431e+303,
+          "alphaMax": -2.7431e+303,
+          "alphaMean": 0,
+          "bytes": 20728,
+          "sha256": "2abdaa6f528a2dacc6f86d0811ef6e76d06fc12f993f7c4d24aaf3b433e6d722"
+        },
+        "768": {
+          "path": "/assets/paper/actions/N09/768.webp",
+          "width": 1152,
+          "height": 768,
+          "channels": "srgb  3.0",
+          "alphaMin": 2.7431e+303,
+          "alphaMax": -2.7431e+303,
+          "alphaMean": 0,
+          "bytes": 89562,
+          "sha256": "c5d0cb7286b1d4281cbf9ede49a84d29b28985c66ce2a2a2aac2df8b768361f1"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "action",
+      "rig": {
+        "body": "full-composite",
+        "face": null,
+        "frontProp": null,
+        "rearProp": null,
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "not-produced"
+      }
+    },
+    "F04": {
+      "category": "action",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/actions/F04/128.webp",
+          "width": 192,
+          "height": 128,
+          "channels": "srgb  3.0",
+          "alphaMin": 2.7431e+303,
+          "alphaMax": -2.7431e+303,
+          "alphaMean": 0,
+          "bytes": 6612,
+          "sha256": "0c89a8ca81a4b1ca9a6113bc795c8ac75991bc3d09bf03003a03e23ecceb7d8e"
+        },
+        "256": {
+          "path": "/assets/paper/actions/F04/256.webp",
+          "width": 384,
+          "height": 256,
+          "channels": "srgb  3.0",
+          "alphaMin": 2.7431e+303,
+          "alphaMax": -2.7431e+303,
+          "alphaMean": 0,
+          "bytes": 16514,
+          "sha256": "760ed00f104a82ac36f1c66734902058f8af748130f6abff87b7f7457ed1894e"
+        },
+        "768": {
+          "path": "/assets/paper/actions/F04/768.webp",
+          "width": 1152,
+          "height": 768,
+          "channels": "srgb  3.0",
+          "alphaMin": 2.7431e+303,
+          "alphaMax": -2.7431e+303,
+          "alphaMean": 0,
+          "bytes": 70632,
+          "sha256": "922514333f0e95e1407f2524a65cdb7d8aab0678763b8e524fbae8f845060a54"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "action",
+      "rig": {
+        "body": "full-composite",
+        "face": null,
+        "frontProp": null,
+        "rearProp": null,
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "not-produced"
+      }
+    },
+    "chair": {
+      "category": "prop",
+      "runtime": {
+        "256": {
+          "path": "/assets/paper/props/chair/256.webp",
+          "width": 218,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.356549,
+          "bytes": 10782,
+          "sha256": "7486add0a6e094fea5838c49b8f30cf071b4ccbe9109e832b2cb4230d2f38037"
+        },
+        "768": {
+          "path": "/assets/paper/props/chair/768.webp",
+          "width": 653,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.35814,
+          "bytes": 47852,
+          "sha256": "aeb302b122637af47392d45a7e7788191c6a4f5bc1bdf70a93e58de082d23d26"
+        },
+        "1536": {
+          "path": "/assets/paper/props/chair/1536.webp",
+          "width": 1306,
+          "height": 1536,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.358469,
+          "bytes": 128720,
+          "sha256": "223745bcf9ec7a03bd95344a163f51c088cc0f81bf3ac7612ec74f5efdd53910"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "chair",
+      "rig": {
+        "body": "full-composite",
+        "face": null,
+        "frontProp": null,
+        "rearProp": null,
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "not-produced"
+      }
+    },
+    "printer": {
+      "category": "prop",
+      "runtime": {
+        "256": {
+          "path": "/assets/paper/props/printer/256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.589985,
+          "bytes": 13558,
+          "sha256": "9aeea0eb5ce7a3bcf1e99d64047f9fbf946f773b62049685915d4fb01d0337cb"
+        },
+        "768": {
+          "path": "/assets/paper/props/printer/768.webp",
+          "width": 768,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.591612,
+          "bytes": 61024,
+          "sha256": "4c18700c11a90a806f17293e924d5277b272464f9f4f2ae75b2d03e6b61f39e4"
+        },
+        "1536": {
+          "path": "/assets/paper/props/printer/1536.webp",
+          "width": 1536,
+          "height": 1536,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.591163,
+          "bytes": 158186,
+          "sha256": "7e706033448c2d1bc769d35e254833721034db61de883fec465b83de60cd8d01"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "printer",
+      "rig": {
+        "body": "full-composite",
+        "face": null,
+        "frontProp": null,
+        "rearProp": null,
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "not-produced"
+      }
+    },
+    "folder": {
+      "category": "prop",
+      "runtime": {
+        "256": {
+          "path": "/assets/paper/props/folder/256.webp",
+          "width": 230,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.547745,
+          "bytes": 10926,
+          "sha256": "5111a8870d5770f17e904b8d1c4dbb9860a6a90029ff9cd4e45fc29c4aceb2e0"
+        },
+        "768": {
+          "path": "/assets/paper/props/folder/768.webp",
+          "width": 691,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.54671,
+          "bytes": 47972,
+          "sha256": "7252854936b1f03b0eda291b15bbb8cde0bf6f67a15e213adc859c1dda94c10e"
+        },
+        "1536": {
+          "path": "/assets/paper/props/folder/1536.webp",
+          "width": 1382,
+          "height": 1536,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.546708,
+          "bytes": 128760,
+          "sha256": "77403e16916159f498118593b5a3ecdd13612eede25fa0950ea0645a8fedde83"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "folder",
+      "rig": {
+        "body": "full-composite",
+        "face": null,
+        "frontProp": null,
+        "rearProp": null,
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "not-produced"
+      }
+    },
+    "table": {
+      "category": "prop",
+      "runtime": {
+        "256": {
+          "path": "/assets/paper/props/table/256.webp",
+          "width": 257,
+          "height": 171,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.346144,
+          "bytes": 8092,
+          "sha256": "339f2def40a26f6f9939f3065a469c90ef710ef2971bff6ffe9004f8344980cf"
+        },
+        "768": {
+          "path": "/assets/paper/props/table/768.webp",
+          "width": 768,
+          "height": 512,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.346122,
+          "bytes": 34146,
+          "sha256": "929ea88019670ba4eaf3b01163e9161885c35d24c5aa0cc39911102ff32bf74b"
+        },
+        "1536": {
+          "path": "/assets/paper/props/table/1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.346584,
+          "bytes": 91700,
+          "sha256": "6dd3ed0519d12318bceef54f6b17c1c64d6f1739481e587400ce32a2585d71d2"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "table",
+      "rig": {
+        "body": "full-composite",
+        "face": null,
+        "frontProp": null,
+        "rearProp": null,
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "not-produced"
+      }
+    },
+    "badge-rack": {
+      "category": "prop",
+      "runtime": {
+        "256": {
+          "path": "/assets/paper/props/badge-rack/256.webp",
+          "width": 257,
+          "height": 171,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.339055,
+          "bytes": 10476,
+          "sha256": "0c2b9e71be5631e2654f6ca89cc4bffc75c2afe2d9b89f9bf64ee32e3b3f15ce"
+        },
+        "768": {
+          "path": "/assets/paper/props/badge-rack/768.webp",
+          "width": 768,
+          "height": 512,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.337505,
+          "bytes": 44958,
+          "sha256": "68a2c978900e6989fc684962af32650e2ffa9150522aac95b4dd903f608ae30c"
+        },
+        "1536": {
+          "path": "/assets/paper/props/badge-rack/1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.337881,
+          "bytes": 118786,
+          "sha256": "41b0d13e15cebbfd0ed1b1b69c732c41067adcf37d6fcf14cf515b6d9f04c480"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "badge-rack",
+      "rig": {
+        "body": "full-composite",
+        "face": null,
+        "frontProp": null,
+        "rearProp": null,
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "not-produced"
+      }
+    },
+    "booth": {
+      "category": "prop",
+      "runtime": {
+        "256": {
+          "path": "/assets/paper/props/booth/256.webp",
+          "width": 257,
+          "height": 171,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.47163,
+          "bytes": 9824,
+          "sha256": "c54400ef392c6db2d3dc5bd9dee6436cd30c45eb3e246797e454f2a501bf44a0"
+        },
+        "768": {
+          "path": "/assets/paper/props/booth/768.webp",
+          "width": 768,
+          "height": 512,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.471631,
+          "bytes": 40812,
+          "sha256": "77d9d0471d551108367be17af0743395bad0be4fe78b81b53ec277c3247d2284"
+        },
+        "1536": {
+          "path": "/assets/paper/props/booth/1536.webp",
+          "width": 1536,
+          "height": 1024,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.471606,
+          "bytes": 107394,
+          "sha256": "d9f0ef8af2fbce36add5ac345293c0f293c861b7efaa58b722023e56c06847f0"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "booth",
+      "rig": {
+        "body": "full-composite",
+        "face": null,
+        "frontProp": null,
+        "rearProp": null,
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "not-produced"
+      }
+    },
+    "paper-book": {
+      "category": "prop",
+      "runtime": {
+        "256": {
+          "path": "/assets/paper/props/paper-book/256.webp",
+          "width": 255,
+          "height": 85,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.51255,
+          "bytes": 4296,
+          "sha256": "82cb7648d8f2cea42ba77f53d70f5e1540d5511bd9558c589c444b6af7e33339"
+        },
+        "768": {
+          "path": "/assets/paper/props/paper-book/768.webp",
+          "width": 768,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.513632,
+          "bytes": 19206,
+          "sha256": "c0727eb9e513556723690dda6244257f5a8d841ae820e7290457afd4f283031c"
+        },
+        "1536": {
+          "path": "/assets/paper/props/paper-book/1536.webp",
+          "width": 1536,
+          "height": 512,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.512442,
+          "bytes": 55252,
+          "sha256": "6db4b5d0da1520aede0f10d73677e281223e9b03afe5c8c574a3495a34a76177"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "paper-book",
+      "rig": {
+        "body": "full-composite",
+        "face": null,
+        "frontProp": null,
+        "rearProp": null,
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "not-produced"
+      }
+    },
+    "public": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/public/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.331091,
+          "bytes": 4572,
+          "sha256": "3e8b82d891d62c4ffeb0dd104804b6db954ff496df560e2d3c149b8924bef4e6"
+        },
+        "256": {
+          "path": "/assets/paper/characters/public/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.330948,
+          "bytes": 12394,
+          "sha256": "0b22c65cd9a0282c13c89dcba283896ab67b93a2d4412fc1a323a61469df70be"
+        },
+        "768": {
+          "path": "/assets/paper/characters/public/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.330261,
+          "bytes": 59182,
+          "sha256": "ac3faa5075b06896a8496ce2817f3f4b963a49bc3f6b3122058a6a580585c3dd"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/public/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.628912,
+          "bytes": 8146,
+          "sha256": "519d7f10fd353e9eae9a1e3a05e9b6e05d8c3ee585b3e0b2498600532c1856bf"
+        },
+        "256": {
+          "path": "/assets/paper/characters/public/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.628822,
+          "bytes": 21622,
+          "sha256": "ffa5dc0c3528977f5212fda6478d0aa14e1adee630c61a0229087dedb755a804"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V111L167 112 152 127 133 127 113 119 92 128 0 125Z",
+          "prop": "M164 109 184 110 184 157 170 174 155 167 160 148 156 145Z M72 174 104 169 114 216 83 221 63 219 64 203Z",
+          "facePivot": [
+            121,
+            124
+          ],
+          "propPivot": [
+            170,
+            166
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "sales": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/sales/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.320908,
+          "bytes": 4378,
+          "sha256": "8ad97e85f6f4aa4b55913ca27f8b3105358558ac3dda6b1abadbdb8d2dc69719"
+        },
+        "256": {
+          "path": "/assets/paper/characters/sales/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.317907,
+          "bytes": 11626,
+          "sha256": "c6b970d78a1436d1490cb7473a8cb1a629f506fe957c9ac62185ad4bfcc98e8c"
+        },
+        "768": {
+          "path": "/assets/paper/characters/sales/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.319249,
+          "bytes": 56482,
+          "sha256": "e2d7289ae7d2e439de0afbb1a4a61d3f5d67ae8e1dec7269a143c911539d7850"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/sales/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.680505,
+          "bytes": 8240,
+          "sha256": "dd272ea76fb583fd203959edb4832440d273743c765d2d8b7d117249a6d32225"
+        },
+        "256": {
+          "path": "/assets/paper/characters/sales/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.680416,
+          "bytes": 22458,
+          "sha256": "6f84fa02df34ff58cbd8913c94d34ded88ec9056371fb728d24e861f683eeda6"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V117L177 119 161 127 145 126 123 119 103 121 83 145 61 146 0 144Z",
+          "prop": "M88 128 113 128 135 177 99 188 79 180 77 165 88 160Z",
+          "facePivot": [
+            123,
+            122
+          ],
+          "propPivot": [
+            109,
+            180
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "product": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/product/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.335106,
+          "bytes": 4406,
+          "sha256": "824352fc68bde4f29a3cbd292b76f0193ce5da5791498dd9d878364e132ff88f"
+        },
+        "256": {
+          "path": "/assets/paper/characters/product/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.334978,
+          "bytes": 11464,
+          "sha256": "f7713cffad38d6c572d95ca52b1f3c583e0d257cfe067e0d59a4c11f978a9b3e"
+        },
+        "768": {
+          "path": "/assets/paper/characters/product/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.334354,
+          "bytes": 51904,
+          "sha256": "a5d6dfd1c7264e5220581c26061f464ab1f00e0bf4d09f9b6412c1e7c4da3e91"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/product/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.64101,
+          "bytes": 7380,
+          "sha256": "c6fad5b58d0764ec304a1bc45464ae4fd11c4a54d7e8e2e0615a71ce30cc8ea3"
+        },
+        "256": {
+          "path": "/assets/paper/characters/product/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.640922,
+          "bytes": 18616,
+          "sha256": "1ea2504c0bc27a77349c7b00e4c47aa7d45d3a02ce65636af6e87c84601f413c"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V111L156 112 145 115 134 119 126 117 113 118 102 122 83 122 0 117Z",
+          "prop": "M90 143 116 145 125 151 117 197 101 199 92 188 75 182 75 175 87 174Z",
+          "facePivot": [
+            120,
+            119
+          ],
+          "propPivot": [
+            97,
+            185
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "finance": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/finance/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.332804,
+          "bytes": 4384,
+          "sha256": "382337d0a7a3ed38ef169cbfe8b9654623d61536fa4e0278b87e65262231ba0c"
+        },
+        "256": {
+          "path": "/assets/paper/characters/finance/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.332666,
+          "bytes": 11986,
+          "sha256": "060090add78de11cc0fc361e84b904f899996982347a07e65435ce5ae03fcc98"
+        },
+        "768": {
+          "path": "/assets/paper/characters/finance/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.334014,
+          "bytes": 57098,
+          "sha256": "630cd1fbb370c642f46a386a1a29ad3b5f3cb01ac36e638c684a639e9bbfc511"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/finance/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.705163,
+          "bytes": 8372,
+          "sha256": "3215341f333f44c379caa6f473335b9879d567db33df8c15ca70e8c1d0d88d3f"
+        },
+        "256": {
+          "path": "/assets/paper/characters/finance/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.705076,
+          "bytes": 22936,
+          "sha256": "d2227cb2e308a6388732119d90a1b67ef6caf3f68d5203ddd266d466ddd43f1d"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V123L172 122 157 127 137 126 123 120 104 121 79 126 0 121Z",
+          "prop": "M170 109 194 115 191 144 180 164 164 163 161 151 169 141 157 136Z",
+          "facePivot": [
+            118,
+            122
+          ],
+          "propPivot": [
+            170,
+            158
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "far": {
+      "category": "prop",
+      "runtime": {
+        "256": {
+          "path": "/assets/paper/props/far/256.webp",
+          "width": 255,
+          "height": 85,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.389895,
+          "bytes": 2902,
+          "sha256": "75876f3ed0b6a00b1595fe6d4503b2e7343b2e9c74c493b5081b113034532ebc"
+        },
+        "768": {
+          "path": "/assets/paper/props/far/768.webp",
+          "width": 768,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.389717,
+          "bytes": 13304,
+          "sha256": "3a9ca8b2ae9609e3a17aa0ff4994503a22e04dd1f2feee99c0c9422bc283765b"
+        },
+        "1536": {
+          "path": "/assets/paper/props/far/1536.webp",
+          "width": 1536,
+          "height": 512,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.389664,
+          "bytes": 37722,
+          "sha256": "a9a3704fe3404e140e0d6f1758042ae18dcab624f5e17197fd0d200e1ce417ae"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "distant-backdrop",
+      "rig": {
+        "body": "full-composite",
+        "face": null,
+        "frontProp": null,
+        "rearProp": null,
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "not-produced"
+      }
+    },
+    "H01": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/H01/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.314334,
+          "bytes": 4230,
+          "sha256": "3ca45c4515ad579c0956f1dbb6f28dcf2c22db8557422ada9a5fa65724980f09"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H01/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.316831,
+          "bytes": 11588,
+          "sha256": "c01633d79639481915cf807a2ec9b22142e71143eb9068c4ea61346c98ded5bf"
+        },
+        "768": {
+          "path": "/assets/paper/characters/H01/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.316324,
+          "bytes": 54366,
+          "sha256": "8b904025e3d8d7876fff77c225e7b7c6af122733c129889f6df90c9731736298"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/H01/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.697322,
+          "bytes": 8214,
+          "sha256": "f82637de6dda69c8c13bc793d65466c9e09b825a8b1548588e0d01df963e21af"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H01/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.697207,
+          "bytes": 22348,
+          "sha256": "9cf60d7c74fc3d046afd8d7a6a0e7b31ae28108d36a0c3f88a788721b0e86db6"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V111L166 117 150 122 133 115 119 119 115 129 99 137 87 153 73 159 41 181 0 181Z",
+          "prop": "M147 125 170 132 191 124 198 127 187 169 169 173 160 184 150 185 144 175 146 170 135 166Z",
+          "facePivot": [
+            122,
+            119
+          ],
+          "propPivot": [
+            153,
+            168
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "H02": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/H02/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.343173,
+          "bytes": 4318,
+          "sha256": "671ced47a103cef8c24019b15d5769f8afedceffc98b03a9ab37ee3582833879"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H02/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.34615,
+          "bytes": 11706,
+          "sha256": "8b6c4c52057d90fe571e714e514c087a017d91e0c9301c17837a36c5fc0648ba"
+        },
+        "768": {
+          "path": "/assets/paper/characters/H02/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.345519,
+          "bytes": 57116,
+          "sha256": "35e0ef862ffea3ec7503f6d7e56622d6dc940dfbdb92dace8ca6ab11a6340e31"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/H02/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.677002,
+          "bytes": 7910,
+          "sha256": "8b8d6ae3e426ce2bce33cffcfb9e951e7936c4b4e59ac99176a778c70abca7bb"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H02/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.676919,
+          "bytes": 21742,
+          "sha256": "457939c9b396be5203c56e8826059c18b988382ba76a05a58405b60efc506a5f"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V116L164 122 150 130 140 128 124 126 108 123 87 128 0 124Z",
+          "prop": "M90 147 116 150 114 195 99 199 92 192 78 191 76 179 83 176Z",
+          "facePivot": [
+            118,
+            124
+          ],
+          "propPivot": [
+            98,
+            187
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "H03": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/H03/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.300309,
+          "bytes": 4574,
+          "sha256": "cc261be0241b03a388c8412127988c66e0d01e5d11c1ba75dbc9e940a13d2934"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H03/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.303146,
+          "bytes": 12226,
+          "sha256": "41935eae71411dc3941d63636a0f99f7734903336405035c3fa452a90069dcca"
+        },
+        "768": {
+          "path": "/assets/paper/characters/H03/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.303479,
+          "bytes": 59884,
+          "sha256": "c24ac0d85de1b5f1693cc7c3962ffc529645a16e3f8816888f87c1fdd6729c7d"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/H03/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.606328,
+          "bytes": 8360,
+          "sha256": "1c26c1bb683ed6c333bfaac349fb320dadfd13663f117202ddbb5f7a4c9deb9f"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H03/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.606212,
+          "bytes": 22330,
+          "sha256": "077e1d7540d0af52da20ef9fde8ec7d7fc326ac700a2d6658f85a02a53978eaf"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V96H179L165 107 151 115 135 116 122 112 110 110 98 114 83 119 0 119Z",
+          "prop": "M84 129 114 124 128 158 113 172 86 172 83 159 87 151Z",
+          "facePivot": [
+            116,
+            116
+          ],
+          "propPivot": [
+            110,
+            165
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "H04": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/H04/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.337037,
+          "bytes": 4522,
+          "sha256": "49339cfea63c5d97f405d5aa7dd7458c7e54b730667fc2da3b3a711d50a88a6a"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H04/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.336877,
+          "bytes": 12106,
+          "sha256": "8deb9cf9dcd7ee2392db909dcc0bb6d951e904ca98e741449a3ce59c2aa0481b"
+        },
+        "768": {
+          "path": "/assets/paper/characters/H04/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.336385,
+          "bytes": 56598,
+          "sha256": "8b7d3c3a66f5e573ad2cc89b47918461607b6a46e75cbd61a13366657fb3990e"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/H04/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.630205,
+          "bytes": 7846,
+          "sha256": "4f2c25fe9a16e87fa0dd57e326ef452fd7ad549454e74463c9db51cf36ddad43"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H04/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.63009,
+          "bytes": 20932,
+          "sha256": "e70532faa82f78e1552acec91e66108c857f360d9bc49145665cf2ceaf317c80"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V114L164 119 149 124 133 120 117 117 98 126 0 124Z",
+          "prop": "M60 134 99 127 111 165 99 184 79 183 76 174 70 172Z",
+          "facePivot": [
+            117,
+            120
+          ],
+          "propPivot": [
+            89,
+            174
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "H05": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/H05/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.318027,
+          "bytes": 4078,
+          "sha256": "5bbef56691561d47b484da26dbd4d2075da254a75b1b5044d30f07a374e934c3"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H05/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.320773,
+          "bytes": 10806,
+          "sha256": "9967cc9eaf30827922a3080eb0a7910f0e136680852268fc58bf943ed2864167"
+        },
+        "768": {
+          "path": "/assets/paper/characters/H05/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.320179,
+          "bytes": 51184,
+          "sha256": "228497013448acdbd139086cd41007403035888d04314cb859465bfc3a604aeb"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/H05/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.685635,
+          "bytes": 7366,
+          "sha256": "9b46d9dc9e8c65b1624c1801cfbd8e6c43152534b3eececac4fa50f1150c2340"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H05/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.685558,
+          "bytes": 19460,
+          "sha256": "d131260f3408fed18a49eadb911d219d648dc105a0d19b6e4dd1e7cefe699b92"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V134L177 139 151 135 135 128 120 123 111 129 87 134 0 128Z",
+          "prop": "M140 137 159 137 163 146 157 183 148 188 139 181 126 178 129 158 140 155Z",
+          "facePivot": [
+            126,
+            127
+          ],
+          "propPivot": [
+            148,
+            177
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "H06": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/H06/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.343012,
+          "bytes": 4312,
+          "sha256": "c7ad9866d0b4da8a2c7a5f5d0650567a429d170cd25cdc8067d72ae7a9f7ac38"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H06/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.342862,
+          "bytes": 11690,
+          "sha256": "4357daf0b2ba8738a6a4f2475326cac9f9d61efe7c38c27dc11cadbb759ce3ba"
+        },
+        "768": {
+          "path": "/assets/paper/characters/H06/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.342166,
+          "bytes": 54258,
+          "sha256": "20a8867dcc7a1d4bc382b053139da959287af488f3b06400192f9bcc8d71288d"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/H06/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.63942,
+          "bytes": 7180,
+          "sha256": "a017f41d7dbc0b473637717703b4c7e37faecbfd305c09be07a6002f41b2f481"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H06/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.639323,
+          "bytes": 19062,
+          "sha256": "bdff430f62935a5ba0430a8f789d7230260ea0af0b1b2651ffddb03f517e9a3a"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V111L163 118 148 123 133 118 112 114 93 119 0 122Z",
+          "prop": "M74 178 114 175 115 213 90 219 63 215 60 200 64 181Z",
+          "facePivot": [
+            119,
+            119
+          ],
+          "propPivot": [
+            94,
+            207
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "H07": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/H07/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.324768,
+          "bytes": 4072,
+          "sha256": "0c8eb60d1e0d4b71e98fe7084312b280a8a92c126183aa3cd18943563744cb42"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H07/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.327828,
+          "bytes": 11222,
+          "sha256": "7ae52e43d6dcf9d30321dc4c141cea8ec856e89008b0882acce83f38c5825370"
+        },
+        "768": {
+          "path": "/assets/paper/characters/H07/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.327143,
+          "bytes": 55092,
+          "sha256": "9192b49f7b4ea4f6de53659422383d6b53c2efea1d58039f8852c35dc31f9501"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/H07/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.623071,
+          "bytes": 7824,
+          "sha256": "5198ce1b8caa121c0c7972d38f6316f5e2015e7590a33d36ed46fdaafe977f0a"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H07/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.622984,
+          "bytes": 21526,
+          "sha256": "f8bc6ebb19b63ff45d918f53664386030b388f969b41ba199500bce13a83b521"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V115L164 119 148 119 132 116 118 112 103 117 92 124 0 127Z",
+          "prop": "M79 137 103 129 116 156 103 174 89 175 81 168 82 158Z",
+          "facePivot": [
+            122,
+            116
+          ],
+          "propPivot": [
+            98,
+            165
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "H08": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/H08/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.376358,
+          "bytes": 4786,
+          "sha256": "c9dc0e70815a056b47d74d8e559035491ac1740b0b9138a4c079e461ce8929e8"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H08/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.376181,
+          "bytes": 13100,
+          "sha256": "d651e066d3a021cb1ece80892dcdad614c98f994b66343759d9d175200f94da7"
+        },
+        "768": {
+          "path": "/assets/paper/characters/H08/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.37662,
+          "bytes": 63866,
+          "sha256": "938b905ba1decb539f59e67df9b3a8391e42aeb8c9bd36036f9b5ba36a2c49bb"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/H08/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.729314,
+          "bytes": 8750,
+          "sha256": "dcfd19a1b75a47c6e69a2f44894ceb3cfa6831edba7e4c1e54387bc13400d955"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H08/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.729207,
+          "bytes": 24070,
+          "sha256": "4298fadc15298fd6f5b7ee25f099b4f098997b0bfaf01c8be5d36ef6d003c54d"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V123L179 126 159 132 144 130 126 122 110 125 89 134 0 130Z",
+          "prop": "M148 120 194 129 196 162 186 182 176 195 151 188 135 171 140 145Z",
+          "facePivot": [
+            129,
+            128
+          ],
+          "propPivot": [
+            171,
+            177
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "H09": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/H09/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.305579,
+          "bytes": 4138,
+          "sha256": "f0601e9deb5820636828eb9521363d13c5da38cbc1b9ff854cac8dd458172cd6"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H09/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.305444,
+          "bytes": 11190,
+          "sha256": "7120d5a5a7acfeca193dd8545a684b0bf19c949bf4b731ec8c5204336318f6c3"
+        },
+        "768": {
+          "path": "/assets/paper/characters/H09/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.305793,
+          "bytes": 52048,
+          "sha256": "086281efaff8f45a585ab2c9e532013f1427bc8079d744d750f3301c36fc2089"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/H09/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.626512,
+          "bytes": 7390,
+          "sha256": "b3ef8454366256d57168fbde4397a7923dc20d48327b294a32493414ff0e300d"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H09/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.626422,
+          "bytes": 19690,
+          "sha256": "cc70b6b215de6fb046d62c5cf5d8788b80ef6808bf4b0e4fd56573b312d82652"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V119L171 123 152 124 138 121 125 118 107 120 89 128 0 126Z",
+          "prop": "M110 164 138 155 148 160 154 193 130 198 109 199 97 191 93 178Z",
+          "facePivot": [
+            128,
+            121
+          ],
+          "propPivot": [
+            126,
+            189
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "H10": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/H10/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.336689,
+          "bytes": 4596,
+          "sha256": "3e5bcd7760cfe1d42d44d71191c0b9cb620054d8eef03e8dd9c66bbe4ea15cb8"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H10/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.339398,
+          "bytes": 12788,
+          "sha256": "0cead865acd06b89c9d493d5cf8640a1580c4205c5e295d387461a1b98c250fb"
+        },
+        "768": {
+          "path": "/assets/paper/characters/H10/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.339782,
+          "bytes": 62886,
+          "sha256": "9575ae8e207c0540c77c52daa0e8732c518b7653d99a827ec1d39d374b862f69"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/H10/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.674843,
+          "bytes": 8594,
+          "sha256": "74a415ee7e32d1735f3fa05bf5b80c00862cc334f45103f24d0a3fd16ae2cebb"
+        },
+        "256": {
+          "path": "/assets/paper/characters/H10/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.674753,
+          "bytes": 23160,
+          "sha256": "6809245b99d3a5fbbb39b09491e9bae75a0e9292745bf0ced9bd057fe51b9899"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V102L162 106 149 115 132 120 116 115 99 113 84 120 0 122Z",
+          "prop": "M147 98 172 110 194 105 198 114 185 148 183 159 173 174 162 174 157 163 137 157 132 146Z",
+          "facePivot": [
+            113,
+            117
+          ],
+          "propPivot": [
+            165,
+            157
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "campus-rat": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/campus-rat/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.509284,
+          "bytes": 4502,
+          "sha256": "eeda1124213d38cf5662828220d45c112ec973ee2e76f3bbe2e56f5c18b5ed92"
+        },
+        "256": {
+          "path": "/assets/paper/characters/campus-rat/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.509119,
+          "bytes": 11400,
+          "sha256": "4dac638f746a8dea31459528bf651dfe3b16961428918d54d14753142d03edb8"
+        },
+        "768": {
+          "path": "/assets/paper/characters/campus-rat/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.510733,
+          "bytes": 55148,
+          "sha256": "52e8f04cb56e445eee78592c4ef64cd7aa0e0fa2d9bbcb61d4f540b357b31995"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/campus-rat/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.670542,
+          "bytes": 5892,
+          "sha256": "c993704882d54d6d2bd2cdea9eda28fa3cf82d861df62f24a09f9fe7b62efa59"
+        },
+        "256": {
+          "path": "/assets/paper/characters/campus-rat/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.670469,
+          "bytes": 15576,
+          "sha256": "e4b86943c16ff9a5c69caca0a3d9264b5c7e9930371e6817fe5a0ccc330098a9"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V70L194 71 189 88 171 98 144 98 116 89 85 85 73 74 0 72Z",
+          "prop": "M172 106 202 116 218 130 221 157 216 178 198 179 187 166 185 151 174 130Z",
+          "facePivot": [
+            140,
+            96
+          ],
+          "propPivot": [
+            204,
+            166
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "intern-beagle": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/intern-beagle/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.398566,
+          "bytes": 4704,
+          "sha256": "dfdc20a7c9eca8c083b47358414a21f29da775e0fc322c53fcaf57acf3398ae2"
+        },
+        "256": {
+          "path": "/assets/paper/characters/intern-beagle/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.395596,
+          "bytes": 12064,
+          "sha256": "13edb5a31385fd53984338936d787db9e8af3890ad1090052748a75bbfc977bc"
+        },
+        "768": {
+          "path": "/assets/paper/characters/intern-beagle/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.396046,
+          "bytes": 57326,
+          "sha256": "8d4e9200c73510fde7bf91939948168dbc8c5bfda3cb3f010ec87fce5cd29e99"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/intern-beagle/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.675304,
+          "bytes": 7338,
+          "sha256": "fd746711a3e8640edbec77d0a02e682652746f937ffbe9d4bf83931eebeb2f0e"
+        },
+        "256": {
+          "path": "/assets/paper/characters/intern-beagle/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.675183,
+          "bytes": 19566,
+          "sha256": "e930dbf36e025568b25b03f083f6f59c64b7bb3e3c8f09cafc679b58da42d795"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M62 0H180V95L173 109 147 113 119 103 94 98 73 95 56 90 55 74 54 55Z",
+          "prop": "M114 118 160 121 169 149 165 178 118 181 111 163Z",
+          "facePivot": [
+            120,
+            108
+          ],
+          "propPivot": [
+            144,
+            170
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "interview-owl": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/interview-owl/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.514888,
+          "bytes": 5360,
+          "sha256": "3cce44e2331d34ecb36c6bf7dd3664bf26d423bb9ceaf67c64711b125777233b"
+        },
+        "256": {
+          "path": "/assets/paper/characters/interview-owl/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.517799,
+          "bytes": 14722,
+          "sha256": "7b657f68cfac022b4191f4cb673eade8b695c97a8efd59fe8b03049a5d9bbedc"
+        },
+        "768": {
+          "path": "/assets/paper/characters/interview-owl/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.517357,
+          "bytes": 76836,
+          "sha256": "1ebc4ef891d473e5d62c02f60b0c1617096d2698f7ae35a05ee956ef07852a38"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/interview-owl/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.724686,
+          "bytes": 7898,
+          "sha256": "dbede2d342f7184c6aa4cc5ee62ad9e3e8424f79c2a8f91d7266f851980e2d8c"
+        },
+        "256": {
+          "path": "/assets/paper/characters/interview-owl/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.724536,
+          "bytes": 22636,
+          "sha256": "a60d4cc016ca170da56a631a398082baef94ce4002c5e503a0082d29e15b969d"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V95L182 109 161 129 137 142 119 134 91 113 62 108 0 106Z",
+          "prop": "M143 112 198 94 210 96 209 111 219 113 218 141 226 163 225 197 205 218 179 218 154 206 133 194 135 160Z",
+          "facePivot": [
+            125,
+            128
+          ],
+          "propPivot": [
+            178,
+            196
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "mentor-capybara": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/mentor-capybara/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.405309,
+          "bytes": 4134,
+          "sha256": "07ac28941d0c2effabb2b3033205d3d9a3c877f0ef08c27d7d2c16cbb37290d1"
+        },
+        "256": {
+          "path": "/assets/paper/characters/mentor-capybara/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.405208,
+          "bytes": 10556,
+          "sha256": "d85ee87350750c1d6fe18321d41d290f3f4a111324c6ca3c00b5bff7f0335569"
+        },
+        "768": {
+          "path": "/assets/paper/characters/mentor-capybara/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.405696,
+          "bytes": 51678,
+          "sha256": "a11e02a451af6913206cb305de6f472dc28031085d6ec764d9d117253b762330"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/mentor-capybara/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.695836,
+          "bytes": 6598,
+          "sha256": "5340b5463f0e079fa548e460b6f8ffe12ac45e315f5babe7c7ade6cd8caaf77c"
+        },
+        "256": {
+          "path": "/assets/paper/characters/mentor-capybara/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.695726,
+          "bytes": 18312,
+          "sha256": "ba592e94e22b3a7e4fb06a493d27e97a02269714bbb6d5eec726cb114b0e56bb"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V80L164 93 151 108 132 111 119 100 97 92 71 82 0 81Z",
+          "prop": "M66 98 89 96 96 109 116 108 124 132 91 137 68 131 61 119Z",
+          "facePivot": [
+            131,
+            106
+          ],
+          "propPivot": [
+            79,
+            122
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "veteran-tortoise": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/veteran-tortoise/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.44828,
+          "bytes": 4488,
+          "sha256": "0faf9658bf8f76cd3cf82625bcf57a756e69fdc674cebff50663f95efe85f00a"
+        },
+        "256": {
+          "path": "/assets/paper/characters/veteran-tortoise/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.448109,
+          "bytes": 11876,
+          "sha256": "f1a58cd6994e19a1b5ff260150c38b4e7d5a34a60ea7e89536dd6340375210ff"
+        },
+        "768": {
+          "path": "/assets/paper/characters/veteran-tortoise/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.447609,
+          "bytes": 56166,
+          "sha256": "93e69d35ac3864b3c1120f514d0d9fbfba9d3567c28d88c921f27068c25e43b0"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/veteran-tortoise/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.721888,
+          "bytes": 7108,
+          "sha256": "1c9537e70505ca3e95adcd5ff5fb3ba42ad18581bf32cd1e0b67a5a7894fbfd1"
+        },
+        "256": {
+          "path": "/assets/paper/characters/veteran-tortoise/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.721761,
+          "bytes": 19438,
+          "sha256": "30c8f73c6671830329198c0eb2da607135cb8b7de1eb5a344d84208dcc42dc33"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M106 0H164L173 28 173 66 163 83 153 95 137 105 123 94 111 88 100 72 96 49 96 30Z",
+          "prop": "M101 138 124 134 130 129 156 129 164 141 183 144 181 174 157 181 133 181 103 173Z",
+          "facePivot": [
+            139,
+            96
+          ],
+          "propPivot": [
+            142,
+            174
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "headhunter-fox": {
+      "category": "character",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/characters/headhunter-fox/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.272315,
+          "bytes": 4014,
+          "sha256": "9a30489a92fc88a84ae8c61dfa3f32126107b138c302ce03907cb37d74321215"
+        },
+        "256": {
+          "path": "/assets/paper/characters/headhunter-fox/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.272147,
+          "bytes": 10202,
+          "sha256": "a416b612a869815f70a877de57fa81369871bd10393fddb9f9981bed63695118"
+        },
+        "768": {
+          "path": "/assets/paper/characters/headhunter-fox/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.272409,
+          "bytes": 49340,
+          "sha256": "30e8399577ce5814a51415ccf89a1f542a5b94380c8accc52fd491a7fb7fcd8d"
+        }
+      },
+      "portraits": {
+        "128": {
+          "path": "/assets/paper/characters/headhunter-fox/portrait-128.webp",
+          "width": 128,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.449206,
+          "bytes": 6472,
+          "sha256": "f9c5e465fae9b986babea9ed71158c01b8c52e3cc817214283a5a1ecc313fd2a"
+        },
+        "256": {
+          "path": "/assets/paper/characters/headhunter-fox/portrait-256.webp",
+          "width": 256,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.449096,
+          "bytes": 18018,
+          "sha256": "e1a8617b82c40108657d905ea6334e0cd7a47c1cfa4813c9d7aea8eb75819c88"
+        }
+      },
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "character",
+      "rig": {
+        "body": "original image minus face/prop masks",
+        "face": "non-empty face/head mask",
+        "prop": "non-empty held-object mask with visible gripping hand as required",
+        "shadow": "/assets/paper/props/shadow/shadow.svg",
+        "layerSeparation": "complementary-runtime-svg-masks",
+        "maskSpec": "assets/paper-source/rig-masks.json",
+        "maskSpecSha256": "da1203faccba3bde85702d8274ef8c55176a0b6ca7989a6e23b328fb6829acb6",
+        "maskPaths": {
+          "face": "M0 0H240V72L147 89 130 97 110 102 94 97 85 90 66 79 0 75Z",
+          "prop": "M50 83 71 83 79 108 75 147 61 149 51 137 52 119 48 107Z",
+          "facePivot": [
+            108,
+            97
+          ],
+          "propPivot": [
+            64,
+            144
+          ]
+        },
+        "expressionVariants": [],
+        "limitations": "No separately painted layers or hidden surfaces. Large rotations reveal the original cut boundary; use small paper-puppet motion."
+      }
+    },
+    "secondary-S00": {
+      "category": "overlay",
+      "runtime": {
+        "accessory": {
+          "path": "/assets/paper/education/S00/accessory.svg",
+          "sourcePath": "assets/paper-source/education/S00-accessory-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 689,
+          "sha256": "f73752392178a2caa06fb57e70791a978bcf9712c7cb83783f8e5fc973a08d8b"
+        },
+        "seal": {
+          "path": "/assets/paper/education/S00/seal.svg",
+          "sourcePath": "assets/paper-source/education/S00-seal-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 527,
+          "sha256": "f122c6d1dd0d7b8d9cba1de6441499b2663bd23021063ec2b669b65368f84eaf"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "education-accessory",
+      "rig": null
+    },
+    "secondary-S01": {
+      "category": "overlay",
+      "runtime": {
+        "accessory": {
+          "path": "/assets/paper/education/S01/accessory.svg",
+          "sourcePath": "assets/paper-source/education/S01-accessory-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 687,
+          "sha256": "c21a8bbd164b0f516f772882d6234af3182e4ba3e769d69b4a906a2b648467ba"
+        },
+        "seal": {
+          "path": "/assets/paper/education/S01/seal.svg",
+          "sourcePath": "assets/paper-source/education/S01-seal-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 525,
+          "sha256": "6657479a9888e73f1c918fd015d2d055137aa4735dbc3c3439d746e4fec4f2a5"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "education-accessory",
+      "rig": null
+    },
+    "secondary-S02": {
+      "category": "overlay",
+      "runtime": {
+        "accessory": {
+          "path": "/assets/paper/education/S02/accessory.svg",
+          "sourcePath": "assets/paper-source/education/S02-accessory-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 667,
+          "sha256": "7bf891167aca2d0e09aabbacf4e6e7366d999791cf28d08000813d1fe98a54ba"
+        },
+        "seal": {
+          "path": "/assets/paper/education/S02/seal.svg",
+          "sourcePath": "assets/paper-source/education/S02-seal-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 505,
+          "sha256": "53c929bcce32daead9cb3e0a8ac745ea80b12c43bbbed10de4b82dfab89a1c97"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "education-accessory",
+      "rig": null
+    },
+    "secondary-S03": {
+      "category": "overlay",
+      "runtime": {
+        "accessory": {
+          "path": "/assets/paper/education/S03/accessory.svg",
+          "sourcePath": "assets/paper-source/education/S03-accessory-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 639,
+          "sha256": "56431c251f3dcb2cdcee54d9990b79415a32e0bf755ab2840950b7fae1ca01f3"
+        },
+        "seal": {
+          "path": "/assets/paper/education/S03/seal.svg",
+          "sourcePath": "assets/paper-source/education/S03-seal-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 477,
+          "sha256": "f6030c4e4324d65e11edef7e651b781f2c24b2d19fca165df189ebee9912c2e8"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "education-accessory",
+      "rig": null
+    },
+    "secondary-S04": {
+      "category": "overlay",
+      "runtime": {
+        "accessory": {
+          "path": "/assets/paper/education/S04/accessory.svg",
+          "sourcePath": "assets/paper-source/education/S04-accessory-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 626,
+          "sha256": "26a762c77aa665fdd3576b158ce8620140ce3d57e9a6762c97c13c21d766c56f"
+        },
+        "seal": {
+          "path": "/assets/paper/education/S04/seal.svg",
+          "sourcePath": "assets/paper-source/education/S04-seal-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 464,
+          "sha256": "4578d35c1196178ba2a9b071db6af8134bfc6924d6f9bc945f0149a1e5664147"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "education-accessory",
+      "rig": null
+    },
+    "secondary-S05": {
+      "category": "overlay",
+      "runtime": {
+        "accessory": {
+          "path": "/assets/paper/education/S05/accessory.svg",
+          "sourcePath": "assets/paper-source/education/S05-accessory-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 648,
+          "sha256": "ef0619a065a3b7509e6bbc73ae6387ecbdc99232037a58836d2ac960c6033ff5"
+        },
+        "seal": {
+          "path": "/assets/paper/education/S05/seal.svg",
+          "sourcePath": "assets/paper-source/education/S05-seal-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 486,
+          "sha256": "f0ddd9c49be825b30b2dd4b678f681e3f798595128ab73683330da7c9bb778db"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "education-accessory",
+      "rig": null
+    },
+    "secondary-S06": {
+      "category": "overlay",
+      "runtime": {
+        "accessory": {
+          "path": "/assets/paper/education/S06/accessory.svg",
+          "sourcePath": "assets/paper-source/education/S06-accessory-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 665,
+          "sha256": "82db2d884a1cb0a9e649c433cdc454f81d643b5f59730b5a18dcee71052bd95b"
+        },
+        "seal": {
+          "path": "/assets/paper/education/S06/seal.svg",
+          "sourcePath": "assets/paper-source/education/S06-seal-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 503,
+          "sha256": "406db43af576c9645707db0c67fe0f7eb9605f347d60007fe77b90d715e4d04e"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "education-accessory",
+      "rig": null
+    },
+    "secondary-S07": {
+      "category": "overlay",
+      "runtime": {
+        "accessory": {
+          "path": "/assets/paper/education/S07/accessory.svg",
+          "sourcePath": "assets/paper-source/education/S07-accessory-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 698,
+          "sha256": "288c74cacb117bfbdc34df189c9f473989cd27cff621f62ed95c651e5a49d2de"
+        },
+        "seal": {
+          "path": "/assets/paper/education/S07/seal.svg",
+          "sourcePath": "assets/paper-source/education/S07-seal-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 536,
+          "sha256": "385b332450e1d46959640aa6a21cd26cde0c5211997fd9c89cea854edb9b7635"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "education-accessory",
+      "rig": null
+    },
+    "secondary-S08": {
+      "category": "overlay",
+      "runtime": {
+        "accessory": {
+          "path": "/assets/paper/education/S08/accessory.svg",
+          "sourcePath": "assets/paper-source/education/S08-accessory-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 730,
+          "sha256": "924f23b2446432398591ac27e0cf3ba061596f1f74e79be084ece7fdf073ebc5"
+        },
+        "seal": {
+          "path": "/assets/paper/education/S08/seal.svg",
+          "sourcePath": "assets/paper-source/education/S08-seal-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 568,
+          "sha256": "57cbdcb2d7bf9b77cd08ee4c5d8d2329691af6793c43d1a0613db0139a782a4a"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "education-accessory",
+      "rig": null
+    },
+    "secondary-S09": {
+      "category": "overlay",
+      "runtime": {
+        "accessory": {
+          "path": "/assets/paper/education/S09/accessory.svg",
+          "sourcePath": "assets/paper-source/education/S09-accessory-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 642,
+          "sha256": "bef448cf683a38384904c4cc4ef9a956f6fa0a03d60291c7334dfd686a426f0b"
+        },
+        "seal": {
+          "path": "/assets/paper/education/S09/seal.svg",
+          "sourcePath": "assets/paper-source/education/S09-seal-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 480,
+          "sha256": "f7a2549b10f46b52dfb6414cb80f9af966f18df6d6a86d422dd6fe9dbf8ef109"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "education-accessory",
+      "rig": null
+    },
+    "secondary-S10": {
+      "category": "overlay",
+      "runtime": {
+        "accessory": {
+          "path": "/assets/paper/education/S10/accessory.svg",
+          "sourcePath": "assets/paper-source/education/S10-accessory-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 658,
+          "sha256": "465eadbf90cb9dd510d4dd6ec65c22ee981239073e79ce6e5f66816465a4fb98"
+        },
+        "seal": {
+          "path": "/assets/paper/education/S10/seal.svg",
+          "sourcePath": "assets/paper-source/education/S10-seal-v1.svg",
+          "width": 256,
+          "height": 256,
+          "bytes": 496,
+          "sha256": "796b1123bbe7de699067dd6c92a21716ce576601f7c2e89016d4dd3a463c24f5"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "layer": "education-accessory",
+      "rig": null
+    },
+    "shadow": {
+      "category": "ui",
+      "runtime": {
+        "vector": {
+          "path": "/assets/paper/props/shadow/shadow.svg",
+          "width": 240,
+          "height": 320,
+          "bytes": 140,
+          "sha256": "742c98ada98ea0ebc6ae6995eb16d85240f4d5aa379e975a01f4c3b124181e9b"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "shadow",
+      "rig": null
+    },
+    "title-sign": {
+      "category": "ui",
+      "runtime": {
+        "vector": {
+          "path": "/assets/paper/props/title-sign/title-sign.svg",
+          "width": 900,
+          "height": 180,
+          "bytes": 763,
+          "sha256": "b25d92521e6a71229f5bc4d2a90e077b82512f2a82de533ba5fd89aa4a4effcf"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.1
+      ],
+      "layer": "title-sign",
+      "rig": null
+    },
+    "algorithm-hit": {
+      "category": "expression",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/expressions/algorithm/hit/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.388935,
+          "bytes": 5062,
+          "sha256": "5b9fda4105f764d223c6ae0f821b1db0137419417c6fef8ee994bcc2703839f5"
+        },
+        "256": {
+          "path": "/assets/paper/expressions/algorithm/hit/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.385554,
+          "bytes": 13706,
+          "sha256": "8995a0c34db391a42ac78cdbea5f4c23f708a11dae9cad7da3240eee135800ea"
+        },
+        "768": {
+          "path": "/assets/paper/expressions/algorithm/hit/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.386021,
+          "bytes": 63510,
+          "sha256": "7a7415b4a40c237da954bfb15647b437537c8c19d5fdf0e0a4fb322fc1a702b2"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "face",
+      "rig": {
+        "rendering": "face-mask-only; body and prop always use original master"
+      }
+    },
+    "algorithm-happy": {
+      "category": "expression",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/expressions/algorithm/happy/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.389378,
+          "bytes": 5124,
+          "sha256": "e6947a5c155a165b4afef9248d41aed06b5ea7006727d22eb7007611be771c6b"
+        },
+        "256": {
+          "path": "/assets/paper/expressions/algorithm/happy/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.385993,
+          "bytes": 14094,
+          "sha256": "570200b7cb46c402fcf7c122730ae51e2d3fa5ab337655b10006001460810c52"
+        },
+        "768": {
+          "path": "/assets/paper/expressions/algorithm/happy/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.386453,
+          "bytes": 65926,
+          "sha256": "65a55a5660b002ca20e006166671278831fa83ff11b2e08502cf062df15ac12d"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "face",
+      "rig": {
+        "rendering": "face-mask-only; body and prop always use original master"
+      }
+    },
+    "algorithm-thinking": {
+      "category": "expression",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/expressions/algorithm/thinking/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.388967,
+          "bytes": 5006,
+          "sha256": "0ad4879555b0bc6d492badcc197b47331f1ed8b3afe0357fbdd82a0322e05e61"
+        },
+        "256": {
+          "path": "/assets/paper/expressions/algorithm/thinking/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.38558,
+          "bytes": 13738,
+          "sha256": "d5d5e397d63e735e27968ea9bb0e59a4a97879a06aec4b5b20609b8e8e227c48"
+        },
+        "768": {
+          "path": "/assets/paper/expressions/algorithm/thinking/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.386047,
+          "bytes": 63656,
+          "sha256": "df77b3ae2d4cd416c9c6bc71c4d27abc18ec727e49ac13afba995022aedeed01"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "face",
+      "rig": {
+        "rendering": "face-mask-only; body and prop always use original master"
+      }
+    },
+    "algorithm-blink": {
+      "category": "expression",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/expressions/algorithm/blink/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.388878,
+          "bytes": 5100,
+          "sha256": "c9d0c3b7f44132015ed7e779f7608b20107ec412fee63f4294601a3f275f7bf8"
+        },
+        "256": {
+          "path": "/assets/paper/expressions/algorithm/blink/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.385488,
+          "bytes": 13868,
+          "sha256": "5f9f7839bf3c1d8a81e3037f76d309f417afbfe9477ec97302a6d4cc212aaf74"
+        },
+        "768": {
+          "path": "/assets/paper/expressions/algorithm/blink/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.385955,
+          "bytes": 63686,
+          "sha256": "89fbafd8bb326162a55565d089d68217170bfb64aa50ac62e689da553587aee3"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "face",
+      "rig": {
+        "rendering": "face-mask-only; body and prop always use original master"
+      }
+    },
+    "research-hit": {
+      "category": "expression",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/expressions/research/hit/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.313778,
+          "bytes": 3966,
+          "sha256": "8228329d4bc334dc07c8fff85f3c1d42ce4c1d5bd18ff58f0833b1623a9d59f6"
+        },
+        "256": {
+          "path": "/assets/paper/expressions/research/hit/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.313684,
+          "bytes": 10864,
+          "sha256": "ae7048660e1996820ea3ad2864f1607d32be845499bf1a0eb6394a2b3f09a412"
+        },
+        "768": {
+          "path": "/assets/paper/expressions/research/hit/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.314971,
+          "bytes": 52220,
+          "sha256": "2b3767c53e06a26be61d4da181730243e0e71596349071d3765fa82ec66daa85"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "face",
+      "rig": {
+        "rendering": "face-mask-only; body and prop always use original master"
+      }
+    },
+    "research-happy": {
+      "category": "expression",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/expressions/research/happy/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.314013,
+          "bytes": 3978,
+          "sha256": "462a6d45c87728e98b7a4abda9616cff5976d92a800769297471a5881336beea"
+        },
+        "256": {
+          "path": "/assets/paper/expressions/research/happy/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.31392,
+          "bytes": 10796,
+          "sha256": "4c04d069c0474c0284590018311fc497b4214b662e851ea01b4bffe0f4b3dc1d"
+        },
+        "768": {
+          "path": "/assets/paper/expressions/research/happy/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.315212,
+          "bytes": 51338,
+          "sha256": "859d195583e6544b16ad963264daca10c0c88f128d8b4b4240500e9628e419c9"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "face",
+      "rig": {
+        "rendering": "face-mask-only; body and prop always use original master"
+      }
+    },
+    "research-thinking": {
+      "category": "expression",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/expressions/research/thinking/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.313683,
+          "bytes": 3910,
+          "sha256": "04c5abcc20003e99cf597f0bb844eb956536b4836e045d4084dec108227a785d"
+        },
+        "256": {
+          "path": "/assets/paper/expressions/research/thinking/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.313588,
+          "bytes": 10720,
+          "sha256": "8551bfa65578bbba232299126959caf653f8986eddb60f575258dad757c04f17"
+        },
+        "768": {
+          "path": "/assets/paper/expressions/research/thinking/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.314874,
+          "bytes": 51368,
+          "sha256": "ae74692a374d5b9679801917d5d44cf4a5e8e43fa3768d560e6a497f7ead74ab"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "face",
+      "rig": {
+        "rendering": "face-mask-only; body and prop always use original master"
+      }
+    },
+    "research-blink": {
+      "category": "expression",
+      "runtime": {
+        "128": {
+          "path": "/assets/paper/expressions/research/blink/128.webp",
+          "width": 96,
+          "height": 128,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.313407,
+          "bytes": 3912,
+          "sha256": "2d6f4a44833987d50ce98f879e252934f45aeebd17e00cff1b3dd8ae115f5ff5"
+        },
+        "256": {
+          "path": "/assets/paper/expressions/research/blink/256.webp",
+          "width": 192,
+          "height": 256,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.313309,
+          "bytes": 10606,
+          "sha256": "24948bfb82a323b36829880cb5b91c9af8e80414a7ef8608ef014204b029fea0"
+        },
+        "768": {
+          "path": "/assets/paper/expressions/research/blink/768.webp",
+          "width": 576,
+          "height": 768,
+          "channels": "srgba 4.0",
+          "alphaMin": 0,
+          "alphaMax": 1,
+          "alphaMean": 0.314596,
+          "bytes": 51002,
+          "sha256": "5cfae07926b03716b3fd648cc9fd80ec99b7e8f943a3461b1299508bbabdd13b"
+        }
+      },
+      "portraits": {},
+      "pivot": [
+        0.5,
+        0.94
+      ],
+      "layer": "face",
+      "rig": {
+        "rendering": "face-mask-only; body and prop always use original master"
+      }
+    }
+  },
+  "ruleMap": {
+    "T01": {
+      "assetId": "algorithm",
+      "status": "runtime-ready-static"
+    },
+    "T10": {
+      "assetId": "algorithm",
+      "status": "runtime-ready-static"
+    },
+    "T04": {
+      "assetId": "research",
+      "status": "runtime-ready-static"
+    },
+    "T07": {
+      "assetId": "research",
+      "status": "runtime-ready-static"
+    },
+    "N07": {
+      "assetId": "N07",
+      "status": "runtime-ready-static"
+    },
+    "N08": {
+      "assetId": "N08",
+      "status": "runtime-ready-static"
+    },
+    "N09": {
+      "assetId": "N09",
+      "status": "runtime-ready-static"
+    },
+    "F04": {
+      "assetId": "F04",
+      "status": "runtime-ready-static"
+    },
+    "T02": {
+      "assetId": "public",
+      "status": "runtime-ready-static"
+    },
+    "T03": {
+      "assetId": "public",
+      "status": "runtime-ready-static"
+    },
+    "T08": {
+      "assetId": "public",
+      "status": "runtime-ready-static"
+    },
+    "T06": {
+      "assetId": "sales",
+      "status": "runtime-ready-static"
+    },
+    "T05": {
+      "assetId": "product",
+      "status": "runtime-ready-static"
+    },
+    "T09": {
+      "assetId": "finance",
+      "status": "runtime-ready-static"
+    },
+    "H01": {
+      "assetId": "H01",
+      "status": "runtime-ready-static"
+    },
+    "H02": {
+      "assetId": "H02",
+      "status": "runtime-ready-static"
+    },
+    "H03": {
+      "assetId": "H03",
+      "status": "runtime-ready-static"
+    },
+    "H04": {
+      "assetId": "H04",
+      "status": "runtime-ready-static"
+    },
+    "H05": {
+      "assetId": "H05",
+      "status": "runtime-ready-static"
+    },
+    "H06": {
+      "assetId": "H06",
+      "status": "runtime-ready-static"
+    },
+    "H07": {
+      "assetId": "H07",
+      "status": "runtime-ready-static"
+    },
+    "H08": {
+      "assetId": "H08",
+      "status": "runtime-ready-static"
+    },
+    "H09": {
+      "assetId": "H09",
+      "status": "runtime-ready-static"
+    },
+    "H10": {
+      "assetId": "H10",
+      "status": "runtime-ready-static"
+    },
+    "N03": {
+      "assetId": "campus-rat",
+      "status": "runtime-ready-masked"
+    },
+    "N01": {
+      "assetId": "intern-beagle",
+      "status": "runtime-ready-masked"
+    },
+    "N02": {
+      "assetId": "interview-owl",
+      "status": "runtime-ready-masked"
+    },
+    "N04": {
+      "assetId": "mentor-capybara",
+      "status": "runtime-ready-masked"
+    },
+    "N05": {
+      "assetId": "veteran-tortoise",
+      "status": "runtime-ready-masked"
+    },
+    "N06": {
+      "assetId": "headhunter-fox",
+      "status": "runtime-ready-masked"
+    },
+    "S00": {
+      "assetId": "secondary-S00",
+      "status": "runtime-ready-vector"
+    },
+    "S01": {
+      "assetId": "secondary-S01",
+      "status": "runtime-ready-vector"
+    },
+    "S02": {
+      "assetId": "secondary-S02",
+      "status": "runtime-ready-vector"
+    },
+    "S03": {
+      "assetId": "secondary-S03",
+      "status": "runtime-ready-vector"
+    },
+    "S04": {
+      "assetId": "secondary-S04",
+      "status": "runtime-ready-vector"
+    },
+    "S05": {
+      "assetId": "secondary-S05",
+      "status": "runtime-ready-vector"
+    },
+    "S06": {
+      "assetId": "secondary-S06",
+      "status": "runtime-ready-vector"
+    },
+    "S07": {
+      "assetId": "secondary-S07",
+      "status": "runtime-ready-vector"
+    },
+    "S08": {
+      "assetId": "secondary-S08",
+      "status": "runtime-ready-vector"
+    },
+    "S09": {
+      "assetId": "secondary-S09",
+      "status": "runtime-ready-vector"
+    },
+    "S10": {
+      "assetId": "secondary-S10",
+      "status": "runtime-ready-vector"
+    },
+    "T00": {
+      "assetId": "support",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/characters/support/256.webp",
+        "component": "PaperCharacter"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "N10": {
+      "assetId": "N07",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N07/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "N11": {
+      "assetId": "N09",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N09/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "N12": {
+      "assetId": "N09",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N09/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "N13": {
+      "assetId": "N09",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N09/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "N14": {
+      "assetId": "N07",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N07/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "N15": {
+      "assetId": "N07",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N07/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "N16": {
+      "assetId": "N09",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N09/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "N17": {
+      "assetId": "N08",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N08/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "N18": {
+      "assetId": "N07",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N07/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "N19": {
+      "assetId": "N07",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N07/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "N20": {
+      "assetId": "N07",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N07/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "N21": {
+      "assetId": "N07",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N07/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "N22": {
+      "assetId": "N07",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N07/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "N23": {
+      "assetId": "F04",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/F04/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "N24": {
+      "assetId": "N09",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N09/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "F01": {
+      "assetId": "N07",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N07/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "F02": {
+      "assetId": "N09",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N09/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "F03": {
+      "assetId": "N09",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N09/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "F05": {
+      "assetId": "N08",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/N08/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "F06": {
+      "assetId": "F04",
+      "status": "same-theme-raster-fallback",
+      "fallback": {
+        "runtimePath": "/assets/paper/actions/F04/256.webp",
+        "component": "Art"
+      },
+      "distinctIllustrationPlanned": true
+    },
+    "K01": {
+      "assetId": "intern-beagle",
+      "status": "shared-animal-token-identity",
+      "fallback": {
+        "runtimePath": "/assets/paper/characters/intern-beagle/256.webp",
+        "component": "PaperCharacter"
+      },
+      "distinctIllustrationPlanned": false,
+      "sharedWith": "N01"
+    },
+    "K02": {
+      "assetId": "mentor-capybara",
+      "status": "shared-animal-token-identity",
+      "fallback": {
+        "runtimePath": "/assets/paper/characters/mentor-capybara/256.webp",
+        "component": "PaperCharacter"
+      },
+      "distinctIllustrationPlanned": false,
+      "sharedWith": "N04"
+    },
+    "K03": {
+      "assetId": "intern-beagle",
+      "status": "shared-animal-token-identity",
+      "fallback": {
+        "runtimePath": "/assets/paper/characters/intern-beagle/256.webp",
+        "component": "PaperCharacter"
+      },
+      "distinctIllustrationPlanned": false,
+      "sharedWith": "N01"
+    }
+  }
+}
