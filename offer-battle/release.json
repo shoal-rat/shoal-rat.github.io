@@ -1,14 +1,14 @@
 {
   "name": "offer-battle",
-  "version": "2.2.0-beta.2",
+  "version": "2.3.0-beta.1",
   "base": "/offer-battle/",
   "api": "https://offer-battle-api.offer-battle.workers.dev",
   "guestMode": "local-bot",
   "source": "https://github.com/shoal-rat/offer-battle",
-  "sourceCommit": "79733e220f9ec625cd66e1737841ec9c2f446d78",
-  "contentHash": "67ba41faafcaa4fd51660d4393d1b51dc9f8ec3bc5a43c0b06164224696cfe13",
+  "sourceCommit": "d6ee8e799bf48f093a6334272365f4ea09fc1db3",
+  "contentHash": "4def33ba9a265ea04e526dc0162aa81e86bab509de2991f03e09612aa90fe287",
   "contentHashAlgorithm": "sha256 of sorted relative-path + NUL + file-sha256 + LF, excluding release.json",
-  "indexSha256": "cb69bb91758c55ac1fff1f5ba5e939f972fd03fdbcd0745f4c70da36cd857d39",
-  "assetCount": 518,
-  "totalBytes": 162980045
+  "indexSha256": "21b28be566b717c4e07118e38c52ef6776ba9f473e62faf540f8260a2acf542f",
+  "assetCount": 889,
+  "totalBytes": 189009029
 }
