@@ -2,235 +2,144 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#FF6B6B">
-  <meta name="description" content="Lively for Web — try the flat-design Live Photo editor in your browser: filters, adjustments, soundtracks, trims, and video export. A demo of the open-source iPhone app.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Lively for Web — edit Live Photos and short clips in your browser: 16 looks, 14 adjustments, Loop, Bounce and Long Exposure, soundtracks and voiceovers, crop, and MP4, GIF or photo export. Nothing is uploaded.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Lively for Web — try the Live Photo editor in your browser">
-  <meta property="og:description" content="Filters, adjustments, soundtracks and trims on a sample clip or your own video. A browser demo of the open-source iPhone app.">
+  <meta property="og:title" content="Lively for Web — edit Live Photos in your browser">
+  <meta property="og:description" content="Looks, Loop, Bounce, Long Exposure, soundtracks and MP4/GIF export — all on your device.">
   <meta property="og:url" content="https://weikezhang.cn/lively/">
-  <meta property="og:image" content="https://weikezhang.cn/lively/assets/icon.png">
+  <meta property="og:image" content="https://weikezhang.cn/lively/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://weikezhang.cn/lively/">
   <link rel="icon" type="image/png" href="assets/icon-180.png">
   <link rel="apple-touch-icon" href="assets/icon-180.png">
-  <link rel="stylesheet" href="css/lively.css">
+  <link rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="/css/site-terminal.css">
   <script defer src="/js/lab.js"></script>
-  <title>Lively for Web — Live Photo editor demo</title>
+  <script type="module" src="src/main.js"></script>
+  <title>Lively for Web — edit Live Photos in your browser</title>
 </head>
-<body data-site-terminal-standalone>
+<body data-site-terminal-standalone="lively">
+<div class="app" id="app" data-state="empty" data-tab="looks">
 
-<header class="top">
-  <a class="mark" href="https://github.com/shoal-rat/Lively" target="_blank" rel="noopener" aria-label="Lively on GitHub">
-    <svg viewBox="0 0 44 44" width="34" height="34" aria-hidden="true">
-      <circle cx="22" cy="22" r="21" fill="#FF6B6B"/>
-      <circle cx="22" cy="22" r="14.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-dasharray="4.6 3.4" stroke-linecap="round"/>
-      <circle cx="22" cy="22" r="8" fill="none" stroke="#fff" stroke-width="2.6"/>
-      <circle cx="22" cy="22" r="3.4" fill="#fff"/>
-    </svg>
-    <span class="mark-copy"><strong>Lively</strong><span>for Web</span></span>
-  </a>
-  <nav class="top-links">
-    <a href="https://github.com/shoal-rat/Lively" target="_blank" rel="noopener">GitHub&nbsp;repo</a>
-    <a href="/" class="quiet">weikezhang.cn</a>
-  </nav>
-</header>
-
-<section class="intro">
-  <h1>Try the Live Photo editor, right here.</h1>
-  <p>
-    This is a browser edition of <a href="https://github.com/shoal-rat/Lively" target="_blank" rel="noopener">Lively</a>,
-    an open-source flat-design Live Photo editor for iPhone. Grade the sample clip — or one of your own videos —
-    with the same filters, soundtrack lane, and trim tools, then export the result.
-    Nothing you open ever leaves your device; everything runs locally in this page.
-  </p>
-</section>
-
-<main class="stage-wrap">
-  <div class="phone" id="editor">
-
-    <div class="editor-top">
-      <button class="icon-btn" id="btn-close" aria-label="Close and choose another clip" hidden>
-        <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      </button>
-      <span class="editor-title">Edit</span>
-      <button class="icon-btn" id="btn-play" aria-label="Pause" hidden>
-        <svg id="ic-pause" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path d="M5 3v10M11 3v10" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
-        <svg id="ic-play" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" hidden><path d="M5 3.2v9.6L13 8z" fill="currentColor"/></svg>
-      </button>
+  <header class="bar">
+    <button class="brand" id="btn-home" type="button" title="Close clip">
+      <svg class="brand-mark" viewBox="0 0 44 44" width="30" height="30" aria-hidden="true">
+        <circle cx="22" cy="22" r="21" fill="#FF6B6B"/>
+        <circle cx="22" cy="22" r="14.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-dasharray="4.6 3.4" stroke-linecap="round"/>
+        <circle cx="22" cy="22" r="8" fill="none" stroke="#fff" stroke-width="2.6"/>
+        <circle cx="22" cy="22" r="3.4" fill="#fff"/>
+      </svg>
+      <span class="brand-copy"><strong>Lively</strong><span>for Web</span></span>
+    </button>
+    <span class="doc-name" id="doc-name"></span>
+    <div class="bar-tools">
+      <button class="icon-btn" id="btn-undo" type="button" title="Undo (⌘Z)" aria-label="Undo"><svg viewBox="0 0 20 20" width="19" height="19" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5 5L3.5 9l4 4"/><path d="M4 9h8a4.5 4.5 0 010 9h-2"/></svg></button>
+      <button class="icon-btn" id="btn-redo" type="button" title="Redo (⇧⌘Z)" aria-label="Redo"><svg viewBox="0 0 20 20" width="19" height="19" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12.5 5l4 4-4 4"/><path d="M16 9H8a4.5 4.5 0 000 9h2"/></svg></button>
+      <span class="bar-sep" aria-hidden="true"></span>
+      <button class="icon-btn" id="btn-compare" type="button" title="Before / after split (or hold \ )" aria-label="Compare before and after"><svg viewBox="0 0 20 20" width="19" height="19" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="2.5" y="4" width="15" height="12" rx="2"/><path d="M10 2.5v15"/></svg></button>
+      <button class="icon-btn" id="btn-keys" type="button" title="Keyboard shortcuts (?)" aria-label="Keyboard shortcuts"><svg viewBox="0 0 20 20" width="19" height="19" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="2.5" y="5" width="15" height="10" rx="2"/><path d="M5.5 8h1M9.5 8h1M13.5 8h1M6 12h8"/></svg></button>
+      <button class="btn primary" id="btn-export" type="button" title="Export (⌘E)"><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 12.5V3m0 0L6.5 6.5M10 3l3.5 3.5"/><path d="M4 10.5v5.5h12v-5.5"/></svg><span>Export</span></button>
     </div>
-
-    <div class="canvas-well" id="canvas-well">
-      <canvas id="stage" width="720" height="960" aria-label="Video preview canvas"></canvas>
-      <div class="vignette" id="vignette" aria-hidden="true"></div>
-      <span class="live-badge" id="live-badge" hidden>
-        <svg viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><circle cx="6" cy="6" r="5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2 1.6"/><circle cx="6" cy="6" r="1.8" fill="currentColor"/></svg>
-        LIVE
-      </span>
-      <span class="playhead" id="playhead" hidden>0:00.0</span>
-
-      <div class="start-overlay" id="start-overlay">
-        <div class="start-hero" aria-hidden="true">
-          <svg viewBox="0 0 44 44" width="76" height="76">
-            <circle cx="22" cy="22" r="21" fill="#FF6B6B"/>
-            <circle cx="22" cy="22" r="14.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-dasharray="4.6 3.4" stroke-linecap="round"/>
-            <circle cx="22" cy="22" r="8" fill="none" stroke="#fff" stroke-width="2.6"/>
-            <circle cx="22" cy="22" r="3.4" fill="#fff"/>
-          </svg>
-        </div>
-        <p class="start-tagline">Give your clips a life of their own.</p>
-        <button class="btn-primary" id="btn-sample">Try the sample clip</button>
-        <button class="btn-secondary" id="btn-open">Open a video of yours…</button>
-        <input type="file" id="file-video" accept="video/*" hidden>
-        <p class="start-note">Videos stay on your device — nothing is uploaded.</p>
-      </div>
-    </div>
-
-    <div class="panel" id="panel">
-
-      <section class="pane" id="pane-filters">
-        <div class="pane-head">
-          <h2>Filters</h2>
-        </div>
-        <div class="filter-strip" id="filter-strip" role="listbox" aria-label="Filter presets"></div>
-        <div class="slider-row" id="row-intensity" hidden>
-          <label for="s-intensity">Intensity</label>
-          <input type="range" id="s-intensity" min="0" max="1" step="0.01" value="1">
-          <output for="s-intensity" id="o-intensity">100%</output>
-        </div>
-      </section>
-
-      <section class="pane" id="pane-adjust" hidden>
-        <div class="pane-head">
-          <h2>Adjust</h2>
-          <button class="text-btn" id="btn-reset-adjust" hidden>Reset</button>
-        </div>
-        <div class="adjust-list" id="adjust-list"></div>
-        <p class="pane-note">Warmth and sharpness are gentle approximations on the web — the iPhone app grades with Core Image.</p>
-      </section>
-
-      <section class="pane" id="pane-audio" hidden>
-        <div class="pane-head"><h2>Original audio</h2></div>
-        <div class="slider-row" id="row-original">
-          <button class="icon-btn small" id="btn-mute" aria-label="Mute original audio">
-            <svg viewBox="0 0 18 18" width="14" height="14" aria-hidden="true"><path id="spk" d="M3 7v4h3l4 3V4L6 7H3z" fill="currentColor"/><path id="spk-waves" d="M12.5 6.5a4 4 0 010 5M14.2 5a6.4 6.4 0 010 8" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
-          </button>
-          <input type="range" id="s-original" min="0" max="1" step="0.01" value="1" aria-label="Original audio volume">
-          <output id="o-original">100%</output>
-        </div>
-        <p class="pane-note" id="no-audio-note" hidden>This clip has no audio track.</p>
-
-        <div class="pane-head sub"><h2>Soundtrack</h2><button class="text-btn danger" id="btn-remove-track" hidden>Remove</button></div>
-        <div id="track-empty">
-          <div class="btn-row">
-            <button class="btn-secondary compact" id="btn-music">Add music…</button>
-            <button class="btn-secondary compact" id="btn-record">Record voiceover</button>
-          </div>
-          <input type="file" id="file-audio" accept="audio/*" hidden>
-          <div class="record-row" id="record-row" hidden>
-            <span class="rec-dot" aria-hidden="true"></span>
-            <span class="rec-time" id="rec-time">0:00.0</span>
-            <span class="rec-meter"><span id="rec-level"></span></span>
-            <button class="btn-primary compact" id="btn-rec-stop">Stop</button>
-          </div>
-        </div>
-        <div id="track-editor" hidden>
-          <p class="track-title" id="track-title"></p>
-          <div class="wave-well">
-            <canvas id="waveform" width="640" height="72"></canvas>
-            <div class="range" id="range-audio"></div>
-          </div>
-          <div class="slider-row"><label for="s-offset">Starts at</label><input type="range" id="s-offset" min="0" max="3" step="0.05" value="0"><output id="o-offset">0:00.0</output></div>
-          <div class="slider-row"><label for="s-tvol">Volume</label><input type="range" id="s-tvol" min="0" max="1" step="0.01" value="1"><output id="o-tvol">100%</output></div>
-          <div class="slider-row"><label for="s-fadein">Fade in</label><input type="range" id="s-fadein" min="0" max="2" step="0.05" value="0"><output id="o-fadein">0.0s</output></div>
-          <div class="slider-row"><label for="s-fadeout">Fade out</label><input type="range" id="s-fadeout" min="0" max="2" step="0.05" value="0"><output id="o-fadeout">0.0s</output></div>
-        </div>
-      </section>
-
-      <section class="pane" id="pane-trim" hidden>
-        <div class="pane-head">
-          <h2>Trim</h2>
-          <button class="text-btn" id="btn-reset-trim" hidden>Reset</button>
-        </div>
-        <div class="film-well">
-          <div class="filmstrip" id="filmstrip"></div>
-          <div class="range" id="range-trim"></div>
-        </div>
-        <div class="timecodes">
-          <span id="tc-start">0:00.0</span>
-          <span id="tc-kept" class="tc-mid">0:00.0 kept</span>
-          <span id="tc-end">0:00.0</span>
-        </div>
-      </section>
-
-      <section class="pane" id="pane-export" hidden>
-        <div class="pane-head"><h2>Export</h2></div>
-        <div id="export-idle">
-          <button class="btn-primary" id="btn-export">Export edited video</button>
-          <p class="pane-note">Renders one full pass of your trim — filters, soundtrack and fades baked in — and downloads it. On iPhone, the real app saves a genuine Live Photo.</p>
-          <p class="pane-note warn" id="export-unsupported" hidden>Export needs Chrome, Edge or Firefox — this browser can't bake filters into video. The live preview above still shows everything.</p>
-        </div>
-        <div id="export-busy" hidden>
-          <div class="progress"><div id="export-bar"></div></div>
-          <p class="pane-note" id="export-label">Rendering…</p>
-        </div>
-        <div id="export-done" hidden>
-          <p class="export-ok">✓ Saved to your downloads</p>
-          <button class="btn-secondary compact" id="btn-export-again">Done</button>
-        </div>
-      </section>
-    </div>
-
-    <nav class="toolbar" id="toolbar" aria-label="Editor tools">
-      <button class="tool is-active" data-tool="filters" aria-label="Filters">
-        <svg viewBox="0 0 20 20" width="19" height="19" aria-hidden="true"><circle cx="10" cy="7" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="7" cy="12.4" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="13" cy="12.4" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-        <span>Filters</span>
-      </button>
-      <button class="tool" data-tool="adjust" aria-label="Adjust">
-        <svg viewBox="0 0 20 20" width="19" height="19" aria-hidden="true"><path d="M2 6h16M2 14h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="13" cy="6" r="2.4" fill="var(--surface)" stroke="currentColor" stroke-width="1.6"/><circle cx="7" cy="14" r="2.4" fill="var(--surface)" stroke="currentColor" stroke-width="1.6"/></svg>
-        <span>Adjust</span>
-      </button>
-      <button class="tool" data-tool="audio" aria-label="Audio">
-        <svg viewBox="0 0 20 20" width="19" height="19" aria-hidden="true"><path d="M3 8v4M7 5v10M11 7v6M15 4v12M19 9v2" transform="translate(-1 0)" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-        <span>Audio</span>
-      </button>
-      <button class="tool" data-tool="trim" aria-label="Trim">
-        <svg viewBox="0 0 20 20" width="19" height="19" aria-hidden="true"><rect x="2.5" y="5" width="15" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 5v10M13.5 5v10" stroke="currentColor" stroke-width="1.3"/></svg>
-        <span>Trim</span>
-      </button>
-      <button class="tool" data-tool="export" aria-label="Export">
-        <svg viewBox="0 0 20 20" width="19" height="19" aria-hidden="true"><path d="M10 12V3m0 0L6.5 6.5M10 3l3.5 3.5" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 10v6h12v-6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span>Export</span>
-      </button>
+    <nav class="bar-links">
+      <a href="https://github.com/shoal-rat/Lively" target="_blank" rel="noopener">iPhone app</a>
+      <a href="/">weikezhang.cn</a>
     </nav>
+  </header>
+
+  <!-- welcome -->
+  <section class="welcome" id="welcome" aria-labelledby="welcome-title">
+    <div class="welcome-top">
+    <div class="welcome-hero">
+      <p class="kicker"><span class="dot" aria-hidden="true"></span> Live Photo editor · runs on your device</p>
+      <h1 id="welcome-title">Give your clips<br>a life of their own.</h1>
+      <p class="lede">Grade a Live Photo or any short video with 16 looks and 14 fine adjustments, turn it into a Loop, a Bounce or a Long Exposure, lay a soundtrack under it, and export MP4, GIF or the perfect still.</p>
+      <div class="welcome-actions">
+        <button class="btn primary big" type="button" data-open>
+          <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13V3.5m0 0L6.5 7M10 3.5L13.5 7"/><path d="M3.5 12.5v3a1.5 1.5 0 001.5 1.5h10a1.5 1.5 0 001.5-1.5v-3"/></svg>
+          Open a video
+        </button>
+        <span class="or">or drop a .MOV / .MP4 anywhere on this page</span>
+      </div>
+      <p class="privacy"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="8.5" width="12" height="8.5" rx="2"/><path d="M7 8.5V6a3 3 0 016 0v2.5"/></svg> Nothing is uploaded — decoding, grading and export all happen in this tab.</p>
+    </div>
+    <figure class="demo" aria-label="A sample clip cycling through looks">
+      <div class="demo-screen">
+        <canvas id="demo-canvas" width="540" height="720"></canvas>
+        <span class="badge">LIVE</span>
+        <span class="demo-look" id="demo-look">Original</span>
+      </div>
+      <div class="demo-chips" id="demo-chips" aria-hidden="true"></div>
+    </figure>
+    </div>
+
+    <div class="welcome-samples">
+      <h2>Or start with a sample</h2>
+      <div class="sample-grid" id="sample-grid"></div>
+    </div>
+
+    <ul class="features">
+      <li><strong>Looks &amp; light</strong><span>16 looks with an amount dial, plus exposure, highlights, shadows, warmth, tint, grain and more — graded on the GPU while it plays.</span></li>
+      <li><strong>Live effects</strong><span>Live, Loop with a cross-faded seam, Bounce, and a real Long Exposure blend — the four iPhone effects.</span></li>
+      <li><strong>Sound</strong><span>Add music, record a voiceover or pick a built-in track; slide and trim it on the timeline with fades.</span></li>
+      <li><strong>Export</strong><span>Frame-accurate MP4 with sound, a looping GIF, or the key photo as a full-resolution JPEG.</span></li>
+    </ul>
+
+    <p class="welcome-foot">Lively for Web is the browser edition of <a href="https://github.com/shoal-rat/Lively" target="_blank" rel="noopener">Lively for iPhone</a>, which saves genuine Live Photos back to your library. Open source, MIT · <a href="/">Shoal/Rat Econ-CS Lab</a></p>
+  </section>
+
+  <!-- editor -->
+  <main class="editor" id="editor">
+    <section class="stage" id="stage" aria-label="Preview">
+      <div class="stage-box" id="stage-box">
+        <div class="canvas-wrap">
+          <canvas id="view" aria-label="Edited preview. Click to play or pause; press and hold to see the original."></canvas>
+          <div class="crop-grid" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="split" id="split" hidden><span class="split-knob" aria-hidden="true"></span><em class="split-l">Before</em><em class="split-r">After</em></div>
+          <span class="badge" id="fx-badge">LIVE</span>
+          <span class="original-tag">Original</span>
+        </div>
+      </div>
+      <div class="busy" id="busy" hidden>
+        <span class="busy-ring" aria-hidden="true"></span>
+        <span id="busy-label">Preparing…</span>
+      </div>
+    </section>
+    <aside class="inspector" id="inspector" aria-label="Tools"></aside>
+    <section class="timeline" id="timeline" aria-label="Timeline"></section>
+  </main>
+
+  <div class="loading-state" aria-live="polite"><span class="busy-ring" aria-hidden="true"></span> Opening your video…</div>
+
+  <div class="unsupported">
+    <h1>Lively needs WebGL 2</h1>
+    <p>Your browser or device doesn’t offer WebGL 2, which Lively uses to grade video in real time. Try a recent Chrome, Edge, Firefox or Safari.</p>
   </div>
 
-  <aside class="aside">
-    <h2>What this demo shows</h2>
-    <ul>
-      <li><strong>12 filter looks</strong> with an intensity blend, plus exposure, contrast, saturation and more — applied to the <em>playing</em> clip in real time.</li>
-      <li><strong>A soundtrack lane</strong>: add music or record a voiceover, trim it on the waveform, slide it along the timeline, set volume and fades, and mix it with the original audio.</li>
-      <li><strong>Trim</strong> with a filmstrip, and a baked <strong>video export</strong>.</li>
-    </ul>
-    <h2>What needs the iPhone</h2>
-    <p>
-      Real Live Photos are an iOS format — a paired photo and video with matching identifiers. The
-      <a href="https://github.com/shoal-rat/Lively" target="_blank" rel="noopener">Lively app</a> edits the ones in your
-      library and saves genuine Live Photos back (and converts videos into them). This page brings the same editor
-      feel to the browser with standard web video.
-    </p>
-    <p class="aside-foot">
-      Open source, MIT.&nbsp;
-      <a href="https://github.com/shoal-rat/Lively" target="_blank" rel="noopener">Star it on GitHub</a> ·
-      <a href="/">Back to the lab</a>
-    </p>
-  </aside>
-</main>
+  <div class="drop" id="drop" hidden><div class="drop-card">Drop your video to open it</div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<footer class="foot">
-  <span>Lively · a <a href="/">Shoal/Rat Econ-CS Lab</a> project · <a href="https://github.com/shoal-rat/Lively" target="_blank" rel="noopener">source on GitHub</a></span>
-</footer>
+  <input type="file" id="file-video" accept="video/*,.mov,.mp4,.m4v,.webm,.heic,.heif" multiple hidden>
+  <input type="file" id="file-audio" accept="audio/*" hidden>
 
-<script src="js/lively.js"></script>
+  <dialog class="keys" id="keys-dialog" aria-labelledby="keys-title">
+    <div class="exp-head"><h2 id="keys-title">Keyboard shortcuts</h2><button class="icon-btn" id="keys-close" type="button" aria-label="Close"><svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button></div>
+    <dl class="keys-list">
+      <div><dt><kbd>Space</kbd></dt><dd>Play / pause</dd></div>
+      <div><dt><kbd>←</kbd> <kbd>→</kbd></dt><dd>Step one frame (hold ⇧ for ten)</dd></div>
+      <div><dt><kbd>I</kbd> <kbd>O</kbd></dt><dd>Trim start / end at the playhead</dd></div>
+      <div><dt><kbd>K</kbd></dt><dd>Make this frame the key photo</dd></div>
+      <div><dt><kbd>\</kbd></dt><dd>Hold to see the original</dd></div>
+      <div><dt><kbd>1</kbd>–<kbd>5</kbd></dt><dd>Looks · Adjust · Live · Crop · Audio</dd></div>
+      <div><dt><kbd class="kbd-mod">⌘</kbd> <kbd>Z</kbd></dt><dd>Undo (add ⇧ to redo)</dd></div>
+      <div><dt><kbd class="kbd-mod">⌘</kbd> <kbd>E</kbd></dt><dd>Export</dd></div>
+      <div><dt><kbd class="kbd-mod">⌘</kbd> <kbd>O</kbd></dt><dd>Open another video</dd></div>
+    </dl>
+  </dialog>
+</div>
+
+<noscript><p class="noscript">Lively for Web runs entirely in your browser and needs JavaScript.</p></noscript>
 </body>
 </html>
