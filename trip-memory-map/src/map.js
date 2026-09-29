@@ -4,7 +4,7 @@
 
 import * as maplibregl from '../vendor/maplibre/maplibre-gl.mjs';
 import { MODE_STYLE } from './trip.js';
-import { bbox } from './geo.js';
+import { bbox, along, bearing } from './geo.js';
 
 const STYLE_URL = 'https://tiles.openfreemap.org/styles/positron';
 
@@ -112,6 +112,7 @@ export class TripMap {
     this.map.touchZoomRotate.disableRotation();
     await new Promise((resolve) => this.map.once('load', resolve));
     this.addRouteLayers();
+    this.loadVehicles();
     this.map.on('moveend', () => this.declutter());
     this.map.on('zoom', () => this.scheduleDeclutter());
     for (const type of ['dragstart', 'wheel', 'touchstart']) {
@@ -155,6 +156,48 @@ export class TripMap {
       if (layer.type === 'symbol' && layer.layout?.['text-field'] && !layer.id.includes('shield') && this.map.getLayer(layer.id)) {
         this.map.setLayoutProperty(layer.id, 'text-field', labelField(language));
       }
+    }
+  }
+
+  /* --------------------------------------------------------- vehicles */
+
+  /** three.js and the models load after the map, so first paint stays fast. */
+  async loadVehicles() {
+    try {
+      const { VehicleLayer, kindFor } = await import('./vehicles.js');
+      this.kindFor = kindFor;
+      this.vehicles = new VehicleLayer(maplibregl);
+      this.map.addLayer(this.vehicles);
+      this.vehicles.setDay(this.dayFilter);
+      this.updateLegs();
+    } catch (error) {
+      console.warn('3D vehicles unavailable; using flat markers', error);
+    }
+  }
+
+  /** One small model per leg, at the middle of its path, facing the travel direction. */
+  updateLegs() {
+    if (!this.vehicles) return;
+    const legs = [];
+    for (const seg of this.trip?.segments || []) {
+      if (seg.km < 0.03) continue;
+      const mid = along(seg.measured, 0.5).point;
+      const a = along(seg.measured, 0.47).point;
+      const b = along(seg.measured, 0.53).point;
+      const heading = a[0] === b[0] && a[1] === b[1] ? bearing(seg.from.center, seg.to.center) : bearing(a, b);
+      legs.push({
+        kind: this.kindFor(seg), lngLat: mid, bearing: heading,
+        lift: seg.mode === 'flight' ? 1 : 0, day: seg.day, a: seg.from.center, b: seg.to.center,
+      });
+    }
+    this.vehicles.setLegs(legs);
+  }
+
+  setReplay(on) {
+    this.vehicles?.setReplay(on);
+    if (!on) {
+      this.setMover(null);
+      if (this.map && this.map.getPitch() > 0.5) this.map.easeTo({ pitch: 0, bearing: 0, duration: 600 });
     }
   }
 
@@ -271,12 +314,14 @@ export class TripMap {
       this.markers.set(stop.id, { marker, el, stop });
     });
     this.refreshSegments();
+    this.updateLegs();
     this.applyDayFilter();
     this.declutter();
   }
 
   setDayFilter(day) {
     this.dayFilter = day;
+    this.vehicles?.setDay(day);
     this.refreshSegments(this.dimAll);
     this.applyDayFilter();
   }
@@ -356,10 +401,10 @@ export class TripMap {
     if (!stops.length) return;
     const b = this.boundsFor(stops, segs);
     if (stops.length === 1) {
-      this.map.easeTo({ center: stops[0].center, zoom: 15, padding: this.padding(), duration: animate ? 800 : 0 });
+      this.map.easeTo({ center: stops[0].center, zoom: 15, pitch: 0, bearing: 0, padding: this.padding(), duration: animate ? 800 : 0 });
       return;
     }
-    this.map.fitBounds(b, { padding: this.padding(), maxZoom: 15.5, duration: animate ? 900 : 0 });
+    this.map.fitBounds(b, { padding: this.padding(), maxZoom: 15.5, pitch: 0, bearing: 0, duration: animate ? 900 : 0 });
   }
 
   flyTo(center, zoom = 15.5) {
@@ -370,13 +415,26 @@ export class TripMap {
     return this.map.cameraForBounds(this.boundsFor([seg.from, seg.to], [seg]), { padding: this.padding(), maxZoom: 16 });
   }
 
-  jump(center, zoom) {
-    this.map.jumpTo({ center, zoom, padding: this.padding() });
+  jump(center, zoom, pitch = 0) {
+    this.map.jumpTo({ center, zoom, pitch, bearing: 0, padding: this.padding() });
   }
 
   /* ------------------------------------------------------------ mover */
 
+  /** state: { seg, lngLat, bearing, lift, moving } or null. */
+  setVehicle(state) {
+    if (!this.vehicles) {
+      this.setMover(state ? state.lngLat : null, state?.seg?.mode || 'walk');
+      return;
+    }
+    this.vehicles.setMover(state ? {
+      kind: this.kindFor(state.seg), lngLat: state.lngLat, bearing: state.bearing, lift: state.lift,
+      moving: state.moving, parked: state.parked,
+    } : null);
+  }
+
   setMover(lngLat, mode) {
+    if (!lngLat && this.vehicles) this.vehicles.setMover(null);
     if (!this.mover) {
       const el = document.createElement('div');
       el.className = 'mover';

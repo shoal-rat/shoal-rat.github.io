@@ -2,10 +2,11 @@
    Each frame positions the mover, draws the travelled path, steers the
    camera (pulling back on long legs) and shows a postcard at every stop. */
 
-import { along } from './geo.js';
+import { along, bearing } from './geo.js';
 import { fmtDate, fmtTime, t } from './i18n.js';
 
 const STOP_ZOOM = 14.6;
+const REPLAY_PITCH = 50;
 const ease = (x) => (x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
 const lerp = (a, b, f) => a + (b - a) * f;
 
@@ -27,6 +28,7 @@ export class Playback {
 
   build(trip) {
     this.trip = trip;
+    this.lastBearing = null;
     this.items = [];
     this.zoomCache.clear();
     let clock = 0;
@@ -64,6 +66,7 @@ export class Playback {
     this.active = true;
     this.last = performance.now();
     this.map.refreshSegments(true);
+    this.map.setReplay(true);
     this.onState?.();
     this.loop();
   }
@@ -80,7 +83,7 @@ export class Playback {
     this.pause();
     this.active = false;
     this.card.hidden = true;
-    this.map.setMover(null);
+    this.map.setReplay(false);
     this.map.setProgress([]);
     this.map.refreshSegments(false);
     this.onState?.();
@@ -91,6 +94,7 @@ export class Playback {
     if (!this.active) {
       this.active = true;
       this.map.refreshSegments(true);
+      this.map.setReplay(true);
       this.onState?.();
     }
     this.render();
@@ -159,13 +163,19 @@ export class Playback {
 
     let center;
     let zoom = STOP_ZOOM;
-    let mode = 'walk';
+    let vehicle;
     let utc;
     let offset;
     if (item.kind === 'stop') {
       const stop = item.stop;
       center = stop.center;
-      mode = this.trip.segments[stop.index - 1]?.mode || this.trip.segments[0]?.mode || 'walk';
+      // parked at the stop: the vehicle it arrived with, facing where it goes next
+      const arrived = this.trip.segments[stop.index - 1];
+      const next = this.trip.segments[stop.index];
+      const seg = arrived || next;
+      let heading = this.lastBearing;
+      if (heading == null && next) heading = bearing(next.geometry[0], next.geometry[Math.min(2, next.geometry.length - 1)]);
+      vehicle = seg ? { seg, lngLat: stop.center, bearing: heading ?? 90, lift: 0, moving: false, parked: true } : null;
       const f = (this.pos - item.t0) / (item.t1 - item.t0);
       const photoIndex = Math.min(stop.photos.length - 1, Math.floor(f * stop.photos.length));
       const photo = stop.photos[photoIndex];
@@ -178,7 +188,15 @@ export class Playback {
       const f = ease(raw);
       const { point, index } = along(seg.measured, f);
       center = point;
-      mode = seg.mode;
+      const behind = along(seg.measured, Math.max(0, f - 0.01)).point;
+      const ahead = along(seg.measured, Math.min(1, f + 0.01)).point;
+      const heading = behind[0] === ahead[0] && behind[1] === ahead[1] ? bearing(seg.from.center, seg.to.center) : bearing(behind, ahead);
+      this.lastBearing = heading;
+      vehicle = {
+        seg, lngLat: point, bearing: heading,
+        lift: seg.mode === 'flight' ? Math.pow(Math.sin(Math.PI * f), 0.7) : 0,
+        moving: raw > 0.02 && raw < 0.98,
+      };
       const zFit = Math.min(STOP_ZOOM, this.segZoom(seg));
       const lift = Math.pow(Math.sin(Math.PI * raw), 0.8);
       zoom = STOP_ZOOM - (STOP_ZOOM - zFit) * lift;
@@ -194,11 +212,10 @@ export class Playback {
       utc = lerp(seg.from.end, seg.to.start, raw);
       offset = raw < 0.5 ? seg.from.offset : seg.to.offset;
       this.card.hidden = true;
-      this.moverPoint = point;
     }
     this.map.setProgress(features);
-    this.map.setMover(item.kind === 'seg' ? this.moverPoint : item.stop.center, mode);
-    this.map.jump(center, zoom);
+    this.map.setVehicle(vehicle);
+    this.map.jump(center, zoom, REPLAY_PITCH);
     this.onFrame?.({
       pos: this.pos,
       total: this.total,
