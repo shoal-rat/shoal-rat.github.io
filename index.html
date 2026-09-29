@@ -2,46 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101720">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a1017">
   <meta name="description" content="Dark-mode Econ-CS field notes on public finance, code, AI systems, and practical learning.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Shoal/Rat Econ-CS Lab">
   <meta property="og:description" content="Dark-mode Econ-CS field notes on public finance, code, AI systems, and practical learning.">
   <meta property="og:url" content="https://shoal-rat.github.io/">
   <meta property="og:site_name" content="Shoal/Rat Econ-CS Lab">
-  <meta property="og:image" content="https://shoal-rat.github.io/images/ukiyo-wave-hero.jpg">
+  <meta property="og:image" content="https://shoal-rat.github.io/images/og-ink-tide.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://shoal-rat.github.io/">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="alternate icon" href="/images/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="preload" as="image" href="/images/hero-base.jpg">
-  <link rel="preload" as="image" href="/images/hero-wave-mid.png">
-  <link rel="preload" as="image" href="/images/hero-wave-front.png">
-  <link rel="preload" as="image" href="/images/hero-wave-crown-v2.png">
-  <link rel="preload" as="image" href="/images/hero-fish-1.png">
-  <link rel="preload" as="image" href="/images/hero-fish-2.png">
-  <link rel="preload" as="image" href="/images/hero-fish-3.png">
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/display-800.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/sans-var.woff2" crossorigin>
+  <link rel="preload" as="image" href="/images/sea/crest.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="/images/sea/mid.webp">
+  <link rel="preload" as="image" href="/images/sea/far.webp">
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/sea.css">
+  <link rel="stylesheet" href="/css/home.css">
   <link rel="alternate" href="/atom.xml" title="Shoal/Rat Econ-CS Lab" type="application/atom+xml">
+  <script>document.documentElement.classList.add("js");</script>
   <script defer src="/js/sea.js"></script>
   <script defer src="/js/lab.js"></script>
   <title>Shoal/Rat Econ-CS Lab</title>
 </head>
-<body>
+<body class="is-home">
   <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
+<header class="site-header is-clear">
   <nav class="site-nav" aria-label="Primary navigation">
     <a class="brand" href="/" aria-label="Shoal/Rat Econ-CS Lab home">
-      <img class="brand-logo" src="/images/site-icon.png" alt="" aria-hidden="true">
+      <img class="brand-logo" src="/images/site-icon.png" alt="" aria-hidden="true" width="320" height="320">
       <span class="brand-copy"><strong>Shoal/Rat</strong><span>Econ-CS Lab</span></span>
     </a>
     <div class="nav-links">
-      <a class="is-active" href="/"><i class="fa fa-terminal" aria-hidden="true"></i><span>Home</span></a>
+      <a class="is-active" href="/" aria-current="page"><i class="fa fa-terminal" aria-hidden="true"></i><span>Home</span></a>
       <a class="" href="/aboutme/"><i class="fa fa-user-astronaut" aria-hidden="true"></i><span>AboutMe</span></a>
       <a class="" href="/projects/"><i class="fa fa-code-branch" aria-hidden="true"></i><span>Projects</span></a>
       <a class="" href="/archives/"><i class="fa fa-archive" aria-hidden="true"></i><span>Archive</span></a>
@@ -54,26 +54,27 @@
 </header>
   <main id="main">
 
-    <section class="hero">
-      <div class="hero-scene" id="hero-scene" role="img" aria-label="Indigo woodblock night sea: layered waves with foam, a paper moon, and leaping fish.">
-        <img class="hero-art" src="/images/hero-base.jpg" alt="">
-        <img class="hero-fish hero-fish-1" src="/images/hero-fish-1.png" alt="">
-        <img class="hero-fish hero-fish-2" src="/images/hero-fish-2.png" alt="">
-        <img class="hero-fish hero-fish-3" src="/images/hero-fish-3.png" alt="">
-        <canvas class="hero-ocean-canvas hero-ocean-mid" aria-hidden="true"></canvas>
-        <img class="hero-layer hero-wave-mid" src="/images/hero-wave-mid.png" alt="">
-        <canvas class="hero-ocean-canvas hero-ocean-front" aria-hidden="true"></canvas>
-        <img class="hero-layer hero-wave-front" src="/images/hero-wave-front.png" alt="">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="sea is-loading" id="sea" role="img" aria-label="Indigo woodblock night sea: a paper moon behind drifting mist, rows of waves rolling left, and a great breaking crest with leaping fish.">
+        <div class="sea-sky"></div>
+        <div class="sea-moon sea-layer"><img src="/images/sea/moon.webp" alt="" width="720" height="720" decoding="async"></div>
+        <div class="sea-mist sea-layer" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="sea-band sea-far sea-layer"><div class="sea-swell"><div class="sea-track"></div></div></div>
+        <div class="sea-band sea-mid sea-layer"><div class="sea-swell"><div class="sea-track"></div></div></div>
+        <div class="sea-crest sea-layer" data-sea-crest><img src="/images/sea/crest.webp" alt="" width="1536" height="961" decoding="async" fetchpriority="high"></div>
+        <div class="sea-fish" data-sea-fish></div>
+        <div class="sea-band sea-near sea-layer" data-sea-near><div class="sea-swell"><div class="sea-track"></div></div></div>
+        <div class="sea-spray" data-sea-spray></div>
+        <div class="sea-veil"></div>
       </div>
-      <div class="hero-shade"></div>
-      <button class="sea-button" id="sea-button" type="button" aria-label="Play ocean animation" title="wake the sea"></button>
-      <img class="hero-hanzi" src="/images/hanzi-gewuzhizhi.jpg" alt="" aria-hidden="true" loading="lazy" width="749" height="2100">
+      <button class="sea-button" id="sea-button" type="button" aria-label="Make the fish leap" title="wake the sea"></button>
+      <img class="hero-hanzi" src="/images/hanzi-gewuzhizhi.jpg" alt="" aria-hidden="true" width="299" height="840">
       <div class="hero-content">
         <p class="eyebrow">~/econ-cs-lab :: ink-terminal</p>
-        <h1>Shoal/Rat</h1>
+        <h1 id="hero-title">Shoal<span class="slash">/</span>Rat</h1>
         <p class="hero-copy">A hacker-style notebook for public finance, computer science, GPT tooling, and the practical mechanics of learning in public.</p>
         <div class="hero-actions">
-          <a class="button primary" href="/archives/"><i class="fa fa-archive" aria-hidden="true"></i><span>Read notes</span></a>
+          <a class="button primary" href="/archives/"><span>Read the notes</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
           <a class="button" href="https://github.com/shoal-rat" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
         </div>
         <div class="hero-console" aria-label="Lab status">
@@ -81,172 +82,216 @@
           <code>notes indexed / search local / stack econ+cs+ai</code>
         </div>
       </div>
+      <span class="hero-hint" aria-hidden="true">tap the sea</span>
     </section>
 
-    <section class="signal-strip" aria-label="Site summary">
-      <div><strong>5</strong><span>field notes</span></div>
-      <div><strong>14</strong><span>public repos mapped</span></div>
-      <div><strong>6</strong><span>tag channels</span></div>
-      <div><strong>AI + Econ + CS</strong><span>operating range</span></div>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <p class="eyebrow">git remote -v</p>
-        <h2>Public projects with working notes</h2>
-        <p>The site now indexes the public GitHub trail as repo cards, not just profile links.</p>
+    <section class="ledger" aria-label="Site summary">
+      <div class="ledger-row">
+        <p class="ledger-lede">Econ instincts, programming practice and AI tooling — each note written like a readable commit in a public learning repo.</p>
+        <dl class="ledger-stats">
+          <div><dt>field notes</dt><dd>05</dd></div>
+          <div><dt>public repos</dt><dd>15</dd></div>
+          <div><dt>tag channels</dt><dd>06</dd></div>
+          <div><dt>live builds</dt><dd>03</dd></div>
+        </dl>
       </div>
-      <div class="project-grid">
+    </section>
+
+    <section class="section home-section" id="work">
+      <div class="section-bar">
+        <div class="section-head">
+          <p class="eyebrow"><span class="eyebrow-num">01</span> git remote -v</p>
+          <h2>Public projects with working notes</h2>
+          <p>The site indexes the public GitHub trail as repo cards, not just profile links.</p>
+        </div>
+        <a class="read-link section-link" href="/projects/"><span>All 15 projects</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+
+      <article class="feature-card">
+        <a class="feature-media" href="/2026/06/12/quant-research-lab/" tabindex="-1" aria-hidden="true">
+          <img src="/images/projects/quant-research-lab.jpg" alt="" width="800" height="450" loading="lazy">
+        </a>
+        <div class="feature-body">
+          <div class="project-head">
+            <span class="project-scope">featured · quant agents</span>
+            <span class="project-status">public</span>
+          </div>
+          <h3><a href="https://github.com/shoal-rat/quant-research-lab" target="_blank" rel="noopener">quant-research-lab</a></h3>
+          <p>Anime quant research club (v4): six students propose, backtest and audit trading ideas with an LLM brain, then paper-trade the survivors. A Python engine with point-in-time S&amp;P 500 data, next-open fills and real costs; rarity is the empirical-Bayes expected live Sharpe, behind deflated-Sharpe gates over every pull and a sealed lockbox.</p>
+          <div class="project-stack" aria-label="quant-research-lab stack">
+            <span>Python</span><span>React</span><span>Vite</span><span>LLM agents</span><span>backtesting</span>
+          </div>
+          <div class="project-actions">
+            <a class="read-link" href="/2026/06/12/quant-research-lab/"><span>Read the build note</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            <a class="read-link is-quiet" href="https://github.com/shoal-rat/quant-research-lab" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i><span>Repo</span></a>
+          </div>
+        </div>
+      </article>
+
+      <div class="project-grid home-projects">
 
   <article class="project-card">
-    <div class="project-head">
-      <span class="project-scope">quant agents</span>
-      <span class="project-status">public</span>
-    </div>
     <div class="project-media">
-      <img src="/images/projects/quant-research-lab.jpg" alt="quant-research-lab: academy crest, rising candlesticks and a vermilion seal">
+      <img src="/images/projects/horizon-fsd.jpg" alt="Horizon_FSD emblem: a car on a mountain road under a red sun" width="800" height="450" loading="lazy">
     </div>
-    <h2><a href="https://github.com/shoal-rat/quant-research-lab" target="_blank" rel="noopener">quant-research-lab</a></h2>
-    <p class="project-note">Anime quant research club (v4): six students propose, backtest and audit trading ideas with an LLM brain, then paper-trade the survivors. A Python engine with point-in-time S&amp;P 500 data, next-open fills and real costs; rarity is the empirical-Bayes expected live Sharpe, behind deflated-Sharpe gates over every pull and a sealed lockbox. Chibi club room, visual-novel storyboard, all-new art.</p>
-    <img class="project-gif" src="/images/projects/quant-research-lab-preview.webp" alt="quant-research-lab animated preview" loading="lazy">
-    <div class="project-stack" aria-label="quant-research-lab stack">
-      <span>Python</span>
-      <span>React</span><span>Vite</span><span>LLM agents</span><span>backtesting</span>
-    </div>
-    <div class="project-actions">
-      <a class="read-link" href="/2026/06/12/quant-research-lab/"><span>Archive note</span><i class="fa fa-file-code" aria-hidden="true"></i></a>
-      <a class="read-link" href="https://github.com/shoal-rat/quant-research-lab" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-    </div>
-  </article>
-
-  <article class="project-card">
     <div class="project-head">
       <span class="project-scope">self-driving RL</span>
       <span class="project-status">public</span>
     </div>
-    <div class="project-media">
-      <img src="/images/projects/horizon-fsd.jpg" alt="Horizon_FSD system glyph">
-    </div>
     <h2><a href="https://github.com/shoal-rat/Horizon_FSD" target="_blank" rel="noopener">Horizon_FSD</a></h2>
-    <p class="project-note">World-model driving stack for Forza Horizon 6 in Offline Solo / Free Roam. It connects Windows screen capture, Forza Data Out UDP telemetry, route features, a DreamerV3 actor-critic, virtual Xbox controller output, crash recovery, replay storage, and stress tests under a tight live decision budget.</p>
-    
+    <p class="project-note">World-model driving stack for Forza Horizon 6: screen capture, UDP telemetry, route features and a DreamerV3 actor-critic driving a virtual Xbox controller under a tight live decision budget.</p>
     <div class="project-stack" aria-label="Horizon_FSD stack">
-      <span>Python</span>
-      <span>DreamerV3</span><span>computer vision</span><span>telemetry</span><span>ViGEm</span><span>Windows</span>
+      <span>Python</span><span>DreamerV3</span><span>telemetry</span>
     </div>
     <div class="project-actions">
-
       <a class="read-link" href="https://github.com/shoal-rat/Horizon_FSD" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
     </div>
   </article>
 
   <article class="project-card">
+    <div class="project-media">
+      <img src="/images/projects/econoclast.jpg" alt="econoclast emblem: scales of judgement inside a ring of waves" width="800" height="450" loading="lazy">
+    </div>
     <div class="project-head">
       <span class="project-scope">econometrics agent</span>
       <span class="project-status">public</span>
     </div>
-    <div class="project-media">
-      <img src="/images/projects/econoclast.jpg" alt="econoclast system glyph">
-    </div>
     <h2><a href="https://github.com/shoal-rat/econoclast" target="_blank" rel="noopener">econoclast</a></h2>
-    <p class="project-note">Adversarial AI referee for empirical economics. It reads a paper, identifies hidden specification choices, researches unfamiliar methods, looks for public data, re-runs headline results across defensible alternatives, and reports fragility, p-hacking, cherry-picking, and replication risks in plain language.</p>
-    
+    <p class="project-note">Adversarial AI referee for empirical economics: it finds hidden specification choices, re-runs headline results across defensible alternatives, and reports fragility and p-hacking risk in plain language.</p>
     <div class="project-stack" aria-label="econoclast stack">
-      <span>Python</span>
-      <span>LLM agent</span><span>replication</span><span>DiD</span><span>RDD</span><span>specification curves</span>
+      <span>Python</span><span>replication</span><span>DiD · RDD</span>
     </div>
     <div class="project-actions">
-
       <a class="read-link" href="https://github.com/shoal-rat/econoclast" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
     </div>
   </article>
 
   <article class="project-card">
+    <div class="project-media">
+      <img src="/images/projects/digital-unconscious.jpg" alt="digital-unconscious emblem: a crescent moon over printed clouds" width="800" height="450" loading="lazy">
+    </div>
     <div class="project-head">
       <span class="project-scope">research automation</span>
       <span class="project-status">public</span>
     </div>
-    <div class="project-media">
-      <img src="/images/projects/digital-unconscious.jpg" alt="digital-unconscious system glyph">
-    </div>
     <h2><a href="https://github.com/shoal-rat/digital-unconscious" target="_blank" rel="noopener">digital-unconscious</a></h2>
-    <p class="project-note">Local-first research assistant that turns workday traces into private notes, idea candidates, daily briefings, and a searchable research backlog. The project includes passive observation, novelty and feasibility judging, multi-provider model routing, optional screenpipe/OCR capture, RAG context, and a staged research pipeline.</p>
-    
+    <p class="project-note">Local-first research assistant that turns workday traces into private notes, idea candidates, daily briefings and a searchable research backlog, with novelty and feasibility judging.</p>
     <div class="project-stack" aria-label="digital-unconscious stack">
-      <span>Python</span>
-      <span>local-first</span><span>screen context</span><span>idea scoring</span><span>RAG</span><span>dashboard</span>
+      <span>Python</span><span>local-first</span><span>RAG</span>
     </div>
     <div class="project-actions">
-
       <a class="read-link" href="https://github.com/shoal-rat/digital-unconscious" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
     </div>
   </article>
 </div>
+    </section>
+
+    <section class="section home-section" id="live">
+      <div class="section-bar">
+        <div class="section-head">
+          <p class="eyebrow"><span class="eyebrow-num">02</span> ls ~/live</p>
+          <h2>Open it right here</h2>
+          <p>Playable builds hosted on this site. Nothing to install — they run in the browser.</p>
+        </div>
+      </div>
+      <div class="live-grid">
+        <a class="live-card" href="/offer-battle/about/">
+          <span class="live-media"><img src="/offer-battle/about/media/cover-1600x900.webp" alt="" width="1600" height="900" loading="lazy"></span>
+          <span class="live-body">
+            <span class="live-kind">card game · multiplayer</span>
+            <strong lang="zh-CN">秋招斗兽棋 · Offer 开打</strong>
+            <span class="live-note" lang="zh-CN">把你的 Offer 变成角色，和朋友打一局。纸艺风原创卡牌。</span>
+            <span class="live-go">Play <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+          </span>
+        </a>
+        <a class="live-card" href="/lively/">
+          <span class="live-media"><img src="/images/projects/lively.jpg" alt="" width="800" height="450" loading="lazy"></span>
+          <span class="live-body">
+            <span class="live-kind">web demo · iOS app</span>
+            <strong>Lively for Web</strong>
+            <span class="live-note">The flat-design Live Photo editor: filters, adjustments, soundtracks and trims on a sample clip or your own video.</span>
+            <span class="live-go">Try it <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+          </span>
+        </a>
+        <a class="live-card" href="/trip-memory-map/">
+          <span class="live-media"><img src="/images/projects/trip-memory-map.jpg" alt="" width="800" height="450" loading="lazy"></span>
+          <span class="live-body">
+            <span class="live-kind">photo GPS · route replay</span>
+            <strong>Trip Memory Map</strong>
+            <span class="live-note">Drop in travel photos: GPS and capture times are read locally in the browser, transport is inferred from speed, and the day replays as a route.</span>
+            <span class="live-go">Open map <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section home-section" id="notes">
+      <div class="section-bar">
+        <div class="section-head">
+          <p class="eyebrow"><span class="eyebrow-num">03</span> ./latest</p>
+          <h2>Notes with executable edges</h2>
+        </div>
+        <nav class="channel-list" aria-label="Note channels">
+          <a href="/categories/Projects/">Projects <span>1</span></a>
+          <a href="/categories/Computer-Science/">Computer Science <span>2</span></a>
+          <a href="/categories/GPT/">GPT <span>2</span></a>
+          <a href="/tags/AIGC/">AIGC <span>2</span></a>
+        </nav>
+      </div>
+      <ol class="note-list">
+        <li>
+          <a class="note-row" href="/2026/06/12/quant-research-lab/">
+            <time datetime="2026-06-12">2026 · 06 · 12</time>
+            <span class="note-main">
+              <strong>Quant Research Lab v4: rebuilding the research office from the ground up</strong>
+              <span>Version 4 is an anime quant research club with chibi characters, a visual-novel storyboard and a Python engine where every adoption has to survive shrinkage and a sealed lockbox.</span>
+            </span>
+            <span class="note-tag">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a class="note-row" href="/2024/01/27/blog-SSH-error/">
+            <time datetime="2024-01-27">2024 · 01 · 27</time>
+            <span class="note-main">
+              <strong>Solution of SSH error</strong>
+              <span>Troubleshooting <code>ssh: connect to host github.com port 22: Connection timed out</code> — network, firewall and key checks, step by step.</span>
+            </span>
+            <span class="note-tag">Blog</span>
+          </a>
+        </li>
+        <li>
+          <a class="note-row" href="/2024/01/25/GPT-introduction-2/">
+            <time datetime="2024-01-25">2024 · 01 · 25</time>
+            <span class="note-main">
+              <strong>Introducing Code Mentor: Your Virtual Coding Assistant</strong>
+              <span>A specialized GPT that teaches through guidance and explanation rather than handing over code, built for undergraduate CS students.</span>
+            </span>
+            <span class="note-tag">GPT</span>
+          </a>
+        </li>
+        <li>
+          <a class="note-row" href="/2024/01/15/blog-building/">
+            <time datetime="2024-01-15">2024 · 01 · 15</time>
+            <span class="note-main">
+              <strong>How to Build a Blog by Yourself — Part 1: GitHub</strong>
+              <span>Registering on GitHub, setting up the profile, and creating the repository that becomes your blog.</span>
+            </span>
+            <span class="note-tag">Computer Science</span>
+          </a>
+        </li>
+        <li>
+          <a class="note-row" href="/2024/01/12/GPTs/">
+            <time datetime="2024-01-12">2024 · 01 · 12</time>
+            <span class="note-main">
+              <strong>Introduction of my GPTs</strong>
+              <span>A guide to the Personal Statement Generator GPT: curated prompts and brainstorming sessions for writing a stronger statement.</span>
+            </span>
+            <span class="note-tag">GPT</span>
+          </a>
+        </li>
+      </ol>
       <div class="section-actions">
-        <a class="button" href="/projects/"><i class="fa fa-code-branch" aria-hidden="true"></i><span>Open all projects</span></a>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <p class="eyebrow">./latest</p>
-        <h2>Notes with executable edges</h2>
-      </div>
-      <div class="post-grid">
-
-  <article class="post-card">
-    <div class="card-meta"><span>2026-06-12</span><span>Projects</span></div>
-    <h3><a href="/2026/06/12/quant-research-lab/">Quant Research Lab v4: rebuilding the research office from the ground up</a></h3>
-    <p>Updated 2026-09-29: I rebuilt Quant Research Lab from scratch. Version 4 is an anime quant research club with chibi characters, a visual-novel storyboard and a Python engine where every adoption has to survive shrinkage and a sealed lockbox...</p>
-    <div class="chip-row"><a class="chip" href="/tags/Projects/">Projects</a><a class="chip" href="/tags/Quant/">Quant</a><a class="chip" href="/tags/TypeScript/">TypeScript</a><a class="chip" href="/tags/AI Agents/">AI Agents</a><a class="chip" href="/categories/Projects/">Projects</a><a class="chip" href="/categories/Computer-Science/">Computer Science</a></div>
-    <a class="read-link" href="/2026/06/12/quant-research-lab/"><span>Open note</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-  </article>
-
-  <article class="post-card">
-    <div class="card-meta"><span>2024-01-27</span><span>Blog</span></div>
-    <h3><a href="/2024/01/27/blog-SSH-error/">Solution of SSH error</a></h3>
-    <p>Experiencing SSH Connection Problems with GitHub? SSH Secure Shell is a common method used by developers to securely connect and interact with remote servers, including repositories hosted on GitHub However, sometimes, y...</p>
-    <div class="chip-row"><a class="chip" href="/tags/Blog/">Blog</a></div>
-    <a class="read-link" href="/2024/01/27/blog-SSH-error/"><span>Open note</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-  </article>
-
-  <article class="post-card">
-    <div class="card-meta"><span>2024-01-25</span><span>AIGC</span></div>
-    <h3><a href="/2024/01/25/GPT-introduction-2/">Introducing Code Mentor: Your Virtual Coding Assistant</a></h3>
-    <p>Welcome to Code Mentor , a specialized GPT designed to enhance your coding skills, assist in debugging, and deepen your understanding of programming concepts Perfect for computer science students at the undergraduate lev...</p>
-    <div class="chip-row"><a class="chip" href="/tags/AIGC/">AIGC</a><a class="chip" href="/categories/GPT/">GPT</a></div>
-    <a class="read-link" href="/2024/01/25/GPT-introduction-2/"><span>Open note</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-  </article>
-
-  <article class="post-card">
-    <div class="card-meta"><span>2024-01-15</span><span>Blog</span></div>
-    <h3><a href="/2024/01/15/blog-building/">How to Build a Blog by Yourself - Part 1: GitHub</a></h3>
-    <p>Getting Started Registering on GitHub Embarking on the journey to build your own blog? A great first step is to create an account on GitHub Get started by registering at GitHub Note Depending on your region, you might ne...</p>
-    <div class="chip-row"><a class="chip" href="/tags/Blog/">Blog</a><a class="chip" href="/categories/Computer-Science/">Computer Science</a></div>
-    <a class="read-link" href="/2024/01/15/blog-building/"><span>Open note</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-  </article>
-
-  <article class="post-card">
-    <div class="card-meta"><span>2024-01-12</span><span>AIGC</span></div>
-    <h3><a href="/2024/01/12/GPTs/">Introduction of my GPTs</a></h3>
-    <p>Elevating Your Personal Statement A Comprehensive Guide to Using GPT Technology Welcome to a transformative journey in crafting compelling personal statements! The Personal Statement Generator GPT is not merely a tool; i...</p>
-    <div class="chip-row"><a class="chip" href="/tags/AIGC/">AIGC</a><a class="chip" href="/categories/GPT/">GPT</a></div>
-    <a class="read-link" href="/2024/01/12/GPTs/"><span>Open note</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-  </article>
-</div>
-    </section>
-
-    <section class="section split-section">
-      <div>
-        <p class="eyebrow">stack.map()</p>
-        <h2>Built like a compact workspace</h2>
-        <p>The site is tuned for a mixed path: economics instincts, programming practice, and GPT experiments. Each note behaves like a readable commit in a public learning repo.</p>
-      </div>
-      <div class="matrix-list">
-        <a href="/categories/GPT/"><span>GPT</span><strong>2</strong></a>
-        <a href="/categories/Computer-Science/"><span>Computer Science</span><strong>2</strong></a>
-        <a href="/projects/"><span>Projects</span><strong>14</strong></a>
-        <a href="/tags/AIGC/"><span>AIGC</span><strong>2</strong></a>
+        <a class="button" href="/archives/"><span>Open the archive</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
       </div>
     </section>
   </main>
