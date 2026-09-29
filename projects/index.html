@@ -58,9 +58,46 @@
         <p>Private repositories are intentionally not listed on the public site. Forks are marked as forks, while original public repos are treated as lab projects.</p>
       </div>
       <div class="matrix-list">
+        <a href="#live-builds"><span>running on this site</span><strong>3</strong></a>
         <a href="#featured-projects"><span>featured systems</span><strong>5</strong></a>
         <a href="#all-projects"><span>public index</span><strong>15</strong></a>
         <a href="https://github.com/shoal-rat" target="_blank" rel="noopener"><span>GitHub profile</span><strong><i class="fab fa-github" aria-hidden="true"></i></strong></a>
+      </div>
+    </section>
+    <section class="section" id="live-builds">
+      <div class="section-head">
+        <p class="eyebrow">ls ~/live</p>
+        <h2>Running on this site</h2>
+        <p>Three builds are hosted here and run entirely in the browser. Nothing to install, and nothing you open is uploaded.</p>
+      </div>
+      <div class="live-grid">
+        <a class="live-card" href="/offer-battle/about/">
+          <span class="live-media"><img src="/offer-battle/about/media/cover-1600x900.webp" alt="" width="1600" height="900" loading="lazy"></span>
+          <span class="live-body">
+            <span class="live-kind">card game · multiplayer</span>
+            <strong lang="zh-CN">秋招斗兽棋 · Offer 开打</strong>
+            <span class="live-note" lang="zh-CN">把你的 Offer 变成角色，和朋友打一局。纸艺风原创卡牌。</span>
+            <span class="live-go">Play <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+          </span>
+        </a>
+        <a class="live-card" href="/lively/">
+          <span class="live-media"><img src="/images/projects/lively.jpg" alt="" width="800" height="450" loading="lazy"></span>
+          <span class="live-body">
+            <span class="live-kind">browser editor · iOS app</span>
+            <strong>Lively for Web</strong>
+            <span class="live-note">Grade a Live Photo or clip on the GPU with 16 looks, turn it into a Loop, Bounce or Long Exposure, add a soundtrack, and export MP4, GIF or the key photo.</span>
+            <span class="live-go">Open the editor <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+          </span>
+        </a>
+        <a class="live-card" href="/trip-memory-map/">
+          <span class="live-media"><img src="/images/projects/trip-memory-map.jpg" alt="" width="800" height="450" loading="lazy"></span>
+          <span class="live-body">
+            <span class="live-kind">photo GPS · trip replay</span>
+            <strong>Trip Memory Map · 旅行照片轨迹</strong>
+            <span class="live-note">Drop a trip’s photos: stops, days and transport are worked out from their GPS and capture times, then the whole journey replays on the map — with GPX export and a share poster.</span>
+            <span class="live-go">Open the map <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+          </span>
+        </a>
       </div>
     </section>
     <section class="section" id="featured-projects">
@@ -72,20 +109,20 @@
 
   <article class="project-card">
     <div class="project-head">
-      <span class="project-scope">ios app · live web demo</span>
+      <span class="project-scope">ios app · browser editor</span>
       <span class="project-status">public</span>
     </div>
     <div class="project-media">
       <img src="/images/projects/lively.jpg" alt="Lively system glyph">
     </div>
     <h2><a href="https://github.com/shoal-rat/Lively" target="_blank" rel="noopener">Lively</a></h2>
-    <p class="project-note">Flat-design Live Photo studio for iPhone: pick a Live Photo (or convert any video into one), grade it with 12 filter looks and 8 adjustments previewed per-frame in real time, lay a soundtrack or voiceover under it with waveform trims and fades, then export a genuine Live Photo — paired HEIC + QuickTime with the content-identifier metadata Photos expects. SwiftUI + Observation, zero dependencies. The browser edition on this site runs the same editor feel on standard web video.</p>
+    <p class="project-note">Flat-design Live Photo studio for iPhone: pick a Live Photo (or convert any video into one), grade it with filter looks and fine adjustments previewed per-frame in real time, lay a soundtrack or voiceover under it with waveform trims and fades, then export a genuine Live Photo — paired HEIC + QuickTime with the content-identifier metadata Photos expects. SwiftUI + Observation, zero dependencies. The browser edition on this site is a full editor of its own: WebGL2 grading with 16 looks and 14 adjustments, Live / Loop / Bounce / Long Exposure, a soundtrack timeline, crop, undo, and frame-accurate MP4, GIF or key-photo export — all on your device.</p>
     <div class="project-stack" aria-label="Lively stack">
       <span>Swift</span>
-      <span>SwiftUI</span><span>AVFoundation</span><span>Core Image</span><span>PhotoKit</span><span>Web Audio</span>
+      <span>SwiftUI</span><span>AVFoundation</span><span>Core Image</span><span>WebGL2</span><span>WebCodecs</span>
     </div>
     <div class="project-actions">
-      <a class="read-link" href="/lively/"><span>Try it in your browser</span><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+      <a class="read-link" href="/lively/"><span>Open the web editor</span><i class="fa fa-play-circle" aria-hidden="true"></i></a>
       <a class="read-link" href="https://github.com/shoal-rat/Lively" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
     </div>
   </article>
@@ -184,20 +221,20 @@
 
   <article class="project-card">
     <div class="project-head">
-      <span class="project-scope">ios app · live web demo</span>
+      <span class="project-scope">ios app · browser editor</span>
       <span class="project-status">public</span>
     </div>
     <div class="project-media">
       <img src="/images/projects/lively.jpg" alt="Lively system glyph">
     </div>
     <h2><a href="https://github.com/shoal-rat/Lively" target="_blank" rel="noopener">Lively</a></h2>
-    <p class="project-note">Live Photo editor for iPhone with a browser demo hosted on this site: filters and adjustments previewed in real time, a soundtrack lane with waveform trims and fades, clip trimming, video-to-Live-Photo conversion, and true Live Photo export via paired content-identifier metadata.</p>
+    <p class="project-note">Live Photo editor for iPhone that saves genuine Live Photos back to the library, plus a full browser edition on this site: GPU-graded looks and adjustments, Loop, Bounce and Long Exposure, a soundtrack timeline with voiceover, crop, and MP4, GIF or key-photo export.</p>
     <div class="project-stack" aria-label="Lively stack">
       <span>Swift</span>
-      <span>SwiftUI</span><span>AVFoundation</span><span>Core Image</span><span>Web Audio</span>
+      <span>SwiftUI</span><span>AVFoundation</span><span>WebGL2</span><span>WebCodecs</span>
     </div>
     <div class="project-actions">
-      <a class="read-link" href="/lively/"><span>Try it in your browser</span><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+      <a class="read-link" href="/lively/"><span>Open the web editor</span><i class="fa fa-play-circle" aria-hidden="true"></i></a>
       <a class="read-link" href="https://github.com/shoal-rat/Lively" target="_blank" rel="noopener"><span>Open repo</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
     </div>
   </article>
