@@ -1,0 +1,35 @@
+{
+  "title": { "zh": "东京 · 京都 · 大阪", "en": "Tokyo · Kyoto · Osaka" },
+  "photos": [
+    "asakusa-kaminarimon.jpg", "asakusa-nakamise.jpg", "sumida-park-skytree.jpg", "shibuya-crossing.jpg",
+    "shinjuku-omoide-yokocho.jpg", "tokyo-station-shinkansen.jpg", "fuji-from-the-train.jpg", "fushimi-inari-torii.jpg",
+    "fushimi-inari-foxes.jpg", "kiyomizu-dera.jpg", "gion-hanamikoji.jpg", "hozugawa-boat.jpg",
+    "arashiyama-togetsukyo.jpg", "arashiyama-bamboo.jpg", "osaka-dotonbori.jpg", "night-flight-shanghai.jpg"
+  ],
+  "names": {
+    "asakusa-kaminarimon.jpg": { "zh": "浅草寺 · 雷门", "en": "Senso-ji, Asakusa" },
+    "sumida-park-skytree.jpg": { "zh": "隅田公园 · 晴空塔", "en": "Sumida Park & Skytree" },
+    "shibuya-crossing.jpg": { "zh": "涩谷十字路口", "en": "Shibuya Crossing" },
+    "shinjuku-omoide-yokocho.jpg": { "zh": "新宿 · 回忆横丁", "en": "Omoide Yokocho, Shinjuku" },
+    "tokyo-station-shinkansen.jpg": { "zh": "东京站", "en": "Tokyo Station" },
+    "fuji-from-the-train.jpg": { "zh": "新干线上看富士山", "en": "Mt Fuji from the Shinkansen" },
+    "fushimi-inari-torii.jpg": { "zh": "伏见稻荷 · 千本鸟居", "en": "Fushimi Inari · Senbon Torii" },
+    "fushimi-inari-foxes.jpg": { "zh": "伏见稻荷 · 四之辻", "en": "Fushimi Inari · Yotsutsuji" },
+    "kiyomizu-dera.jpg": { "zh": "清水寺", "en": "Kiyomizu-dera" },
+    "gion-hanamikoji.jpg": { "zh": "祇园 · 花见小路", "en": "Hanamikoji, Gion" },
+    "hozugawa-boat.jpg": { "zh": "保津川游船", "en": "Hozugawa River boat" },
+    "arashiyama-togetsukyo.jpg": { "zh": "岚山 · 渡月桥", "en": "Togetsukyo, Arashiyama" },
+    "arashiyama-bamboo.jpg": { "zh": "岚山竹林", "en": "Arashiyama Bamboo Grove" },
+    "osaka-dotonbori.jpg": { "zh": "大阪 · 道顿堀", "en": "Dotonbori, Osaka" },
+    "night-flight-shanghai.jpg": { "zh": "夜航 · 飞往上海", "en": "Night flight to Shanghai" }
+  },
+  "overrides": {
+    "shibuya-crossing.jpg": "rail",
+    "shinjuku-omoide-yokocho.jpg": "rail",
+    "tokyo-station-shinkansen.jpg": "rail",
+    "kiyomizu-dera.jpg": "bus",
+    "hozugawa-boat.jpg": "rail",
+    "arashiyama-togetsukyo.jpg": "boat",
+    "osaka-dotonbori.jpg": "rail"
+  }
+}
