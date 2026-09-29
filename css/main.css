@@ -210,11 +210,16 @@ kbd {
 }
 
 .brand-logo {
-  width: 2.35rem;
-  height: 2.35rem;
+  width: 2.4rem;
+  height: 2.4rem;
   flex: 0 0 auto;
-  border-radius: 2px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35);
+  transform: rotate(-2deg);
+  transition: transform 0.35s var(--ease-out);
+}
+
+/* the seal is pressed a touch crooked, like a real stamp; hover straightens it */
+.brand:hover .brand-logo {
+  transform: rotate(0deg) scale(1.04);
 }
 
 .brand-copy {
