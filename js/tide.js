@@ -1,6 +1,7 @@
 /* 观潮 Tidewatch — page telemetry for weikezhang.cn.
    Sends page views, time on page, scroll depth, clicks, performance and
-   errors to the Tidewatch worker. No cookies; one random id in localStorage.
+   errors to the Tidewatch worker. The visitor id is a random UUID kept in
+   localStorage and in a first-party cookie (tw_v) so return visits are recognised.
    URL switches:  ?tidewatch=me   mark this browser as the site owner
                   ?tidewatch=off  undo that
                   ?tidewatch=preview  do not record this page load        */
@@ -46,18 +47,58 @@
     return h.slice(0, 8) + "-" + h.slice(8, 12) + "-" + h.slice(12, 16) + "-" + h.slice(16, 20) + "-" + h.slice(20);
   }
 
+  /* Identity lives in two places so a returning visitor is still recognised when one
+     is wiped: localStorage, and a first-party cookie "tw_v" shared by *.weikezhang.cn
+     (vid.firstSeen.visitCount.lastActivity). Safari caps both at 7 days without a visit. */
+  var ID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  var COOKIE_DOMAIN = /(^|\.)weikezhang\.cn$/.test(location.hostname) ? "; domain=weikezhang.cn" : "";
+  function readCookie() {
+    var m = document.cookie.match(/(?:^|;\s*)tw_v=([^;]+)/);
+    if (!m) return null;
+    var p = decodeURIComponent(m[1]).split(".");
+    if (!ID_RE.test(p[0])) return null;
+    return { vid: p[0], first: Number(p[1]) || 0, n: Number(p[2]) || 0, last: Number(p[3]) || 0 };
+  }
+  function writeCookie() {
+    try {
+      document.cookie = "tw_v=" + [vid, firstSeen, visitNo, lastActive].join(".") +
+        "; path=/; max-age=34560000; samesite=lax" + (location.protocol === "https:" ? "; secure" : "") + COOKIE_DOMAIN;
+    } catch (_) {}
+  }
+
   var now = Date.now();
-  var vid = store.get("tw_vid");
-  var firstSeen = Number(store.get("tw_first")) || now;
-  if (!vid) { vid = uid(); store.set("tw_vid", vid); store.set("tw_first", String(now)); }
+  var lsVid = store.get("tw_vid");
+  if (lsVid && !ID_RE.test(lsVid)) lsVid = null;
+  var lsFirst = Number(store.get("tw_first")) || 0;
+  var ck = readCookie();
+  var idSource = (lsVid ? 1 : 0) + (ck ? 2 : 0); // 0 new browser, 1 storage only, 2 cookie only, 3 both
+  var vid = lsVid || (ck && ck.vid) || uid();
+  if (lsVid && ck && ck.vid !== lsVid && ck.first && (!lsFirst || ck.first < lsFirst)) vid = ck.vid; // keep the older identity
+  var firstSeen = Math.min.apply(null, [lsFirst, ck ? ck.first : 0, now].filter(function (x) { return x > 0; }));
+  var visitNo = Math.max(Number(store.get("tw_n")) || 0, ck ? ck.n : 0);
+  var lastActive = Math.max(Number(store.get("tw_last")) || 0, ck ? ck.last : 0);
 
   var sess = readJSON(store.get("tw_s"));
   var newSession = !sess || !sess.id || now - (sess.last || 0) > SESSION_GAP;
-  var visitNo = Number(store.get("tw_n")) || 0;
+  if (sess && sess.last > lastActive) lastActive = sess.last;
+  var sinceLast = 0;
   if (newSession) {
+    sinceLast = visitNo > 0 && lastActive > 0 && lastActive < now ? now - lastActive : 0;
     visitNo += 1;
-    store.set("tw_n", String(visitNo));
     sess = { id: uid(), last: now, seq: 0 };
+  }
+  lastActive = now;
+  store.set("tw_vid", vid);
+  store.set("tw_first", String(firstSeen));
+  store.set("tw_n", String(visitNo));
+  store.set("tw_last", String(lastActive));
+  writeCookie();
+  function touch() {
+    lastActive = Date.now();
+    sess.last = lastActive;
+    store.set("tw_s", JSON.stringify(sess));
+    store.set("tw_last", String(lastActive));
+    writeCookie();
   }
   var owner = store.get("tw_owner") === "1" ? 1 : 0;
 
@@ -103,8 +144,7 @@
   var pv = null;
   function startView(navType) {
     sess.seq = (sess.seq || 0) + 1;
-    sess.last = Date.now();
-    store.set("tw_s", JSON.stringify(sess));
+    touch();
     var prev = tabStore.get("tw_prev") || "";
     pv = {
       id: uid(), path: location.pathname, vis: 0, act: 0, scroll: 0,
@@ -113,7 +153,7 @@
     tabStore.set("tw_prev", location.pathname);
     send({
       t: "pv", v: VERSION, vid: vid, sid: sess.id, pv: pv.id, seq: sess.seq,
-      ns: newSession ? 1 : 0, vn: visitNo, fs: firstSeen, own: owner,
+      ns: newSession ? 1 : 0, vn: visitNo, fs: firstSeen, own: owner, ids: idSource, gp: sinceLast,
       u: location.pathname + location.search + location.hash,
       ti: (document.title || "").slice(0, 200),
       r: navType === "spa" ? "" : document.referrer || "",
@@ -311,8 +351,7 @@
       perf: perf, ev: pv.events.splice(0), ck: pv.clicks.splice(0), end: final ? 1 : 0
     });
     if (final) pv.ended = true;
-    sess.last = Date.now();
-    store.set("tw_s", JSON.stringify(sess));
+    touch();
     flush();
   }
   setInterval(function () {
